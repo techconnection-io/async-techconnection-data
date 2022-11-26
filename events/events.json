@@ -1,0 +1,12 @@
+[{
+    "slug": "frenchkit",
+    "name": "FrenchKit",
+    "logo": "logos/FrenchKit_Logo.svg",
+    "editions": [{
+        "slug": "2022",
+        "name": "FrenchKit 2022"
+    }, {
+        "slug": "se-2019",
+        "name": "FrenchKit SE"
+    }]
+}]
