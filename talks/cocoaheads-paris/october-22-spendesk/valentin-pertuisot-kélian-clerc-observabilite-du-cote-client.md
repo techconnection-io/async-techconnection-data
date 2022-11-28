@@ -4,7 +4,7 @@ date: "2022-10-18"
 title: "Observabilité du côté client"
 author: "Valentin Pertuisot", "Kélian Clerc"
 video: h5ft1Kt0bNw
-thumbnail: thumbnails/
+thumbnail: thumbnails/valentin-pertuisot-kélian-clerc-observabilite-du-cote-client.jpg
 slides: downloads/
 tags: [""]
 year: 2022

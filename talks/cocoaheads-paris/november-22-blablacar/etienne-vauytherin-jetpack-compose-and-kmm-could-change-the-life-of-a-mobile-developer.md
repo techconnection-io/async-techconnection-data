@@ -4,7 +4,7 @@ date: "2022-11-22"
 title: "Jetpack Compose and KMM could change the life of a mobile developer"
 author: "Etienne Vauytherin"
 video: m9hc1xkTIsw
-thumbnail: thumbnails/
+thumbnail: thumbnails/etienne-vauytherin-jetpack-compose-and-kmm-could-change-the-life-of-a-mobile-developer.jpg
 slides: downloads/
 tags: [""]
 year: 2022
