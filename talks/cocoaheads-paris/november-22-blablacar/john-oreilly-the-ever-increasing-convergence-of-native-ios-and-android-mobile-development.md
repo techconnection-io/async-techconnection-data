@@ -1,0 +1,14 @@
+---
+slug: "/talks/cocoaheads-paris/november-22-blablacar/john-oreilly-the-ever-increasing-convergence-of-native-ios-and-android-mobile-development"
+date: "2022-11-22"
+title: "The ever increasing convergence of native iOS and Android mobile development"
+author: "John O’Reilly"
+video: BOza1SgeNBE
+thumbnail: thumbnails/
+slides: downloads/
+tags: [""]
+year: 2022
+conference: cocoaheadsparis
+edition: november-2022
+allow_ads: false
+---
