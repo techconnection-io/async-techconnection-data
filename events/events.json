@@ -1,12 +1,32 @@
-[{
+[
+  {
     "slug": "frenchkit",
     "name": "FrenchKit",
     "logo": "logos/FrenchKit_Logo.svg",
-    "editions": [{
+    "editions": [
+      {
         "slug": "2022",
         "name": "FrenchKit 2022"
-    }, {
+      },
+      {
         "slug": "se-2019",
         "name": "FrenchKit SE"
-    }]
-}]
+      }
+    ]
+  },
+  {
+    "slug": "cocoaheadsparis",
+    "name": "CocoaHeads Paris",
+    "logo": "",
+    "editions": [
+      {
+        "slug": "october-2022",
+        "name": "CocoaHeads d'Octobre chez Spendesk"
+      },
+      {
+        "slug": "november-2022",
+        "name": "CocoaHeads de Novembre chez Blablacar"
+      }
+    ]
+  }
+]
