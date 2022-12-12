@@ -1,5 +1,5 @@
 ---
-slug: "/talks/frenchkit-2022/zouhair-mahieddine-migrating-your-legacy-code-to-local-spm-packages---an-iterative-approach"
+slug: "/talks/frenchkit-2022/zouhair-mahieddine-migrating-your-legacy-code-to-local-spm-packages-an-iterative-approach"
 date: "2022-09-30"
 title: "Migrating Your Legacy Code to Local SPM Packages - An Iterative Approach"
 author: "Zouhair Mahieddine"
