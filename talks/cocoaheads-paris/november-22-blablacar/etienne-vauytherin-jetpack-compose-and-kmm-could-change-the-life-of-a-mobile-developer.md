@@ -8,7 +8,7 @@ thumbnail: thumbnails/etienne-vauytherin-jetpack-compose-and-kmm-could-change-th
 slides: downloads/
 tags: [""]
 year: 2022
-conference: cocoaheadsparis
+conference: cocoaheads-paris
 edition: november-2022
 allow_ads: false
 ---

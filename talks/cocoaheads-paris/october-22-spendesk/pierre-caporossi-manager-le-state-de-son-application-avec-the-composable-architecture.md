@@ -8,7 +8,7 @@ thumbnail: thumbnails/pierre-caporossi-manager-le-state-de-son-application-avec-
 slides: downloads/
 tags: [""]
 year: 2022
-conference: cocoaheadsparis
+conference: cocoaheads-paris
 edition: october-2022
 allow_ads: false
 ---

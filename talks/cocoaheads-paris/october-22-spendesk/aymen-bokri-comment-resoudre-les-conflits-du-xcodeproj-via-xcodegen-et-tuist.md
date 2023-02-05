@@ -8,7 +8,7 @@ thumbnail: thumbnails/aymen-bokri-comment-resoudre-les-conflits-du-xcodeproj-via
 slides: downloads/
 tags: [""]
 year: 2022
-conference: cocoaheadsparis
+conference: cocoaheads-paris
 edition: october-2022
 allow_ads: false
 ---

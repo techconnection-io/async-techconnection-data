@@ -8,7 +8,7 @@ thumbnail: thumbnails/john-oreilly-the-ever-increasing-convergence-of-native-ios
 slides: downloads/
 tags: [""]
 year: 2022
-conference: cocoaheadsparis
+conference: cocoaheads-paris
 edition: november-2022
 allow_ads: false
 ---

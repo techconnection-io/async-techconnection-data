@@ -8,7 +8,7 @@ thumbnail: thumbnails/patrick-brochado-victor-carmouze-our-road-to-experience-ba
 slides: downloads/
 tags: [""]
 year: 2022
-conference: cocoaheadsparis
+conference: cocoaheads-paris
 edition: november-2022
 allow_ads: false
 ---
