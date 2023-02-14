@@ -34,6 +34,21 @@
       {
         "slug": "january-2023",
         "name": "CocoaHeads Paris - January 2023"
+      },
+      {
+        "slug": "february-2023",
+        "name": "CocoaHeads Paris - February 2023"
+      }
+    ]
+  },
+  {
+    "slug": "react-native-paris",
+    "name": "React Native Paris",
+    "logo": "logos/React-Native-Paris-Meetup.png",
+    "editions": [
+      {
+        "slug": "february-2023",
+        "name": "React Native Paris - February 2023"
       }
     ]
   }
