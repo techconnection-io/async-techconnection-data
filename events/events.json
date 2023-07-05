@@ -15,6 +15,28 @@
     ]
   },
   {
+    "slug": "react-native-connection",
+    "name": "React Native Connection",
+    "logo": "logos/React-Native-Connection.svg",
+    "editions": [
+      {
+        "slug": "2023",
+        "name": "React Native Connection 2023"
+      }
+    ]
+  },
+  {
+    "slug": "flutter-connection",
+    "name": "Flutter Connection",
+    "logo": "logos/Flutter-Connection.svg",
+    "editions": [
+      {
+        "slug": "2023",
+        "name": "Flutter Connection 2023"
+      }
+    ]
+  },
+  {
     "slug": "cocoaheads-paris",
     "name": "CocoaHeads Paris",
     "logo": "logos/CocoaHeads-Paris-White.png",
