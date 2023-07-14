@@ -9,7 +9,7 @@ slides:
 tags: []
 year: 2023
 conference: react-native-connection
-edition: june-2023
+edition: 2023
 allow_ads: false
 ---
 

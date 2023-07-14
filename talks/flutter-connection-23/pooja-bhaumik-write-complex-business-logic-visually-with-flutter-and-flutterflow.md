@@ -9,7 +9,7 @@ slides:
 tags: []
 year: 2023
 conference: flutter-connection
-edition: june-2023
+edition: 2023
 allow_ads: false
 ---
 
@@ -39,19 +39,13 @@ Wait.
 
 What was it?
 
-OK, it was something like, [NON-ENGLISH SPEECH]
+OK, it was something like, "C'est un plaisir d'être à Paris"
 
 So I'm pleased to be here in Paris, coming all the way from India.
 
 And I'm going to be talking about Flutter Flow.
 
-And have you heard of Flutter Flow, or have you seen Flutter Flow in Flutter for--
-
-I don't know why this is not working.
-
-OK.
-
-Have you heard about Flutter Flow from Flutter Forward this year?
+And have you heard of Flutter Flow, or have you heard about Flutter Flow from Flutter Forward this year?
 
 Anyone who has heard of Flutter Flow?
 
@@ -69,55 +63,9 @@ Like, of course, you can build UI.
 
 I mean, this is already built.
 
-There's no-- I just realized.
+You can build UI fast with Flutter Flow.
 
-[LAUGHS]
-
-Organizers?
-
-I was looking at this screen, and this is working.
-
-So you should have told me.
-
-[LAUGHS]
-
-We're working on this.
-
-I'm very sorry about that.
-
-I don't know what happened.
-
-We didn't change anything.
-
-So that's awkward.
-
-In the meanwhile, so okay.
-
-This works.
-
-All right.
-
-> > Okay.
-
-> > What happens there?
-
-> > It is the same.
-
-> > All right.
-
-Awesome.
-
-> > Yeah.
-
-> > Thank you.
-
-Sorry.
-
-> > Yeah, it's fine.
-
-> > Yeah, it's fine. I was like, yeah, this is probably part of how -- like, I was looking at this, so it was fine for me. But as you see, you can build UI fast with Flutter Flow.
-
-However, today we -- I mean, I'm sure that's fine in a way. But what I want to cover is that how we can build complex logic in Flutter Flow in a local way and also use Firebase and Flutter code inside the Flutter Flow platform and build applications even faster than Flutter can.
+But what I want to cover is that how we can build complex logic in Flutter Flow in a local way and also use Firebase and Flutter code inside the Flutter Flow platform and build applications even faster than Flutter can.
 
 Right?
 
@@ -145,7 +93,7 @@ So we are building-- get ready for it--
 
 Kahoot!
 
-And this will be with Flutter, Firebase, and inside a Flutter flow application.
+And this will be with Flutter, Firebase, and inside a Flutter Flow application.
 
 So before we actually move on to the building part,
 
@@ -153,11 +101,11 @@ I want to make sure that you understand how the Firebase collections are structu
 
 So let's hope-- yeah.
 
-So in this case, we have a Cahoot Quiz Firebase Firestore database.
+So in this case, we have a Kahoot Quiz Firebase Firestore database.
 
-I do have certain stuff already created, which is I will be showing it in the Flutter flow platform.
+I do have certain stuff already created, which is I will be showing it in the Flutter Flow platform.
 
-If you see it here, this is the Flutter flow platform.
+If you see it here, this is the Flutter Flow platform.
 
 And hopefully, this is visible for you.
 
@@ -573,7 +521,7 @@ Because we have one last thing that I want to basically talk about before we act
 
 -- lock yourself to a platform because it does not let you do custom work. It does not let you code or add custom code kind of a thing. So you're kind of lost. But here you you won't be lost because you can use your Flutter code,
 
-Flutter packages, Dart code, et cetera, all in the Flutter flow platform.
+Flutter packages, Dart code, et cetera, all in the Flutter Flow platform.
 
 So instead of actually doing this by self,
 
@@ -593,7 +541,7 @@ Because if you've taken 15 seconds to answer the score, your score is going to b
 
 Now, that's too much of logic in a way.
 
-And can Flutter flow do it or not is a question.
+And can Flutter Flow do it or not is a question.
 
 But here, I'm going to open this.
 
@@ -877,7 +825,7 @@ Flutter's 1.0 launch event was called this.
 
 The new rendering engine that Flutter is experimenting with is called -- constraints go down, sizes is go up, complete the sentence.
 
-What is the framework language used to write the Flutter flow builder?
+What is the framework language used to write the Flutter Flow builder?
 
 I heard that.
 
@@ -923,46 +871,6 @@ All right.
 
 Woo!
 
-So we have Malrok, Damien, Louisa, Craig, Elian, Oliver,
+[...]
 
-Mike, Sacha, Jeremy, Quentin.
-
-So you can come here.
-
-So I think the first five winners, we have the t-shirt.
-
-But I think we have more t-shirts from the other places as well.
-
-So you can probably have more t-shirts as well.
-
-But we have 10 T-shirts, 10 widgets, 10 stickers, something like that.
-
-So yeah, the winners can come here and pick it up before someone else steals it.
-
-Yes, you can come--
-
-Woo-hoo!
-
-Can we have some lights for the room?
-
-Thank you.
-
-They are all here.
-
-So you can grab one of each.
-
-So sadly, as we're running a bit late, we won't have time for the Q&A.
-
-We saw that there were some questions on Twitter, so you can ask Pooja directly--
-
-- Absolutely.
-
-- During the lunch break, or during the other break this afternoon, or during the party after the conference.
-
-- Yes.
-
-- Exactly. - Awesome, thank you.
-
-- So thank you so much, Pooja, for this amazing talk.
-
-(audience applauding)
+So thank you so much, Pooja, for this amazing talk.
