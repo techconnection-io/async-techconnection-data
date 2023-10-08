@@ -1,15 +1,17 @@
 ---
-slug: "/talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility"
-date: "2022-09-30"
-title: "Testing for Accessibility"
-author: "Robin Kanatzar"
+slug: /talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility
+date: '2022-09-30'
+title: Testing for Accessibility
+author: Robin Kanatzar
 video: 59uLAKVB-d4
-thumbnail: thumbnails/robin.jpg
-slides: downloads/testing-for-accessibility.pdf
-tags: ["Accessibility"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/59uLAKVB-d4.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility/slides.pdf
+tags:
+  - Accessibility
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 

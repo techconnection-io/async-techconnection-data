@@ -1,11 +1,13 @@
 ---
-slug: "/talks/react-native-connection-23/tommy-nguyen-raising-the-bar-our-journey-making-react-native-a-preferred-choice"
-date: 2023-06-01
-title: "Raising the Bar: Our Journey Making React Native a Preferred Choice"
-author: "Tommy Nguyen"
+slug: >-
+  /talks/react-native-connection-23/tommy-nguyen-raising-the-bar-our-journey-making-react-native-a-preferred-choice
+date: 2023-06-01T00:00:00.000Z
+title: 'Raising the Bar: Our Journey Making React Native a Preferred Choice'
+author: Tommy Nguyen
 video: hlhnAqEtpmY
-thumbnail: thumbnails/tommy.png
-slides: downloads/dev-xp-at-ms.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/hlhnAqEtpmY.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/tommy-nguyen-raising-the-bar-our-journey-making-react-native-a-preferred-choice/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

@@ -1,11 +1,15 @@
 ---
-slug: "/talks/react-native-connection-23/monica-restrepo-testing-apps-at-scale-how-shopify-manages-testing-and-qa-of-its-mobile-applications"
-date: 2023-06-01
-title: "Testing Apps at Scale: How Shopify Manages Testing and QA of Its Mobile Applications"
-author: "Mónica Restrepo"
+slug: >-
+  /talks/react-native-connection-23/monica-restrepo-testing-apps-at-scale-how-shopify-manages-testing-and-qa-of-its-mobile-applications
+date: 2023-06-01T00:00:00.000Z
+title: >-
+  Testing Apps at Scale: How Shopify Manages Testing and QA of Its Mobile
+  Applications
+author: Mónica Restrepo
 video: dpO-3OoPZNM
-thumbnail: thumbnails/monica.png
-slides: downloads/rn-connection-official-slidedeck-monica.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpO-3OoPZNM.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/monica-restrepo-testing-apps-at-scale-how-shopify-manages-testing-and-qa-of-its-mobile-applications/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

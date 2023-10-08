@@ -1,15 +1,17 @@
 ---
-slug: "/talks/frenchkit-2022/tunde-adegoroye-i-love-swift-concurrency"
-date: "2022-09-29"
-title: "I 💕 Swift Concurrency"
-author: "Tunde Adegoroye"
+slug: /talks/frenchkit-2022/tunde-adegoroye-i-love-swift-concurrency
+date: '2022-09-29'
+title: I 💕 Swift Concurrency
+author: Tunde Adegoroye
 video: HptV7UUTToQ
-thumbnail: thumbnails/tunde.jpg
-slides: downloads/i-love-swift-concurrency.pdf
-tags: ["Concurrency"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HptV7UUTToQ.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/tunde-adegoroye-i-love-swift-concurrency/slides.pdf
+tags:
+  - Concurrency
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 

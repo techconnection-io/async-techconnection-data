@@ -1,15 +1,20 @@
 ---
-slug: "/talks/frenchkit-2022/donny-wals-building-custom-property-wrappers-for-swiftui-and-how-to-test-them"
-date: "2022-09-29"
-title: "Building Custom Property Wrappers for SwiftUI (And How to Test Them)"
-author: "Donny Wals"
+slug: >-
+  /talks/frenchkit-2022/donny-wals-building-custom-property-wrappers-for-swiftui-and-how-to-test-them
+date: '2022-09-29'
+title: Building Custom Property Wrappers for SwiftUI (And How to Test Them)
+author: Donny Wals
 video: x3-GZzjeH9g
-thumbnail: thumbnails/donny.jpg
-slides: downloads/building-custom-property-wrappers-for-swiftui-and-how-to-test-them.pdf
-tags: ["Property Wrappers", "SwiftUI", "Architecture"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/x3-GZzjeH9g.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/donny-wals-building-custom-property-wrappers-for-swiftui-and-how-to-test-them/slides.pdf
+tags:
+  - Property Wrappers
+  - SwiftUI
+  - Architecture
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 

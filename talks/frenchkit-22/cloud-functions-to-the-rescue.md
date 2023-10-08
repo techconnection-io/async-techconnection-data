@@ -1,15 +1,18 @@
 ---
-slug: "/talks/frenchkit-2022/zamzam-farzamipooya-cloud-functions-to-the-rescue"
-date: "2022-09-30"
-title: "Cloud Functions to the Rescue!"
-author: "Zamzam Farzamipooya"
+slug: /talks/frenchkit-2022/zamzam-farzamipooya-cloud-functions-to-the-rescue
+date: '2022-09-30'
+title: Cloud Functions to the Rescue!
+author: Zamzam Farzamipooya
 video: DdGfFkOz9gQ
-thumbnail: thumbnails/zamzam.jpg
-slides: downloads/cloud-functions-to-the-rescue.pdf
-tags: ["Other Languages", "Back-End"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/DdGfFkOz9gQ.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/zamzam-farzamipooya-cloud-functions-to-the-rescue/slides.pdf
+tags:
+  - Other Languages
+  - Back-End
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 
