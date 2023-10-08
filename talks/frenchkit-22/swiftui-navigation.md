@@ -1,15 +1,18 @@
 ---
-slug: "/talks/frenchkit-2022/luis-ascorbe-swiftui-navigation"
-date: "2022-09-29"
-title: "SwiftUI Navigation"
-author: "Luis Ascorbe"
+slug: /talks/frenchkit-2022/luis-ascorbe-swiftui-navigation
+date: '2022-09-29'
+title: SwiftUI Navigation
+author: Luis Ascorbe
 video: jhO9gfVg6_U
-thumbnail: thumbnails/luis.jpg
-slides: downloads/swiftui-navigation.pdf
-tags: ["SwiftUI", "Architecture"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/jhO9gfVg6_U.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/luis-ascorbe-swiftui-navigation/slides.pdf
+tags:
+  - SwiftUI
+  - Architecture
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 

@@ -1,11 +1,12 @@
 ---
-slug: "/talks/flutter-connection-23/muhammed-salih-guler-dart-ffi-with-rust"
-date: 2023-06-02
-title: "Dart FFI With Rust"
-author: "Muhammed Salih Guler"
+slug: /talks/flutter-connection-23/muhammed-salih-guler-dart-ffi-with-rust
+date: 2023-06-02T00:00:00.000Z
+title: Dart FFI With Rust
+author: Muhammed Salih Guler
 video: oQb_yTJJKI4
-thumbnail: thumbnails/muhammed.png
-slides: downloads/dartffi-rust.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/oQb_yTJJKI4.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/flutter-connection-23/muhammed-salih-guler-dart-ffi-with-rust/slides.pdf
 tags: []
 year: 2023
 conference: flutter-connection

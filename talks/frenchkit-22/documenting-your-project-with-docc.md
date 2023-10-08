@@ -1,15 +1,17 @@
 ---
-slug: "/talks/frenchkit-2022/simon-b-stovring-documenting-your-project-with-docc"
-date: "2022-09-30"
-title: "Documenting Your Project With DocC"
-author: "Simon B. Støvring"
+slug: /talks/frenchkit-2022/simon-b-stovring-documenting-your-project-with-docc
+date: '2022-09-30'
+title: Documenting Your Project With DocC
+author: Simon B. Støvring
 video: paR2INQMc3s
-thumbnail: thumbnails/simon.jpg
-slides: downloads/documenting-your-project-with-docc.pdf
-tags: ["DocC"]
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/paR2INQMc3s.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/simon-b-stovring-documenting-your-project-with-docc/slides.pdf
+tags:
+  - DocC
 year: 2022
 conference: frenchkit
-edition: "2022"
+edition: '2022'
 allow_ads: true
 ---
 

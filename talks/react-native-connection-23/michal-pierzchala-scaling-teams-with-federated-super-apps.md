@@ -1,11 +1,13 @@
 ---
-slug: "/talks/react-native-connection-23/michal-pierzchala-scaling-teams-with-federated-super-apps"
-date: 2023-06-01
-title: "Scaling teams with Federated Super Apps"
-author: "Michał Pierzchała"
+slug: >-
+  /talks/react-native-connection-23/michal-pierzchala-scaling-teams-with-federated-super-apps
+date: 2023-06-01T00:00:00.000Z
+title: Scaling teams with Federated Super Apps
+author: Michał Pierzchała
 video: Br2dkgZtnic
-thumbnail: thumbnails/michal.png
-slides: downloads/super-apps.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Br2dkgZtnic.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/michal-pierzchala-scaling-teams-with-federated-super-apps/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

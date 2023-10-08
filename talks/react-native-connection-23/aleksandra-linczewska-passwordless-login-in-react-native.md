@@ -1,11 +1,13 @@
 ---
-slug: "/talks/react-native-connection-23/aleksandra-linczewska-passwordless-login-in-react-native"
-date: 2023-06-01
-title: "Passwordless Login in React Native"
-author: "Aleksandra Linczewska"
+slug: >-
+  /talks/react-native-connection-23/aleksandra-linczewska-passwordless-login-in-react-native
+date: 2023-06-01T00:00:00.000Z
+title: Passwordless Login in React Native
+author: Aleksandra Linczewska
 video: CocLa_PCHsg
-thumbnail: thumbnails/aleksandra.png
-slides: downloads/passwordless-login-in-React-Native.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/CocLa_PCHsg.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/aleksandra-linczewska-passwordless-login-in-react-native/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

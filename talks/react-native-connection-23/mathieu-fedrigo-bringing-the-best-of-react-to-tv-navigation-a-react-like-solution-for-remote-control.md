@@ -1,11 +1,15 @@
 ---
-slug: "/talks/react-native-connection-23/mathieu-fedrigo-bringing-the-best-of-react-to-tv-navigation-a-react-like-solution-for-remote-control"
-date: 2023-06-01
-title: "Bringing the Best of React to TV Navigation: A React-Like Solution for Remote Control"
-author: "Mathieu Fedrigo"
+slug: >-
+  /talks/react-native-connection-23/mathieu-fedrigo-bringing-the-best-of-react-to-tv-navigation-a-react-like-solution-for-remote-control
+date: 2023-06-01T00:00:00.000Z
+title: >-
+  Bringing the Best of React to TV Navigation: A React-Like Solution for Remote
+  Control
+author: Mathieu Fedrigo
 video: Asn1TmCH2b0
-thumbnail: thumbnails/pierreetmathieu.png
-slides: downloads/react-native-tv-lrud.pdf
+thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Asn1TmCH2b0.jpg
+slides: >-
+  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/mathieu-fedrigo-bringing-the-best-of-react-to-tv-navigation-a-react-like-solution-for-remote-control/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection
