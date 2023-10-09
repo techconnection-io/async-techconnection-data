@@ -7,9 +7,9 @@ title: >-
   Applications
 author: Mónica Restrepo
 video: dpO-3OoPZNM
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpO-3OoPZNM.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpO-3OoPZNM.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/monica-restrepo-testing-apps-at-scale-how-shopify-manages-testing-and-qa-of-its-mobile-applications/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/monica-restrepo-testing-apps-at-scale-how-shopify-manages-testing-and-qa-of-its-mobile-applications/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

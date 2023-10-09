@@ -4,9 +4,9 @@ date: '2022-09-29'
 title: I 💕 Swift Concurrency
 author: Tunde Adegoroye
 video: HptV7UUTToQ
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HptV7UUTToQ.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HptV7UUTToQ.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/tunde-adegoroye-i-love-swift-concurrency/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/tunde-adegoroye-i-love-swift-concurrency/slides.pdf
 tags:
   - Concurrency
 year: 2022

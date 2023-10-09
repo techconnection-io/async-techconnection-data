@@ -5,9 +5,9 @@ date: '2022-09-29'
 title: 'Beyond Code: Skills for Impactful Development That Makes a Difference'
 author: Maxim Cramer
 video: epYcQluY954
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/epYcQluY954.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/epYcQluY954.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/maxim-cramer-beyond-code-skills-for-impactful-development-that-makes-a-difference/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/maxim-cramer-beyond-code-skills-for-impactful-development-that-makes-a-difference/slides.pdf
 tags:
   - Soft Skills
 year: 2022

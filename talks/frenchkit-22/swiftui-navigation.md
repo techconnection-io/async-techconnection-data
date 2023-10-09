@@ -4,9 +4,9 @@ date: '2022-09-29'
 title: SwiftUI Navigation
 author: Luis Ascorbe
 video: jhO9gfVg6_U
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/jhO9gfVg6_U.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/jhO9gfVg6_U.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/luis-ascorbe-swiftui-navigation/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/luis-ascorbe-swiftui-navigation/slides.pdf
 tags:
   - SwiftUI
   - Architecture

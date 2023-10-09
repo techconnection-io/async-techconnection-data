@@ -5,9 +5,9 @@ date: 2023-06-02T00:00:00.000Z
 title: An Introduction to Game Development With Flame
 author: Lukas Klingsbo
 video: fVEEp1vsakY
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/fVEEp1vsakY.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/fVEEp1vsakY.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/flutter-connection-23/lukas-klingsbo-an-introduction-to-game-development-with-flame/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/flutter-connection-23/lukas-klingsbo-an-introduction-to-game-development-with-flame/slides.pdf
 tags: []
 year: 2023
 conference: flutter-connection

@@ -7,9 +7,9 @@ title: >-
   Control
 author: Mathieu Fedrigo
 video: Asn1TmCH2b0
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Asn1TmCH2b0.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Asn1TmCH2b0.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/mathieu-fedrigo-bringing-the-best-of-react-to-tv-navigation-a-react-like-solution-for-remote-control/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/react-native-connection-23/mathieu-fedrigo-bringing-the-best-of-react-to-tv-navigation-a-react-like-solution-for-remote-control/slides.pdf
 tags: []
 year: 2023
 conference: react-native-connection

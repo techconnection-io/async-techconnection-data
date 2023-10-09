@@ -5,9 +5,9 @@ date: '2022-09-30'
 title: 'From Source Code to Executable: A Day in the Life of a Build System'
 author: Samuel Giddins
 video: dpxqSjSKJYA
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpxqSjSKJYA.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpxqSjSKJYA.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/samuel-giddins-from-source-code-to-executable-a-day-in-the-life-of-a-build-system/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/samuel-giddins-from-source-code-to-executable-a-day-in-the-life-of-a-build-system/slides.pdf
 tags:
   - Build System
 year: 2022

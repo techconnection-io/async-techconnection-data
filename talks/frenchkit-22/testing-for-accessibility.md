@@ -4,9 +4,9 @@ date: '2022-09-30'
 title: Testing for Accessibility
 author: Robin Kanatzar
 video: 59uLAKVB-d4
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/59uLAKVB-d4.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/59uLAKVB-d4.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility/slides.pdf
 tags:
   - Accessibility
 year: 2022

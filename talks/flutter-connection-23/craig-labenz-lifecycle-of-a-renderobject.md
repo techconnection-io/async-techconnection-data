@@ -4,9 +4,9 @@ date: 2023-06-02T00:00:00.000Z
 title: Lifecycle of a RenderObject
 author: Craig Labenz
 video: HtIapq5Vo3w
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HtIapq5Vo3w.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HtIapq5Vo3w.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/flutter-connection-23/craig-labenz-lifecycle-of-a-renderobject/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/flutter-connection-23/craig-labenz-lifecycle-of-a-renderobject/slides.pdf
 tags: []
 year: 2023
 conference: flutter-connection

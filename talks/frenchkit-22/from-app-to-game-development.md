@@ -4,9 +4,9 @@ date: '2022-09-30'
 title: From App to Game Development
 author: Michel-André Chirita
 video: HLz0Cfkaiew
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HLz0Cfkaiew.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HLz0Cfkaiew.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/michel-andre-chirita-from-app-to-game-development/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/michel-andre-chirita-from-app-to-game-development/slides.pdf
 tags:
   - SceneKit
   - GameplayKit

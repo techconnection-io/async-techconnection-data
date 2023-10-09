@@ -4,9 +4,9 @@ date: '2022-09-30'
 title: Cloud Functions to the Rescue!
 author: Zamzam Farzamipooya
 video: DdGfFkOz9gQ
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/DdGfFkOz9gQ.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/DdGfFkOz9gQ.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/zamzam-farzamipooya-cloud-functions-to-the-rescue/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/zamzam-farzamipooya-cloud-functions-to-the-rescue/slides.pdf
 tags:
   - Other Languages
   - Back-End

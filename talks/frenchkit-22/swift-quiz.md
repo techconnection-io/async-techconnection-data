@@ -4,9 +4,9 @@ date: '2022-09-30'
 title: Swift Quiz
 author: Vincent Pradeilles
 video: mUBBY6JCC0c
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/mUBBY6JCC0c.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/mUBBY6JCC0c.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/vincent-pradeilles-swift-quiz/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/vincent-pradeilles-swift-quiz/slides.pdf
 tags: []
 year: 2022
 conference: frenchkit

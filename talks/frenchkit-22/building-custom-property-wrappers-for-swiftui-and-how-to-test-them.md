@@ -5,9 +5,9 @@ date: '2022-09-29'
 title: Building Custom Property Wrappers for SwiftUI (And How to Test Them)
 author: Donny Wals
 video: x3-GZzjeH9g
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/x3-GZzjeH9g.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/x3-GZzjeH9g.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/donny-wals-building-custom-property-wrappers-for-swiftui-and-how-to-test-them/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/donny-wals-building-custom-property-wrappers-for-swiftui-and-how-to-test-them/slides.pdf
 tags:
   - Property Wrappers
   - SwiftUI

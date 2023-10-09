@@ -4,9 +4,9 @@ date: '2022-09-29'
 title: SwiftUI at Scale
 author: Thomas Ricouard
 video: tsZBLvdcoTw
-thumbnail: https:/async-assets.s3.eu-west-3.amazonaws.com/thumbnails/tsZBLvdcoTw.jpg
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/tsZBLvdcoTw.jpg
 slides: >-
-  https:/async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/thomas-ricouard-swiftui-at-scale/slides.pdf
+  https://async-assets.s3.eu-west-3.amazonaws.com/slides/talks/frenchkit-2022/thomas-ricouard-swiftui-at-scale/slides.pdf
 tags:
   - SwiftUI
 year: 2022
