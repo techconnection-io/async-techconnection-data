@@ -1,11 +1,14 @@
 ---
-slug: "/talks/flutter-connection-23/remi-rousselet-make-your-codebase-more-maintainable-using-custom_lint-by-creating-custom-refactorings-and-lint-rules"
-date: 2023-06-02
-title: "Make Your Codebase More Maintainable Using custom_lint by Creating Custom Refactorings and Lint Rules"
-author: "Rémi Rousselet"
+slug: >-
+  /talks/flutter-connection-23/remi-rousselet-make-your-codebase-more-maintainable-using-custom_lint-by-creating-custom-refactorings-and-lint-rules
+date: 2023-06-02T00:00:00.000Z
+title: >-
+  Make Your Codebase More Maintainable Using custom_lint by Creating Custom
+  Refactorings and Lint Rules
+author: Rémi Rousselet
 video: xZQJftO1C-4
-thumbnail: thumbnails/remi.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/xZQJftO1C-4.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

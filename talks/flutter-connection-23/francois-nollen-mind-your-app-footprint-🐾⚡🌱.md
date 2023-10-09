@@ -1,11 +1,11 @@
 ---
-slug: "/talks/flutter-connection-23/francois-nollen-mind-your-app-footprint-🐾⚡🌱"
-date: 2023-06-02
-title: "Mind Your App Footprint! 🐾⚡🌱"
-author: "François Nollen"
+slug: /talks/flutter-connection-23/francois-nollen-mind-your-app-footprint-🐾⚡🌱
+date: 2023-06-02T00:00:00.000Z
+title: Mind Your App Footprint! 🐾⚡🌱
+author: François Nollen
 video: JQFp2vXTtgQ
-thumbnail: thumbnails/triosncf.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/JQFp2vXTtgQ.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

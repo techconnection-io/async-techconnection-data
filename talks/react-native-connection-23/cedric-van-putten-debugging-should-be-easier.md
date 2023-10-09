@@ -1,11 +1,11 @@
 ---
-slug: "/talks/react-native-connection-23/cedric-van-putten-debugging-should-be-easier"
-date: 2023-06-01
-title: "Debugging Should Be Easier"
-author: "Cedric van Putten"
+slug: /talks/react-native-connection-23/cedric-van-putten-debugging-should-be-easier
+date: 2023-06-01T00:00:00.000Z
+title: Debugging Should Be Easier
+author: Cedric van Putten
 video: eWY7rHo_94U
-thumbnail: thumbnails/cedric.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/eWY7rHo_94U.jpg
+slides: null
 tags: []
 year: 2023
 conference: react-native-connection

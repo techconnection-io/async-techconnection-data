@@ -1,11 +1,11 @@
 ---
-slug: "/talks/flutter-connection-23/renan-araujo-the-world-of-dart-only-plugins"
-date: 2023-06-02
-title: "The World of Dart-Only Plugins"
-author: "Renan Araujo"
+slug: /talks/flutter-connection-23/renan-araujo-the-world-of-dart-only-plugins
+date: 2023-06-02T00:00:00.000Z
+title: The World of Dart-Only Plugins
+author: Renan Araujo
 video: C1AgQMLXPDE
-thumbnail: thumbnails/renan.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/C1AgQMLXPDE.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

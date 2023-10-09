@@ -1,11 +1,12 @@
 ---
-slug: "/talks/flutter-connection-23/pooja-bhaumik-write-complex-business-logic-visually-with-flutter-and-flutterflow"
-date: 2023-06-02
-title: "Write Complex Business Logic Visually With Flutter & FlutterFlow"
-author: "Pooja Bhaumik"
+slug: >-
+  /talks/flutter-connection-23/pooja-bhaumik-write-complex-business-logic-visually-with-flutter-and-flutterflow
+date: 2023-06-02T00:00:00.000Z
+title: Write Complex Business Logic Visually With Flutter & FlutterFlow
+author: Pooja Bhaumik
 video: ciO85zG8r2A
-thumbnail: thumbnails/pooja.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/ciO85zG8r2A.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

@@ -1,11 +1,12 @@
 ---
-slug: "/talks/flutter-connection-23/teresa-wu-flutter-on-desktop-end-to-end-from-build-to-distribution"
-date: 2023-06-02
-title: "Flutter on Desktop: End to End From Build to Distribution"
-author: "Teresa Wu"
+slug: >-
+  /talks/flutter-connection-23/teresa-wu-flutter-on-desktop-end-to-end-from-build-to-distribution
+date: 2023-06-02T00:00:00.000Z
+title: 'Flutter on Desktop: End to End From Build to Distribution'
+author: Teresa Wu
 video: U5_FbCIqwwY
-thumbnail: thumbnails/teresa.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/U5_FbCIqwwY.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

@@ -1,11 +1,12 @@
 ---
-slug: "/talks/flutter-connection-23/dominik-roszkowski-from-network-failures-to-offline-success-a-journey-of-visible-app"
-date: 2023-06-02
-title: "From Network Failures to Offline Success: A Journey of Visible App"
-author: "Dominik Roszkowski"
+slug: >-
+  /talks/flutter-connection-23/dominik-roszkowski-from-network-failures-to-offline-success-a-journey-of-visible-app
+date: 2023-06-02T00:00:00.000Z
+title: 'From Network Failures to Offline Success: A Journey of Visible App'
+author: Dominik Roszkowski
 video: e5aOsY6N8Cs
-thumbnail: thumbnails/dominik.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/e5aOsY6N8Cs.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection

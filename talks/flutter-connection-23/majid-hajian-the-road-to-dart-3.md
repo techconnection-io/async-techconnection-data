@@ -1,11 +1,11 @@
 ---
-slug: "/talks/flutter-connection-23/majid-hajian-the-road-to-dart-3"
-date: 2023-06-02
-title: "The Road to Dart 3"
-author: "Majid Hajian"
+slug: /talks/flutter-connection-23/majid-hajian-the-road-to-dart-3
+date: 2023-06-02T00:00:00.000Z
+title: The Road to Dart 3
+author: Majid Hajian
 video: 8ic_lYBzpvU
-thumbnail: thumbnails/majid.png
-slides:
+thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/8ic_lYBzpvU.jpg
+slides: null
 tags: []
 year: 2023
 conference: flutter-connection
