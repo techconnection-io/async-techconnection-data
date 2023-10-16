@@ -1,5 +1,5 @@
 ---
-slug: /talks/swift-connection/september-2023/krzysztof-zablocki-the-project-template
+slug: /talks/frenchkit/september-2023/krzysztof-zablocki-the-project-template
 date: '2023-09-21'
 title: The Project Template
 author: Krzysztof Zabłocki
@@ -8,7 +8,7 @@ thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/9KOnO77msU
 slides: null
 tags: []
 year: 2023
-conference: swift-connection
+conference: frenchkit
 edition: september-2023
 allow_ads: false
 ---

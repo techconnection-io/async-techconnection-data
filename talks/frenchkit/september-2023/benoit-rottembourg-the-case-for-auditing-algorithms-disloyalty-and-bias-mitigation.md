@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/september-2023/benoit-rottembourg-the-case-for-auditing-algorithms-disloyalty-and-bias-mitigation
+  /talks/frenchkit/september-2023/benoit-rottembourg-the-case-for-auditing-algorithms-disloyalty-and-bias-mitigation
 date: '2023-09-21'
 title: 'The Case for Auditing Algorithms: Disloyalty and Bias Mitigation'
 author: Benoit Rottembourg
@@ -10,7 +10,7 @@ slides: >-
   https://async-assets.s3.eu-west-3.amazonaws.com/slides/fae0b93922c949ff916fc6810926b089/slides.pdf
 tags: []
 year: 2023
-conference: swift-connection
+conference: frenchkit
 edition: september-2023
 allow_ads: false
 ---

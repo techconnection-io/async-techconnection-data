@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/september-2023/hidde-van-der-ploeg-how-to-make-your-app-look-like-youve-hired-a-designer
+  /talks/frenchkit/september-2023/hidde-van-der-ploeg-how-to-make-your-app-look-like-youve-hired-a-designer
 date: '2023-09-21'
 title: How to Make Your App Look Like You've Hired a Designer
 author: Hidde van der Ploeg
@@ -10,7 +10,7 @@ slides: >-
   https://async-assets.s3.eu-west-3.amazonaws.com/slides/477c5b8208ac40f3bae075e1d74080f9/slides.pdf
 tags: []
 year: 2023
-conference: swift-connection
+conference: frenchkit
 edition: september-2023
 allow_ads: false
 ---

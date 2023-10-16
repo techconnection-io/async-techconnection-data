@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/september-2023/robin-kanatzar-building-accessible-maps-and-navigation
+  /talks/frenchkit/september-2023/robin-kanatzar-building-accessible-maps-and-navigation
 date: '2023-09-21'
 title: Building Accessible Maps and Navigation
 author: Robin Kanatzar
@@ -10,7 +10,7 @@ slides: >-
   https://async-assets.s3.eu-west-3.amazonaws.com/slides/63c88b6afb914e3faf50cbfd113b34bb/slides.pdf
 tags: []
 year: 2023
-conference: swift-connection
+conference: frenchkit
 edition: september-2023
 allow_ads: false
 ---
