@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/frenchkit-2022/yono-mittlefehldt-how-not-to-build-an-umm-detector-using-create-ml
-date: '2022-09-29'
+date: "2022-09-29"
 title: How (Not) to build an Ummm Detector using Create ML
 author: Yono Mittlefehldt
 video: 45hxH7-p5IM
@@ -9,9 +9,10 @@ thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/45hxH7-p5I
 slides: null
 tags:
   - Core ML
+  - AI
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 

@@ -19,6 +19,17 @@
     ]
   },
   {
+    "slug": "swift-connection",
+    "name": "Swift Connection",
+    "logo": "logos/SwifConnection.svg",
+    "editions": [
+      {
+        "slug": "2023",
+        "name": "Swift Connection 2023"
+      }
+    ]
+  },
+  {
     "slug": "react-native-connection",
     "name": "React Native Connection",
     "logo": "logos/React-Native-Connection.svg",
