@@ -1,5 +1,6 @@
 ---
-slug: /talks/frenchkit/september-2023/avi-tsadok-offline-first-mobile-app-design
+slug: >-
+  /talks/frenchkit/swift-connection-2023/avi-tsadok-offline-first-mobile-app-design
 date: '2023-09-21'
 title: Offline-First Mobile App Design
 author: Avi Tsadok
@@ -10,7 +11,7 @@ slides: >-
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 My name is Avi.

@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/frenchkit/september-2023/vincent-pradeilles-parameter-packs-or-how-swift-decided-to-become-c
+  /talks/frenchkit/swift-connection-2023/vincent-pradeilles-parameter-packs-or-how-swift-decided-to-become-c
 date: '2023-09-21'
 title: Parameter Packs or How Swift Decided to Become C++
 author: Vincent Pradeilles
@@ -10,7 +10,7 @@ slides: null
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 Hello.

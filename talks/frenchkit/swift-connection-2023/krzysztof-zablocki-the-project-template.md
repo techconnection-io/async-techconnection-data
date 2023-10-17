@@ -1,5 +1,5 @@
 ---
-slug: /talks/frenchkit/september-2023/krzysztof-zablocki-the-project-template
+slug: /talks/frenchkit/swift-connection-2023/krzysztof-zablocki-the-project-template
 date: '2023-09-21'
 title: The Project Template
 author: Krzysztof Zabłocki
@@ -9,7 +9,7 @@ slides: null
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 Hello, so yeah, I do a lot of open source.

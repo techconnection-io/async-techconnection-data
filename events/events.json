@@ -2,7 +2,7 @@
   {
     "slug": "frenchkit",
     "name": "SwiftConnection",
-    "logo": "logos/SwifConnection.svg",
+    "logo": "logos/SwiftConnection.svg",
     "editions": [
       {
         "slug": "2022",
@@ -15,6 +15,10 @@
       {
         "slug": "september-2023",
         "name": "Swift Connection - September 2023"
+      },
+      {
+        "slug": "swift-connection-2023",
+        "name": "Swift Connection 2023"
       }
     ]
   },

@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/frenchkit/september-2023/danijela-vrzan-string-catalog-better-way-to-localize-your-apps
+  /talks/frenchkit/swift-connection-2023/danijela-vrzan-string-catalog-better-way-to-localize-your-apps
 date: '2023-09-21'
 title: 'String Catalog: Better Way to Localize Your Apps'
 author: Danijela Vrzan
@@ -10,7 +10,7 @@ slides: null
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 Hello, everyone.

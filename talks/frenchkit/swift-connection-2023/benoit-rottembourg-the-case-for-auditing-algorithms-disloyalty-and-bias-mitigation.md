@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/frenchkit/september-2023/benoit-rottembourg-the-case-for-auditing-algorithms-disloyalty-and-bias-mitigation
+  /talks/frenchkit/swift-connection-2023/benoit-rottembourg-the-case-for-auditing-algorithms-disloyalty-and-bias-mitigation
 date: '2023-09-21'
 title: 'The Case for Auditing Algorithms: Disloyalty and Bias Mitigation'
 author: Benoit Rottembourg
@@ -11,7 +11,7 @@ slides: >-
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 So, as you can see, I'm trying to improve the average age of the session.

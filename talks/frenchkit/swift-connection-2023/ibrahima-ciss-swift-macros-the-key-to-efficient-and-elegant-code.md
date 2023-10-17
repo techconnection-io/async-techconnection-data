@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/frenchkit/september-2023/ibrahima-ciss-swift-macros-the-key-to-efficient-and-elegant-code
+  /talks/frenchkit/swift-connection-2023/ibrahima-ciss-swift-macros-the-key-to-efficient-and-elegant-code
 date: '2023-09-21'
 title: 'Swift Macros: The Key to Efficient and Elegant Code'
 author: Ibrahima Ciss
@@ -10,7 +10,7 @@ slides: null
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 Hey, guys.

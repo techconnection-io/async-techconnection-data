@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/frenchkit/september-2023/robin-kanatzar-building-accessible-maps-and-navigation
+  /talks/frenchkit/swift-connection-2023/robin-kanatzar-building-accessible-maps-and-navigation
 date: '2023-09-21'
 title: Building Accessible Maps and Navigation
 author: Robin Kanatzar
@@ -11,7 +11,7 @@ slides: >-
 tags: []
 year: 2023
 conference: frenchkit
-edition: september-2023
+edition: swift-connection-2023
 allow_ads: false
 ---
 Does anybody here remember having to use this?
