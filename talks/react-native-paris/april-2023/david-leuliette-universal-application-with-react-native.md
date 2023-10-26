@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/react-native-paris/april-2023/david-leuliette-universal-application-with-react-native
-date: 2023-04-18T00:00:00.000Z
+date: '2023-04-18'
 title: Universal Application with React Native
 author: David Leuliette
 video: t4rKdSjRz18
