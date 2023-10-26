@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/react-native-paris/april-2023/charlotte-isambert-you-cant-use-hooks-conditionally-or-can-you?
-date: 2023-04-18T00:00:00.000Z
+  /talks/react-native-paris/april-2023/charlotte-isambert-you-cant-use-hooks-conditionally-or-can-you
+date: '2023-04-18'
 title: You can’t use hooks conditionally… or can you?
 author: Charlotte Isambert
 video: 0x8WZqk21e4
