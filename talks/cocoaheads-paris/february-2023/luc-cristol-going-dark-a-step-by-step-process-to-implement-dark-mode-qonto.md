@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/cocoaheads-paris/february-2023/luc-cristol-going-dark-a-step-by-step-process-to-implement-dark-mode-qonto
-date: 2023-02-09T00:00:00.000Z
+date: '2023-02-09'
 title: 'Going Dark: A Step-by-Step process to implement Dark Mode @ Qonto'
 author: Luc Cristol
 video: vpHvNTc76D0
