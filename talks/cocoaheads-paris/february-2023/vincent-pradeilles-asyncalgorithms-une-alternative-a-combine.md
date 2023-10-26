@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/cocoaheads-paris/february-2023/vincent-pradeilles-asyncalgorithms-une-alternative-a-combine
-date: 2023-02-09T00:00:00.000Z
+date: '2023-02-09'
 title: 'AsyncAlgorithms : une alternative à Combine ?'
 author: Vincent Pradeilles
 video: YExRPBO_uCs
