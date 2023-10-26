@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/cocoaheads-paris/december-2022/remi-caroff-un-serveur-de-mocks-integre-pour-des-uitests
-date: 2022-12-13T00:00:00.000Z
+date: '2022-12-13'
 title: Un serveur de mocks intégré pour des UITests
 author: Rémi Caroff
 video: blBg8Xrfz0A
