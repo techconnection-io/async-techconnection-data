@@ -15,10 +15,10 @@ edition: swift-connection-2023
 allow_ads: false
 ---
 Hello, my name is Andreas Lang and I'm a senior software architect working at
-NVW. So let's start first, what is NVW? We are one of the biggest German energy producer and supply company but we are not only working in Germany maybe it's more interesting for you we have also subsidiaries in whole Europe or some countries in Europe and even in Turkey. If you have an electric car you might know our app Mobility Plus in which you can find more than 100 more than half a million of charge points in 17 countries in Europe and you can then charge electric vehicle there and pay with it.
+EnBW. So let's start first, what is EnBW? We are one of the biggest German energy producer and supply company but we are not only working in Germany maybe it's more interesting for you we have also subsidiaries in whole Europe or some countries in Europe and even in Turkey. If you have an electric car you might know our app Mobility Plus in which you can find more than 100 more than half a million of charge points in 17 countries in Europe and you can then charge electric vehicle there and pay with it.
 With that app we have more than 100,000 monthly active users.
 Where do we build all those apps?
-Well this one and others, in the NBW Centre of Excellence mobile.
+Well this one and others, in the EnBW Centre of Excellence mobile.
 It exists since 2009 and in the last 14 years we have built over 100 apps. for the public app store as well as company apps in the custom app store.
 Obviously we started back then with UIKit and our architecture that we then took over after some years was Viper. I'm not sure if you're still familiar with that architecture. Here I have on the right side a little architecture sketch that you have there, the view, the router, the presenter, the interactor and the entity.
 So it's a...
