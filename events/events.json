@@ -34,6 +34,11 @@
     ]
   },
   {
+    "slug": "react-connection",
+    "name": "React Connection",
+    "logo": "logos/React-Connection.svg"
+  },
+  {
     "slug": "flutter-connection",
     "name": "Flutter Connection",
     "logo": "logos/Flutter-Connection.svg",
