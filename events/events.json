@@ -34,6 +34,17 @@
     ]
   },
   {
+    "slug": "react-connection",
+    "name": "React Connection",
+    "logo": "logos/React-Connection.svg",
+    "editions": [
+      {
+        "slug": "2024",
+        "name": "React Connection 2023"
+      }
+    ]
+  },
+  {
     "slug": "flutter-connection",
     "name": "Flutter Connection",
     "logo": "logos/Flutter-Connection.svg",
