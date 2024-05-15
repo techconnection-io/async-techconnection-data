@@ -40,7 +40,7 @@
     "editions": [
       {
         "slug": "2024",
-        "name": "React Connection 2023"
+        "name": "React Connection 2024"
       }
     ]
   },
@@ -52,6 +52,10 @@
       {
         "slug": "2023",
         "name": "Flutter Connection 2023"
+      },
+      {
+        "slug": "flutter-connection-2024",
+        "name": "Flutter Connection 2024"
       }
     ]
   },
