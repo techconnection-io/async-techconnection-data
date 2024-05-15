@@ -36,7 +36,13 @@
   {
     "slug": "react-connection",
     "name": "React Connection",
-    "logo": "logos/React-Connection.svg"
+    "logo": "logos/React-Connection.svg",
+    "editions": [
+      {
+        "slug": "2024",
+        "name": "React Connection 2024"
+      }
+    ]
   },
   {
     "slug": "flutter-connection",
