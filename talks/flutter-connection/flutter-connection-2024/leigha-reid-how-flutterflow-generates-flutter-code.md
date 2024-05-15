@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/leigha-reid-how-flutterflow-generates-flutter-code
-date: '2024-04-24'
+date: "2024-04-24"
 title: How FlutterFlow generates Flutter code
 author: Leigha Reid
 video: qf8OKwL-aig
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Leigha]
 Thanks so much for coming, and I'm so excited to talk to you today about Flutter Flow. So Paris is one of my favorite cities to visit, and I already have seen a lot of familiar faces here, so I look forward to connecting with you all throughout the day. I'm Leah, and I've been involved in the Flutter community for a couple years now.
 

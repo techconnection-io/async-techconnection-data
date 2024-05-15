@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/anton-borries-bring-your-flutter-app-to-the-homescreen-homescreen-widgets
-date: '2024-04-24'
+date: "2024-04-24"
 title: Bring your Flutter App to the HomeScreen - HomeScreen Widgets
 author: Anton Borries
 video: gAjZsZmMTlc
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Anton]
 My name is Anton, I'm from Germany, I'm a software developer at 1,5 Grad and yeah, I'm talking about homescreen widgets today. And so we all kind of know what homescreen widgets are. You can see them on the screenshot already.
 

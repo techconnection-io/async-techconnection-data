@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/masahiro-aoki-enabling-instant-updates-in-flutter-apps-with-shorebird-my-journey-with-code-push
-date: '2024-04-24'
+date: "2024-04-24"
 title: >-
   Enabling Instant Updates in Flutter Apps with Shorebird: My Journey with Code
   Push
@@ -12,9 +12,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Masahiro]
 Enabling Instant Updates in Flutter Apps with Shobo, my journey with CodePush. I'm Masahiro Aoki, founder of OpenCI, a free CI-CD service for Flutter. If you have some interest about OpenCI, you can go to OpenCI.io. And because it is closed beta, you can join our Discord channel if you are interested. I was a former software engineer at IBM, startup co-founder, CDO, and as I mentioned to you, I just became an organizer of Flutter Tokyo a few hours ago. So, if you have a chance to come to Japan, let's do some Flutter meetups. Of course, I have loved Flutter and Dart for five years.
 

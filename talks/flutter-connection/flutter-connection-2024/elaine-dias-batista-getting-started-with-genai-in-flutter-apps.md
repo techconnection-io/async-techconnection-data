@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/elaine-dias-batista-getting-started-with-genai-in-flutter-apps
-date: '2024-04-24'
+date: "2024-04-24"
 title: Getting Started with GenAI in Flutter Apps
 author: Elaine Dias Batista
 video: CujkphnSHOQ
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Elaine]
 So, yes, yes, I'm that person talking about AI on a tech conference. Hopefully you enjoy it. So let's get you started with Gen AI on Flutter apps.
 

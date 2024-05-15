@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/maxime-eglem-bringing-your-flutter-app-to-the-web
-date: '2024-04-24'
+date: "2024-04-24"
 title: Bringing Your Flutter App to the Web
 author: Maxime Eglem
 video: dIo7QYcm6lg
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Maxime]
 I'm thrilled to be here today to share our journey of transitioning our clients' Adenoid mobile application into the web and prod. Welcome everyone. My name is Maxime Eglem, I'm a consultant at Selenza and I am with Michaël Ohayon, a consultant at Publicis Sapiens. Let's start with a quick introduction of the mobile application and Adenoid. Adenoid is a worldwide company that provides prepared services like mail vouchers and gift cards to millions of employees. We are going to give you the reasons why we shifted to the web, how we approached it and all the lessons we've learned along the way.
 

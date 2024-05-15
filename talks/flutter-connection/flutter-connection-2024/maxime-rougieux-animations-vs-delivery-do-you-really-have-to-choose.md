@@ -1,8 +1,8 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/maxime-rougieux-animations-vs-delivery-do-you-really-have-to-choose
-date: '2024-04-24'
-title: 'Animations VS Delivery: Do you Really Have to Choose?'
+date: "2024-04-24"
+title: "Animations VS Delivery: Do you Really Have to Choose?"
 author: Maxime Rougieux
 video: GkF-LO2CiL4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/GkF-LO2CiL4.jpg
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Thomas]
 We're going to talk about animation versus delivery, and do we really have to choose between those two? I am Thomas, a lead developer at BAM, and you are?
 

@@ -1,8 +1,8 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/mateusz-wojtczak-demystifying-app-architecture-the-leancode-guide
-date: '2024-04-24'
-title: 'Demystifying App Architecture: The LeanCode Guide'
+date: "2024-04-24"
+title: "Demystifying App Architecture: The LeanCode Guide"
 author: Mateusz Wojtczak
 video: T4B9NQRirKE
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/T4B9NQRirKE.jpg
@@ -10,9 +10,10 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: flutter-connection-2024
+edition: 2024
 allow_ads: false
 ---
+
 [Mateusz]
 Welcome to Demystifying App Architecture, the Lean Code Guide. We'll try to have a walkthrough about app architecture, how we approach it, why we approach it that way and when it's probably a good way for you and maybe when you should think about what you build and maybe do some fixes to that. So, I'm Mateusz and I'm head of mobile at Lean Code, also a Flutter and Dart GDE.
 
