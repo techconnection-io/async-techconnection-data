@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Maël]
+### Maël
 So thank you for being there to listen to my talk. Today we're going to talk a bit about custom React renders, which is kind of similar to what Sarah talked before in her talk about 3GS being used for React, but we'll go deeper into the usage that we can do of that. So my name is Mael.
 
 I work at Datadog as a staff front-end engineer on front-end developer experience. And I have to admit that I'm not super familiar, well, I am familiar with React, but I don't use it every day. I'm not a product developer.
@@ -100,7 +100,7 @@ That's good developer experience. Thanks. I hope you enjoyed this presentation a
 
 If you have questions, feel free to ask them.
 
-[Christophe]
+### Christophe
 Thank you. Please come over. Thank you.
 
 Custom renderers. I love that. I was just curious whether you had, like, a particular favorite among all those...
@@ -109,51 +109,51 @@ Custom renderers? Yeah. Yeah.
 
 Custom renderers you mentioned.
 
-[Maël]
+### Maël
 I really like terminals. I actually started to get involved in custom renderers seven, eight years ago, when they were very prototype, because I wanted to implement a custom renderer for terminals. And Terminosaurus is a modern version of this early work that...
 
-[Christophe]
+### Christophe
 Because we have, like, Ink and React, Blast, and everything for the terminal.
 
-[Maël]
+### Maël
 Exactly. But before, we didn't have that. So when I started Terminosaurus, it was under a different name.
 
-[Christophe]
+### Christophe
 It predates those.
 
-[Maël]
+### Maël
 Exactly. It predates them. I wanted to use...
 
 To render on the terminal, because I was building a Game Boy emulator, and I wanted to build a debugger for it. However, it was too slow to have the debugger inside the browser, due to the DOM override. So I wanted to bring it to the terminal, but only Blast existed at the time.
 
 I couldn't really implement the UI I wanted as efficiently as I wanted, so I decided to try my hand with this new, weird interface that allowed you to use React for anything.
 
-[Christophe]
+### Christophe
 Okay. Cool.
 
-[Simone]
+### Simone
 Why going specifically with React renderers instead of other solutions? I mean, it's not the only framework library that supports custom renderers, is it?
 
-[Maël]
+### Maël
 Nowadays, you have other frameworks that start to use custom renderers. For instance, I think that VGS is supporting them. However, the custom renderers in React are very mature, and they are used in very significant production use cases.
 
 So React Native, as I mentioned, is a custom renderer, so the React team is putting a lot of effort in making sure that they can do anything that the DOM implementation could do. So basically, it's more mature, so it better fits.
 
-[Simone]
+### Simone
 A question from the audience. Well, we actually answered the first one. And which renderer are you currently using with Yarn?
 
 Yeah. Well, which one?
 
-[Maël]
+### Maël
 Which one?
 
-[Simone]
+### Simone
 I mean, so it's just a custom, specific renderer just for Yarn? It's not about...
 
-[Maël]
+### Maël
 For the interactive upgrade feature. Oh, so for interactive upgrade, we are currently using Ink. And if Terminus Ares continues to be a project I'm interested in, we are probably going to migrate towards it at some point.
 
 Okay. Awesome.
 
-[Christophe]
+### Christophe
 All right. Thank you very much, Manuel.

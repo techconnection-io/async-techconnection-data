@@ -14,7 +14,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Christophe]
+### Christophe
 This is a tiny talk, it's just like a closer of our conference. It doesn't look anywhere as good as Julian's. I don't look anywhere as good as Julian's.
 
 So just a few thoughts about the future of React. So when I'm not emceeing conferences, I work obviously on the web, I've been doing JavaScript since JavaScript, and I've been doing React almost since React. I work at DrLib, which, yeah, I'm basically the boss of front-end at DrLib, to make a long story short.

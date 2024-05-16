@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Mark]
+### Mark
 My name is Mark Erikson, and today I'm very happy to talk to you about why you should at least consider using Redux today. A couple of quick things about myself. Cool.
 
 Clicker actually works. I am a senior front-end engineer at Replay.io, where we are building a time-traveling debugger for JavaScript. It is an amazing tool.
@@ -176,7 +176,7 @@ So thank you very much. I've got a list of links here. And I will have the slide
 
 Thank you.
 
-[Christophe]
+### Christophe
 Thank you, Mark. Let's just convene over. Please take the center seat.
 
 How was that? Who here uses Redux? That's too few of you.
@@ -185,10 +185,10 @@ So full disclaimer, I'm a big Redux fan. I've always been. And actually, in term
 
 Moving to RTK in my training material. because we shifted over to TypeScript, and yes, indeed, manually typing vanilla Redux was a pain. It was like a lot of boilerplate.
 
-[Mark]
+### Mark
 It was really bad. People would write action types in a JS file, and then they would write TS types for the action types, and then they would write TS types for the objects.
 
-[Christophe]
+### Christophe
 It was so bad. It was so bad. It was kind of a mess.
 
 So bad. I know. I wanted inference.
@@ -197,51 +197,51 @@ So yeah. Okay. So do you want to start with questions?
 
 Probably have, like, good questions from the audience.
 
-[Romain]
+### Romain
 Three questions. So if you have to write Redux from scratch today, what kind of change would you do?
 
-[Mark]
+### Mark
 It's funny, because so much of what we did with Redux Toolkit was based on both seeing how people used Redux and seeing the other, like, the community extension libraries that they had built to try to solve standard problems. Between 2015 and 2018, I used to keep a running list of every Redux-related library.
 
-[Christophe]
+### Christophe
 The ecosystem links? Yeah.
 
-[Mark]
+### Mark
 And, like, there were so many... It's a book. There were so many libraries that people had, like, 50 libraries that all solved the same problem.
 
 And so, like, certainly if I could go back with the knowledge we have now, like, we'd basically just recreate Redux Toolkit, but we couldn't have created Redux Toolkit without knowing what people were doing with Redux, and, frankly, also, we couldn't have done it without the invention of Ymir.
 
-[Christophe]
+### Christophe
 Yeah. Yeah. Shout out to Michel.
 
 Ymir is awesome. Yeah. Ymir is great, really.
 
 I really liked when Ymir came in, because, especially when you have, like, a deep, deeply nested update, it's very easy to get it wrong.
 
-[Mark]
+### Mark
 Dot, dot, dot, state, dot, dot, dot, state, dot, dot, dot, dot, dot, dot, dot, dot.
 
-[Christophe]
+### Christophe
 And arrays. And arrays. And before we had the with helpers or something, you would have to do some crazy concat stuff with arrays.
 
 Yeah. Yeah. For sure.
 
 Okay. This one thing, do you have any idea what the usage ratios are between, like, just RTK and RTK query? You know, what would you describe as, like, the sweet spot in terms of project or team for actually using RTK query?
 
-[Mark]
+### Mark
 So I don't have hard numbers for how many, like, I can look at NPM downloads and see, like, here's the total number of Redux downloads versus the number of Redux toolkit downloads. And Redux toolkit depends on Redux. So the overlap is kind of like this.
 
 Because RTK query is part of the Redux toolkit package, like, I can't explicitly break out those numbers. I can do searches on GitHub and see how many imports and usages of create API exist. I can say that anecdotally between looking at what issues get filed in our repo and the kinds of questions we get asked in our Discord channel, a lot of people using Redux are using RTK query, which is good.
 
 That's what we want to encourage. We currently have something like 150 open issues that either are asking for new features or tweaks or wanting us to improve the code generator tools for RTK query. So based on those anecdotal statistics, it seems to be a pretty good percentage.
 
-[Christophe]
+### Christophe
 Cool.
 
-[Romain]
+### Romain
 So I have two questions about the evolution of Redux and Redux toolkit. How do you stay creative about what needs to be done? And also, how do you gather inputs from the Redux community?
 
-[Mark]
+### Mark
 So we have always kept an eye on, you know, like, what are people doing with Redux? What kind of questions are they asking? What kinds of problems are they trying to solve?
 
 And if you go back and you look at the history of Redux toolkit releases, we got the initial version out the door with create reducer, configure store, create slice. Those solved the basic principle of, you know, setting up a Redux app. And then it's, well, people do data fetching in thunks.
@@ -258,31 +258,31 @@ There were debates over the exact shape and behavior of the API. The React Redux
 
 Yeah.
 
-[Christophe]
+### Christophe
 But it's mostly because of, like, the most discussed issues or voted or stuff. Yeah. Yeah, for sure.
 
 Okay. And let's wrap up with this one, and then there's the break, people. What would you say is, like, the single most maybe underrated facet of Redux?
 
-[Mark]
+### Mark
 The concept of modeling events as or modeling actions as events and not setters. This is a really subtle concept, because nothing about the code directly changes. You're still writing dispatch with an action and handling it in a reducer, but the mindset of the UI just says here's a thing that occurred with some associated data, and then any part of the app that does care about it can do something with it, versus the mindset of I'm going to dispatch set first name.
 
 Set last name.
 
-[Christophe]
+### Christophe
 Which is actually bad practice. Right.
 
-[Mark]
+### Mark
 And it's like the it's a combination of changing how you name the actions, kind of like a past tense, this happened name, to do added instead of add to do. But then it also results in dispatching fewer actions in a row, thinking of it as a broadcast that anyone can listen to. It's a very subtle thing.
 
 It can be hard to kind of, like, show or explain, but we've tried to encourage people to think that way, because we think it leads to a better app architecture overall.
 
-[Christophe]
+### Christophe
 It's a lot more maintainable.
 
-[Mark]
+### Mark
 Yeah.
 
-[Christophe]
+### Christophe
 For sure. Yeah. Well, thank you very much, Mark.
 
 Thank you. Everyone, Mark Erikson.

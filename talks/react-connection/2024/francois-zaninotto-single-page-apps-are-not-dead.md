@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[François]
+### François
 It's a pleasure to be here at React Connection. I'm here to talk about our web apps and more specifically about the merits of the single-page application architecture. First a few figures about myself.
 
 I'm a software engineer. I work at a company called Marmolab that I founded 11 years ago. I started contributing to open source a long time ago and I've never stopped since.
@@ -130,66 +130,66 @@ Here's my advice. The single-page app is back from the dead, and it's your best 
 
 If you need a framework for that, try React Admin. It's free, and it's built on the shoulders of giants. Thanks a lot for your time.
 
-[Christophe]
+### Christophe
 Thank you, François. I've got some of the best speaker photos I've seen in a long time. So that was not controversial at all.
 
 The guy starts up the RSC track with, okay, so RSCs suck, you know? I know some people in the audience who are big on clean design and everything, and they're like, oh, yeah, dependency injection, and bounded context, and I'm like, yeah, context, and then everything re-renders a gazillion times because people misuse them. But we have some good questions.
 
 Do you want to get started?
 
-[Simone]
+### Simone
 Yeah, sure. Well, actually, the first question you actually answered about why you think there is this push for Next.js, but you more than answered that in your talk, and actually maybe you want to close this conference down. Thank you very much for that.
 
 Anyway, you mentioned you can marry SPA with server-side rendering where needed without Next.js and Remix. How would you go about that?
 
-[François]
+### François
 Sorry, come again?
 
-[Simone]
+### Simone
 Sorry. You mentioned that you can marry SPA with the SSR without Next.js and without Remix. How would you do that?
 
 Do you have any recommendations?
 
-[François]
+### François
 Well, yeah, you can use any server-side rendering framework and send rendered HTML, and then with React 19, I think, or React 18, you can have many routes for React applications inside the same page, so you can just add components, islands of interactivity like Astro does, but you can do that in React, and you can totally use, I would say, like Ruby on Rails, Django, Symphony, whatever you want to render the HTML page, and that's what many people are doing, and I think Next.js is reinventing this server-side rendering for static pages, but it's been done in the past with much success, so there's not much to reinvent here, I think.
 
-[Christophe]
+### Christophe
 Yeah, people haven't waited for Next to keep rendering stuff, HTML the old way, and just sprinkle interactivity with React.
 
-[Simone]
+### Simone
 Totally, totally. A question that actually is interesting from a product point of view, is React actually a framework or just a tool to admin as an admin panel? I know the answer, but I think that the name might be not clear enough.
 
-[François]
+### François
 I think it's a framework, but many people put different meanings behind that word, so to me, it's a framework in the sense that it gives you the backbone of your application around which you will build your app. The difference with a collection of tools would be that the collection of tools, you can extract the tools and replace them by another one. With React admin, I think it's very hard to remove that backbone because it handles routing, it handles form submissions, layouts, et cetera, et cetera, so it's very core of the UI logic, so the only thing is you have the backbone, and you add some layers of flesh.
 
-[Simone]
+### Simone
 It's not an admin tool, that was the question.
 
-[François]
+### François
 It's not an admin tool.
 
-[Christophe]
+### Christophe
 I think the original perception was very much using React admin for a quick and easy way to your back office kind of screens, like admin panel and everything, but you're seeing it as having evolved more towards really like a scaffolding, including for the user-facing pages.
 
-[François]
+### François
 Yeah, exactly. We see many B2B apps.
 
-[Christophe]
+### Christophe
 Perhaps it's in need of rebranding, rebooting.
 
-[François]
+### François
 Yeah, we're not very good at branding. But yes, it's used for many different apps, including customer-facing apps, not B2C apps, because usually these apps require SEO and pre-rendering, but for all the B2B apps, we have so many users.
 
-[Simone]
+### Simone
 I think it's worth mentioning that React admin is actually one of, so it's kind of your own project at some point, and some personal projects at some point get stuck, and they eventually die, and you actually made, I think, some people leave about this.
 
-[François]
+### François
 Yeah, so it is a sustainable open source project, and it's a great joy to be able to say here that you can bet on React admin today, and there is a team paid to maintain it for the foreseeable future, and we don't have to reimburse any VC, because we don't have any VC, and we're already sustainable. But it's easier said than done. This is something like my eighth open source project.
 
 All the previous ones have failed in terms of sustainability, so this sweet spot of having something that you have the liberty to develop yourself, but you're also paid to do it, is really hard to attain.
 
-[Simone]
+### Simone
 Anyway, congratulations for that.
 
-[Christophe]
+### Christophe
 Thank you very much, François. François Zaninotto, everyone.

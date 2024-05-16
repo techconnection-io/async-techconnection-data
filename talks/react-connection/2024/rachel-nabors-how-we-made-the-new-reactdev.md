@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Rachel]
+### Rachel
 I'm Rachel, a formerly React core member, previously I've been head of developer advocacy or education at AWS's Amplify team, worked at Microsoft Edge for a little bit. And I was also the developer evangelist no one asked for for web animations, which was back when I worked with Mozilla and MDN and worked on the web animations API. That was when I originally spoke at LaConf a decade ago when we didn't have Wi-Fi in Paris.
 
 I remember that was a problem. It has been ten years, and my French is just as bad then as it is now, but I did do some Duolingo before I came. I will spare your ears attempting to give this talk in French.
@@ -204,31 +204,31 @@ Anyway, I wanted to say that the work we did with React Native, it went a long w
 
 I love seeing these two communities come closer and closer together. And thank you for helping make the docs great.
 
-[Christophe]
+### Christophe
 Thank you, Rachel.
 
-[Rachel]
+### Rachel
 I think I come over here now, do I?
 
-[Christophe]
+### Christophe
 Come on, you want to come up?
 
-[Rachel]
+### Rachel
 I see a piece of tape here. That must mean I sit here.
 
-[Christophe]
+### Christophe
 Either that or that takes you off camera. I'm actually not entirely sure about this.
 
-[Rachel]
+### Rachel
 You know, the fun thing about being the first to go is we get to learn with me. Anything that can go wrong is going to go wrong with me.
 
-[Christophe]
+### Christophe
 That's what you do, though. We learn with you.
 
-[Rachel]
+### Rachel
 Yeah, that's true.
 
-[Christophe]
+### Christophe
 Yeah, that's true. How was that? Do you like that talk?
 
 Yeah? Go to these docs. I don't care how long you've been doing React.
@@ -239,63 +239,63 @@ Like, stop ignoring dependencies on use effect. You're always doing it wrong. Th
 
 Yes?
 
-[Rachel]
+### Rachel
 I highly recommend if you're interviewing for a role, just go through the chapter headings of each one and go through the examples. It's a really good way of preparing yourself for the ha, gotcha questions on interviews.
 
-[Christophe]
+### Christophe
 If you're adversarial about it, yeah.
 
-[Rachel]
+### Rachel
 There are many companies that are. I don't know that I'd want to work for one of those, but I'm not sure. Are French companies adversarial?
 
-[Christophe]
+### Christophe
 We have as many jackasses as everybody. It's actually sort of the national ethos. But we do have, like, good interview processes as well.
 
-[Rachel]
+### Rachel
 You were a great audience, by the way. They told me don't expect any laughs at all from a French audience, but I guess we have some out-of-towners here.
 
-[Christophe]
+### Christophe
 It's early in the morning, yeah. Coffee still. So, yeah.
 
 Okay. So, do you want to get started with the questions, Romain?
 
-[Romain]
+### Romain
 Just a point. Don't forget to post your question directly on the Slido, and you can also write it in French if you are not confident in French. We will translate it for you.
 
-[Rachel]
+### Rachel
 I can use my Duolingo skills.
 
-[Christophe]
+### Christophe
 Yeah, yeah.
 
-[Romain]
+### Romain
 Do you want to get started with something, or? Yes, I will take one question. Do you have any idea about how much user interact with interactive example?
 
-[Rachel]
+### Rachel
 Well, I don't have access to the Google Analytics anymore. So, I can't answer that. But I can say that when I was watching people, I would run, like, user research sessions where, you know, person comes in, I say perform a task, and I just kind of watch them.
 
 And from what I understand, once people realize that they're interactive, they're unable to stop interacting with them. People will interact with the examples on every page.
 
-[Christophe]
+### Christophe
 Yeah, it's a bit like when you're writing your own game, and you start fiddling with it forever, even if it's not done, just because you can. Yeah, those are pretty great, honestly. And the challenges are pretty great.
 
 Actually, making sure that the French translation for the tabs in the challenges did not cause too much overflow was a challenge in itself. But I had to rephrase some of these.
 
-[Rachel]
+### Rachel
 Maybe you should have given the latter half of the talk. We should have been, like, now over to you about the challenges of translating them.
 
-[Christophe]
+### Christophe
 Yeah, it was fun. So, what would you say maybe was, like, the hardest challenge in bringing those docs to life?
 
-[Rachel]
+### Rachel
 Shipping them.
 
-[Christophe]
+### Christophe
 Yeah. Getting out of beta, you mean? Getting out of beta?
 
 Or even just getting to beta?
 
-[Rachel]
+### Rachel
 Getting to beta. The React team has a lot of people staring at them, and they can be very shy about releasing things that aren't perfect. So, there's a bit of self-consciousness and convincing the team, like, no, these are really good.
 
 The community should have them. It's like, oh, but the API reference isn't done, and I don't know if this metaphor is really quite good. It's like, no, no, no, no.
@@ -306,45 +306,45 @@ It's good. We should go. We should go.
 
 That was the hardest part. The content was actually probably could have launched six months earlier, but the hardest part was overcoming the team's fear of failure.
 
-[Christophe]
+### Christophe
 I think they've done some progress in that, because when I see the state of new pages being published, it's very much MVP, and so I think they probably made some progress into getting stuff out earlier.
 
-[Rachel]
+### Rachel
 I think also that it's more of a community effort inside the team now. You have more people contributing to the documentation, and part of that is because of the way we set it up to make it super easy for team members to contribute. You make a markdown file.
 
 You add examples using a special kind of MDX, and it's very easy to just build new versions of the site. So after going to beta and after launching, now it's really easy for team members like Luna to add and release new pages. So I'm happy to see people contributing to the documentation regularly now.
 
-[Christophe]
+### Christophe
 Yeah, it's moving reasonably fast, on a basically weekly basis.
 
-[Romain]
+### Romain
 You know developers love to write documentation. Do you think they can be trained to write documentation, or is it really something dedicated to content creators?
 
-[Rachel]
+### Rachel
 You know, that's a great question. I find it writing documentation is a bit like acting. You know, you could say some people have a gift, but usually it comes down to wanting to do it and practicing, and you know, you will always get better with practice and study, and people who seem gifted at it probably have practiced more.
 
 But you, Christophe, you translate, you translated Dan's writing before and after the documentation.
 
-[Christophe]
+### Christophe
 Yeah, and like the prior docs.
 
-[Rachel]
+### Rachel
 Did you notice a change in Dan's writing skills?
 
-[Christophe]
+### Christophe
 Oh, for sure. We mentioned that yesterday at the speaker dinner, but it was obvious that the phrasing, like there was a lot of like best practices in terms of educational writing that were sifting through, like using simple phrases, not using too many pronoun back references, spaced repetition, rephrasing of the idea multiple times in the same explanation. It all, it was very manifest, and it was not the way he used to write.
 
 Although he always wrote like pretty well in terms of pedagogy, like the original Redux docs were pretty great from that standpoint, for instance. But you could see there was clearly taking into account a lot of other best practices that he might have been unaware of. So for sure, yeah, the writing style changed very much.
 
-[Rachel]
+### Rachel
 Yeah, one of the best ways to get better at writing is to work with a great editor, too. I got better at writing when I published my first book and had an editor going through and challenging the way I was conveying ideas. Same with MDN.
 
 It's definitely something that helps to have another person there to push and pull with. And so if you want to become a better writer, the best thing you can do is work with a writer you really admire, and they will help you acquire some of their skills.
 
-[Romain]
+### Romain
 Final one, maybe? Yes. Did you plan to add some gamification, for example, to, I don't know, winning badges or things like that, or maybe to save the progression when you start learning React?
 
-[Rachel]
+### Rachel
 You know, a lot of people ask us that. Like, oh, oh, you've got challenges. You're going to block people from progressing until they show their work.
 
 It's like, no, because there's many different ways to accomplish the same thing with React. There's no one right way. And so we have no way of testing, like, you got to, you know, like, how you achieve it is less important than that you were able to achieve it.
@@ -355,17 +355,17 @@ We're not adding any badges or anything like that. It would be I don't think it 
 
 But let's leave that for the Josh Comos and the Kent C. Dodds and their courses.
 
-[Christophe]
+### Christophe
 Yeah, they're pretty great, too. You can't put everyone out. Even there it's not blocking.
 
 If you look at Josh. Even the GitHub project space are just, like, for extra credit, but it doesn't prevent you from going forward.
 
-[Rachel]
+### Rachel
 No, it's a docs project. It's not a course project. We're just trying to get the information out.
 
 We're not trying to build a new courseware system.
 
-[Christophe]
+### Christophe
 Anyway, yeah. We've got a lot of great questions, but we have to move forward with the schedule. That's why the breaks and the hallway track is for.
 
 So please go find Rachel with your questions. Thank you very much, Rachel. Thank you for having me.

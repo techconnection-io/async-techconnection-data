@@ -14,7 +14,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Mo]
+### Mo
 How are you all doing? Everyone's well fed? Yeah?
 
 Awake? Cool. So I've worked at a French company for the last three years, and what I've learned is that the French love to have extended lunch and coffee breaks.
@@ -157,18 +157,18 @@ It's a subset, and it's a part of tooling that allows you to optimize server-dri
 
 And this is a pattern in which the whole story can be seen more holistically, rather than just looking at RSCs in isolation. Thank you very much. And that's my Twitter and LinkedIn, if you want to stay in touch.
 
-[Christophe]
+### Christophe
 Thank you, Mo. Please come in. Can I have some light on the?
 
-[Mo]
+### Mo
 Am I not allowed to sit on this one?
 
-[Christophe]
+### Christophe
 You are very much allowed, or requested. To sit on that one? To sit on that one.
 
 Can I have you? Oh, there you go.
 
-[Simone]
+### Simone
 Yes. OK. Everywhere.
 
 All right. So let's start with some harsh subject, which is about Crane, who's going to talk tomorrow. So you're going to have a fight tomorrow on stage, probably, or not.
@@ -177,29 +177,29 @@ Oh, I see what you mean. About, I'm just quoting. So less client-side code leads
 
 But is that really true? I mean, what if we go through spotty connections, or have the classic mobile issues?
 
-[Mo]
+### Mo
 I mean, that's going to be a restriction anyway, right? So there's a balance that I think you need to play in terms of those core features, and especially if we're talking in the mobile world, those core features that live on the client at any given point, versus those features that live on the server, as an example, and know where and how to cache it correctly. And I think that's where the caching functionality comes into play.
 
 It is a trade-off. So what are you optimizing for? Are you optimizing for latency?
 
 Or are you optimizing for code execution? And I think trying to optimize for network availability is a losing battle, because it's highly dependent on the user's state. So what you should be optimizing for is for the actual performance and how small you can make what you're shipping over the wire, so you're not reliant on the network anymore.
 
-[Christophe]
+### Christophe
 You're going to combine both, though, anyway. You can optimize for execution when you have a reliable network and do some service worker-based specific caching.
 
-[Mo]
+### Mo
 And that's where the caching story comes into play.
 
-[Christophe]
+### Christophe
 Yeah, definitely. I have this question. You're a big React Native fan, which is your biggest home, basically, in terms of tech.
 
-[Mo]
+### Mo
 That's where the heart is at.
 
-[Christophe]
+### Christophe
 Yeah, exactly. So how do you say that what you just discussed sort of translates in the React Native world?
 
-[Mo]
+### Mo
 I think it's far more interesting in the React Native world, actually. In some capacity, this approach makes a lot of sense for React Native apps for a few reasons. Firstly, in the React Native world, contrary to the web world, you have restrictions on the frequency of how quickly you can release because you've got the app stores fighting you at any given point.
 
 And so this is a really nice way to circumvent that process. You can do that in React Native with over-the-air updates, but I think this is a way to iterate very quickly as well. Beyond that as well, I think that a lot of these complexities that we've discussed, there's a few paradigms that people are talking about on the React Native world, which is quite interesting.
@@ -208,10 +208,10 @@ Some people are saying, can that server actually run on the phone? Where does th
 
 So there's a lot of interesting questions happening in that space. And I'm excited to explore that a bit further. But it's very tied into the whole RSC conversation on React Native, which, like we said, people are seemingly confused about for now.
 
-[Simone]
+### Simone
 A third, maybe last question. How does end-to-end testing work in this case?
 
-[Mo]
+### Mo
 I think end-to-end testing becomes quite important. I mean, there's a few approaches you can take. You can either mock the JSON that would be returned from the API and assume that that's correct, or you would need to.
 
 So the testing story, in the ways that I've seen it, becomes having heavy API tests running on the output of APIs given a certain input in. Obviously, that's reliant on what the PMs, quote unquote, are changing. But you can add some level of flexibility to make sure that certain things are adhered to.
@@ -226,7 +226,7 @@ So it's a question. But I think the whole end-to-end game at the end of the day 
 
 Whether or not you use server-driven UI or not is just maybe amplified by the fact that you're using a server-driven UI paradigm.
 
-[Christophe]
+### Christophe
 Thank you very much, Mo. Thanks for having me. Mo Gazzelli, everyone.
 
 Thank you.
