@@ -13,7 +13,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Loic]
+### Loic
 I'm Loic, I'm from the Flutter team at Google, and today I'll be talking about Flutter's journey to supporting desktop applications with multiple windows. So you might be wondering, why do we need this? So let's start by looking at some example scenarios.
 
 So first a very common one is if you have a desktop application and you need to manage some settings, oftentimes the application will do this by opening a new window. So in this example, I'm using Microsoft Paint, and then I want to resize my image, and the way Microsoft Paint does this is by opening a new window. Another example that's very common in desktop applications are applications with multiple tabs.
@@ -164,55 +164,55 @@ No need to do a ton of state magic. So the hope is that with multi-view, which i
 
 And in this case where we have years of work ahead of us, it's a bit more of a mammoth shave. But we think that by doing this deep, fundamental investment in Flutter's architecture, that it will unlock a lot of value to our customers. And that's it.
 
-[Guillaume]
+### Guillaume
 Thank you very much, Loic. We have some questions.
 
-[Simone]
+### Simone
 Some questions. Just a few. Just a few questions.
 
 It's the end of the day. I think we can stick here for the next two hours responding to questions if you don't mind. But I think the pun piper will mind.
 
-[Guillaume]
+### Guillaume
 I'm really impressed by the number of questions on such a technical talk at that hour. You guys are amazing. So let's start with an easy one.
 
 Does it support hot reload?
 
-[Loic]
+### Loic
 Yes, of course. Yeah, it needs to be an excellent development experience or bust.
 
-[Guillaume]
+### Guillaume
 So see, it was an easy one. Okay, maybe we'll keep this one for the last one.
 
-[Simone]
+### Simone
 Okay, sure. While you're looking for one, I think I had one personal question. So you said that in a way Flutter assumed that the render tree was just one.
 
 So did it break so much stuff there? I mean, how painful was it to refactor that code that was kind of hard-coded in a way?
 
-[Loic]
+### Loic
 Well, the tech lead for the Flutter framework spent a year fixing that problem. So it was pretty hard, I'd say. Yeah, so before the render tree we would bootstrap the widget tree, and we've completely inversed this actually.
 
 So now the new view widget creates a render tree. There's actually a lot more going on. So we actually have, I didn't mention this in the talk, there's actually a tree of render trees.
 
 So we call this a render forest. This is like another thing that we had to introduce as part of this work. So we are boiling the ocean as part of this effort.
 
-[Guillaume]
+### Guillaume
 Lost in the forest. Brace yourselves. Are there any widgets that would implicitly support multi-windows out of the Flutter framework?
 
-[Loic]
+### Loic
 By that do you mean, what would you mean?
 
-[Guillaume]
+### Guillaume
 I mean, from the existing widgets, are there any widgets that people would know of that would automatically, implicitly be usable on multi-windows?
 
-[Loic]
+### Loic
 So we're hoping that all widgets should still work in a multi-window world. Really, I think we also want to add new abstractions, I think, to make having multiple windows better. Right now we're more working on a low-level fundamental layer.
 
 But ideally all the widgets that you see today should still work across multiple windows.
 
-[Guillaume]
+### Guillaume
 Okay, so all of them, basically. Hopefully. Are there impacts on web with those new render tree architecture?
 
-[Loic]
+### Loic
 So as part of the multi-window effort, we're introducing multi-view. And that's going to be really useful for web as well. We've had a demo where Gemini was generating Flutter applications as part of responses.
 
 So you could ask, I don't know, hey, can you convert kilometers to miles? And they would create a little Flutter application for you so you could do that. And then each response had its own application.
@@ -223,78 +223,78 @@ You might want to start by just migrating the sidebar and then migrating the Flu
 
 They started well after the desktop team. And then they caught up with us, and now they're past us. So we think multiple views will be productionized first on web.
 
-[Guillaume]
+### Guillaume
 Awesome. That really is going into the Flutterverse. So this one is a bit more technical, but interesting.
 
 I think from the platform dispatcher, when you draw on all, I'm reading it literally. When you draw on all views, is it on a single thread? And how would it impact the performance if you have 20, 50 views?
 
-[Loic]
+### Loic
 Yeah, that's a great question. Yeah, so Dart is single threaded, and the UI thread will remain single threaded. So yes, it is iterating.
 
 If you have 50 views, you would have to do it in, like one thread would be running through all 50 views. So my hope, I don't know if we'll be able to pull this off, is that you won't likely have 50 views that change every single frame. So the amortized cost, ideally, should be as good as a single window world, if not better.
 
 Because on some frames, you might not have any views that changed at all. Whereas today, we're always rendering your one view every single frame, even if that might be completely wasteless or wasted work.
 
-[Simone]
+### Simone
 I guess on top of it, you know which windows actually show on the screen and which isn't.
 
-[Loic]
+### Loic
 In theory, we could do tricks like that. We haven't started looking into that, but that's something we could look into as well.
 
-[Simone]
+### Simone
 OK. Awesome. Same goes, I guess, for partial rendering, like render a portion of the screen which is not.
 
-[Loic]
+### Loic
 That would be hard. I don't know if we'll be doing that, but maybe in the future. OK, right.
 
-[Guillaume]
+### Guillaume
 Is there any ETA for that to be released, that you can talk about?
 
-[Simone]
+### Simone
 Can we switch recording off?
 
-[Loic]
+### Loic
 So we don't give any ETAs at all on the Flutter team. Things will be done when they're done. It will probably be multiple years, sadly.
 
 So not anytime soon.
 
-[Simone]
+### Simone
 Yes, I think you're thinking about that question.
 
-[Guillaume]
+### Guillaume
 Yeah. OK. Yeah, I think this is actually the first question that popped up on the Slido.
 
 Do you have any Google's roadmap for Flutter to share, other than multi-windows, I guess?
 
-[Loic]
+### Loic
 Nothing offhand that I know has been changed. We have shared a roadmap earlier in the year. I think that was on our Flutter wiki, and that was also on the Discord.
 
 So as far as I know, that's still the latest roadmap. I'm sure that at Google I-O, they will probably be doing great marketing. They always do wonderful marketing at Google I-O.
 
 It's always shocking as a developer to find out all the things we've been working on.
 
-[Simone]
+### Simone
 Might I add the latest public roadmap? What about it? Sorry, may I add the latest public roadmap?
 
 I mean, I guess you have a roadmap internally, which kind of, I don't know. It's not shareable.
 
-[Guillaume]
+### Guillaume
 So we were looking for some crispy announcements.
 
-[Simone]
+### Simone
 Oh, no crispy announcements from me, sorry.
 
-[Guillaume]
+### Guillaume
 We'll wait for Google I-O in May, I guess.
 
-[Simone]
+### Simone
 No, we're waiting for the bar, you know. We're waiting for a couple of pints. In vino veritas, as the Latin said.
 
-[Guillaume]
+### Guillaume
 Thank you very much, Loic.
 
-[Simone]
+### Simone
 Yeah, thank you.
 
-[Guillaume]
+### Guillaume
 Thank you for sharing all those with us.

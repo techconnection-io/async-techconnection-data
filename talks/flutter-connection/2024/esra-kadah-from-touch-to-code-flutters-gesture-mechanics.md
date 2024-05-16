@@ -14,7 +14,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Esra]
+### Esra
 I'm Esra, and today I'm going to talk about Flutter's gesture mechanics, and let me just check it out. Okay. We are fine.
 
 So first of all, let's meet me. I'm one of the co-organizers of Flutteristas, and you can also see me actively talking in Flutter communities. I'm one of the ex-organizers of GDG WTM communities, and of course currently a full-time developer in Flutter and Dart.
@@ -49,106 +49,106 @@ We have, like, we could have just, like, a picture with five tabs, or we would j
 
 So this is quite quick one. You can ask me anything, and in this QR code, I actually have a Google form for you to fill it, because now I just raised the point that let's think about what these gestures could be differently, and I want you to send me with this Google form your outside of the box gesture ideas, and I'm planning to do them in our in my next talks, and definitely for some submissions, I have some swag, I have some dash, I have some, you know, small pins as a gift, and thank you for you. So thank you for listening to me, and hope it just clicks something in your mind, and now it's a little bit different. Thank you.
 
-[Guillaume]
+### Guillaume
 Thank you. Thank you very much, Ezra. Thank you.
 
 Do you care to join me for a couple of questions?
 
-[Esra]
+### Esra
 Yes.
 
-[Simone]
+### Simone
 So please sit in the middle.
 
-[Esra]
+### Esra
 Of course.
 
-[Simone]
+### Simone
 All right. Let's see. Let's start with the basics.
 
 Why are we replacing all the resistive screen with the capacitive ones?
 
-[Esra]
+### Esra
 Because actually the capacitive ones we use in the iPhones, in iPads, and so on, when you consider the ATM kiosk ones, the resistive screens are way much more durable. It's like less costful to maintain and so on, and is this one, this part is also getting recorded now?
 
-[Simone]
+### Simone
 Yeah, sure. Yeah.
 
-[Esra]
+### Esra
 Okay. Now I will just cut it a little bit slower. I wouldn't want to have a drunk person ordering a burger using my iPad that much, and it would be like causing me some trouble.
 
-[Simone]
+### Simone
 Yeah, sure.
 
-[Esra]
+### Esra
 So resistive screens are always a go-to to reduce effort, reduce maintaining, like they are more durable, and capacitive ones are more of personal and professional use, I would say. All right.
 
-[Guillaume]
+### Guillaume
 They're probably cheaper too.
 
-[Esra]
+### Esra
 Definitely.
 
-[Guillaume]
+### Guillaume
 Yeah. There's a technical question from somebody who's saying that the Google form needs permission.
 
-[Esra]
+### Esra
 Form access? Okay. I will just fix it out.
 
 I will just tweet it.
 
-[Guillaume]
+### Guillaume
 Thanks, guys.
 
-[Esra]
+### Esra
 Thank you.
 
-[Guillaume]
+### Guillaume
 Yeah, one other question is, is there any documentation about the time attached just to needs, like for example, 300 milliseconds for double tap? Is it a standard or some arbitrary values set by the framework?
 
-[Esra]
+### Esra
 Like currently, as I know they are in framework, correct me if I'm wrong, because GM also has an amazing talk related to gestures, you can always check it out, but you can actually customize those. You can actually overwrite those values, you can overwrite that gesture detectors, or you can even have your own one, which he is actually talking about, if you want to just give a couple words related to that.
 
-[Guillaume]
+### Guillaume
 Yeah, so the value is a constant in the Flutter framework, but the value is also passed as parameter to gesture detectors and listeners and so on, so you can definitely overwrite it if you need to.
 
-[Simone]
+### Simone
 So like in modern phones, compared to the old ones, I don't know if you used old resistive screens, the interaction is much richer with gestures as the link to the typo screen we use.
 
-[Esra]
+### Esra
 Like actually, the gesture world is just started with 2007 first Apple iPhone release, and this is like, that's why it's also one of the revolutionary things, because like 2007 first iPhone release is like first ever capacitive screen successfully used in smartphones, then once we think about that, literally we just started to have gestures after 2007. So that's why I actually mentioned about our habits, these are shaped in last years, even almost like last 10-15 years, that these are like even normal right now. New generation and newborns, they are like in three years old, they are using those gestures now, but they weren't there before 2007, so that's actually something I would say always to be aware of and go for it, and that's why in resistive screens like ATM, kiosk and so on, you cannot touch the two points at once, like there is no zoom functionality, because it just can't, it just can't understand what's going on.
 
-[Simone]
+### Simone
 Fun fact, my mother sometimes is trying to zoom on ATM screens, but she can't.
 
-[Esra]
+### Esra
 And also like resistive screen stuff, when you have super huge light hit on that, of course you can't see it, and trust me, you will never be able to see it, it is technically impossible, so you will be always having this while you're trying to get the money.
 
-[Simone]
+### Simone
 There is something that made me curious, you said iPhone is like the first high-tech with the capacitive screen used successively, and then actually are there other companies that try to do capacitive screens on mass market?
 
-[Esra]
+### Esra
 To be honest, as I know, the invention of capacitive screen was before resistive screen, I think it's around 1960s, 1970s, they found capacitive screen and then for resistive screens, it just went for, not they say mistake, but it was like lab iteration that they get resistive, and they just proceed with that, then they started to successfully use the capacitive screen, so actually it started with capacitive first, but everybody kept using resistive, then with iPhone, then we switched to capacitive once back again.
 
-[Simone]
+### Simone
 Super interesting, thank you very much.
 
-[Esra]
+### Esra
 Yeah, like it is definitely something you need to watch, I wish I could squeeze it, but we just have super short time.
 
-[Guillaume]
+### Guillaume
 Maybe one last question, what's the most original gesture that you add to an application, like three finger swipe or double long press?
 
-[Esra]
+### Esra
 For me, like lately I'm always having fights to have the best user experience, so when there's an unusual thing, I'm always raising it, and I say not do it, because it looks like it is so fancy and good, like they mentioned in animation, but the user will not be able to find it, like when I wanted to come with new stuff, I wanted to actually have a form in next talks, probably the following ones, thanks to your feedback and ideas, for example, while you are filling a Google form, actually you could use sensors to swipe down, or I would just do like totally switching my phone and doing like totally different gestures than normal, because now we are swiping up and down, and let's put it to horizontal, you click once to a text field, let's make it a long tap, let's make it like three taps, and there is even more, much more than this, because in history, as we know, military always raising some stuff for us to improve, and when you think about military conditions, there are like totally different screens and gestures applied there.
 
 Now I need to be able to use my glow, I need to be able to like working when it's wet, when there is raining, but it should be still sensitive and working as capacitive screens that they have actually PSAP, like projective capacitive screens, and there is even more, and you know they are not using simple fingers or swipes in some of them, they are using hand gestures, double hand gestures, so it's even very much more than this, and very much beyond than Flutter, so of course this gives you a little bit more awareness about the tools that we are using now.
 
-[Guillaume]
+### Guillaume
 Yeah, I think it's, you can start with the user's habits and the base for the gesture you implement, and then if you want to create new habits, or you have to make the gesture discoverable, and actually that's what TikTok is doing, because the other swipe is now becoming a habit, but it wasn't at the time, and they just created this small animation when you go to the page for the first time, just teaching you how to swipe up and down, so if you happen to implement some weird gesture, then you might want to make sure that it's discoverable to your user based on their habits. Totally, yes. Thank you very much Ezra.
 
-[Esra]
+### Esra
 Of course, thank you for having me.
 
-[Guillaume]
+### Guillaume
 Thank you very much.

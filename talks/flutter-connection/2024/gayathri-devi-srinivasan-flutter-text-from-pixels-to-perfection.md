@@ -14,7 +14,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Gayatri]
+### Gayatri
 Good evening to be here at Paris, a beautiful city. Now, let's get started with my presentation today. And before going on, introducing myself.
 
 I'm Gayatri Devi Srinivasan, working as a mobile developer at DeGreed. And I'm also a tech ambassador for Women Techmakers Club. And I'm also a technical speaker and content creator.
@@ -107,61 +107,61 @@ Yeah. And you can connect with me through my Twitter and LinkedIn handles for an
 
 And thanks to Flutter Connection for this opportunity. Thank you.
 
-[Simone]
+### Simone
 Thank you very much for the quiz. It's super interesting to have this interaction and also for the plushes. So for the plushes, by the way, we have to thank Flutter which helps communities like ours.
 
 And they sent us the swag that Masahiro and Gayathri Devi gave you today. So thank you to the Flutter team and Google.
 
-[Romain]
+### Romain
 So maybe one question. So we have a question. What would be a good practice for text rendering testing for a large variety of devices?
 
 Do you have some tips?
 
-[Gayatri]
+### Gayatri
 Yeah. So actually we do have the option to texting the text rendering or text display process for different devices in our Flutter DevTools. Like while debugging your application before like you are going into the profile mode testing or release mode testing, you can just on the debugging process test the display range of each text on the screens using your Flutter DevTools options.
 
 During the debugging process. That would be the best approach, I think.
 
-[Simone]
+### Simone
 And how to handle the ARB translations to change the style of the arguments?
 
-[Gayatri]
+### Gayatri
 Okay. So you can dynamically pass the styles for each text widget which you are trying to pass it dynamically. For example, if the username is getting to be displayed only after signing up, so you can dynamically pass based on some condition the text styles to particular text widget.
 
 So through this way you can like implement dynamic text styling.
 
-[Romain]
+### Romain
 Another question. What would you consider as a low hanging fruit that every app should support from the start? So the minimum.
 
 That's the way I understand the question. Sorry if it's not that. But the minimum feature among all you said that is like the MVP of the text features.
 
-[Gayatri]
+### Gayatri
 The minimum consideration key points which we should be on mind before creating an application, considering only with the text widget is like the text scaling for different devices. It should be responsive. That should not be like text overflow for different screen sizes.
 
 It should be handled with like text overflow with ellipses or some random emojis to make it more attractive also. So the final point is like through dynamic scaling, like instead of passing all at once, we can go with the approach of dynamic text scaling and styling process which will make the application more optimized.
 
-[Simone]
+### Simone
 And do you think you can use semantics to, for instance, improve the SEO on the web?
 
-[Gayatri]
+### Gayatri
 Yeah, for sure. We can like use the go with the approach. Yeah.
 
-[Romain]
+### Romain
 Maybe I have a personal question based on the text rendering. You talked about the text sizing. Yeah.
 
 And which is the best way for you like if I have a big text and easy to do overflow? Sorry. No, no, no, it's fine.
 
 Okay. Easy to do overflow or the container to maybe like if I have a container of a certain height and the text is too big, what is the best way to do overflow or to make the container bigger?
 
-[Gayatri]
+### Gayatri
 Okay. So that should be a way like we do have the canvas rendering process through which through that approach, we can able to get the text height of the widget. So based on the text height, the container will be dynamically expanding or shrinking its size so that we can handle it.
 
 For example, consider a circle in the center of it. We are going to display a good afternoon message. So for tablet, the circle like if the size of the text tends to be like little bigger, the circle will start to like increase its radius based on the text height.
 
 So based on the text painter height, we can like dynamically increase or shrink the size. So the canvas rendering approach will be better.
 
-[Simone]
+### Simone
 I think that's cool. Right. Thank you very much.
 
-[Gayatri]
+### Gayatri
 Yeah. Thank you all.
