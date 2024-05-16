@@ -1,20 +1,19 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/gayathri-devi-srinivasan-flutter-text-from-pixels-to-perfection
-date: "2024-04-24"
-title: "Flutter Text: From Pixels to Perfection"
+date: '2024-04-24'
+title: 'Flutter Text: From Pixels to Perfection'
 author:
-  - Gayathri Devi Srinivasan
+  - Gayathri Devi , Srinivasan
 video: xYIBjz7xMUY
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/xYIBjz7xMUY.jpg
 slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: 2024
+edition: flutter-connection-2024
 allow_ads: false
 ---
-
 [Gayatri]
 Good evening to be here at Paris, a beautiful city. Now, let's get started with my presentation today. And before going on, introducing myself.
 

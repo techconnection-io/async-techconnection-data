@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/loic-sharma-into-the-flutter-verse
-date: "2024-04-24"
+date: '2024-04-24'
 title: Into the Flutter-Verse
 author:
   - Loïc Sharma
@@ -11,10 +11,9 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: 2024
+edition: flutter-connection-2024
 allow_ads: false
 ---
-
 [Loic]
 I'm Loic, I'm from the Flutter team at Google, and today I'll be talking about Flutter's journey to supporting desktop applications with multiple windows. So you might be wondering, why do we need this? So let's start by looking at some example scenarios.
 
