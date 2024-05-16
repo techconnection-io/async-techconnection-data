@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit-2022/antoine-van-der-lee-any-idea-how-to-use-some-generics
-date: '2022-09-29'
+date: "2022-09-29"
 title: any Idea How to Use some Generics?
-author: Antoine Van der Lee
+author:
+  - Antoine Van der Lee
 video: xT5aaMyyR9c
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/xT5aaMyyR9c.jpg
 slides: >-
@@ -11,7 +12,7 @@ tags:
   - Generics
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 

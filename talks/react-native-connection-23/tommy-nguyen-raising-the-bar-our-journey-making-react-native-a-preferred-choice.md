@@ -2,8 +2,9 @@
 slug: >-
   /talks/react-native-connection-23/tommy-nguyen-raising-the-bar-our-journey-making-react-native-a-preferred-choice
 date: 2023-06-01T00:00:00.000Z
-title: 'Raising the Bar: Our Journey Making React Native a Preferred Choice'
-author: Tommy Nguyen
+title: "Raising the Bar: Our Journey Making React Native a Preferred Choice"
+author:
+  - Tommy Nguyen
 video: hlhnAqEtpmY
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/hlhnAqEtpmY.jpg
 slides: >-

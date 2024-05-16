@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/daniel-steinberg-floating-down-an-asyncstream
-date: '2023-09-21'
+date: "2023-09-21"
 title: Floating Down an AsyncStream
-author: Daniel Steinberg
+author:
+  - Daniel Steinberg
 video: zYUt8O-u9Sg
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/zYUt8O-u9Sg.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 So I'm going to be talking about async streams, which sits in a nice place.
 For those moving from Combine, an async stream was a nice way to publish values without using the Combine framework.
 And if you're not ready to go to iOS 17, you can't take advantage of observable yet.

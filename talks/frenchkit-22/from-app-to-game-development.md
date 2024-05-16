@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit-2022/michel-andre-chirita-from-app-to-game-development
-date: '2022-09-30'
+date: "2022-09-30"
 title: From App to Game Development
-author: Michel-André Chirita
+author:
+  - Michel-André Chirita
 video: HLz0Cfkaiew
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/HLz0Cfkaiew.jpg
 slides: >-
@@ -12,7 +13,7 @@ tags:
   - GameplayKit
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 

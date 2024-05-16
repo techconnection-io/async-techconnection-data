@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/maxime-eglem-bringing-your-flutter-app-to-the-web
 date: "2024-04-24"
 title: Bringing Your Flutter App to the Web
-author: Maxime Eglem
+author:
+  - Maxime Eglem
 video: dIo7QYcm6lg
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dIo7QYcm6lg.jpg
 slides: null

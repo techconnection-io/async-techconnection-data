@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/leigha-reid-how-flutterflow-generates-flutter-code
 date: "2024-04-24"
 title: How FlutterFlow generates Flutter code
-author: Leigha Reid
+author:
+  - Leigha Reid
 video: qf8OKwL-aig
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/qf8OKwL-aig.jpg
 slides: null

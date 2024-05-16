@@ -5,7 +5,8 @@ date: 2023-06-02T00:00:00.000Z
 title: >-
   Make Your Codebase More Maintainable Using custom_lint by Creating Custom
   Refactorings and Lint Rules
-author: Rémi Rousselet
+author:
+  - Rémi Rousselet
 video: xZQJftO1C-4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/xZQJftO1C-4.jpg
 slides: null

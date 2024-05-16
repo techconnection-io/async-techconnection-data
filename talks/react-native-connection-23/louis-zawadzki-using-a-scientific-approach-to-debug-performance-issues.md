@@ -3,7 +3,8 @@ slug: >-
   /talks/react-native-connection-23/louis-zawadzki-using-a-scientific-approach-to-debug-performance-issues
 date: 2023-06-01T00:00:00.000Z
 title: Using a Scientific Approach to Debug Performance Issues
-author: Louis Zawadzki
+author:
+  - Louis Zawadzki
 video: AWnLonnZNBo
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/AWnLonnZNBo.jpg
 slides: >-

@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/alois-deniel-server-driven-ui-with-flutter
 date: "2024-04-24"
 title: Server-Driven UI with Flutter
-author: Aloïs Deniel
+author:
+  - Aloïs Deniel
 video: O15L2zduOKM
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/O15L2zduOKM.jpg
 slides: null

@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/shai-mishali-a-crash-course-of-the-composable-architecture
-date: '2023-09-21'
+date: "2023-09-21"
 title: A Crash Course of The Composable Architecture
-author: Shai Mishali
+author:
+  - Shai Mishali
 video: h0Agq-98RZ8
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/h0Agq-98RZ8.jpg
 slides: null
@@ -13,6 +14,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hi everyone, it's so good being in France for the very first time, thank you for the kind hospitality, today I'll talk to you about the composable architecture, before then a quick intro, my name is Shai, I work for a company called , Monday.com, , I do a lot of open source work which you might know are Swift combined related projects and also a huge fan of conferences like this one and hackathons, and that's it.
 My agenda is mainly to do my best to not confuse you despite this being a relatively fast-paced talk due to the time constraints.
 So let's just get started.

@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit/swift-connection-2023/krzysztof-zablocki-the-project-template
-date: '2023-09-21'
+date: "2023-09-21"
 title: The Project Template
-author: Krzysztof Zabłocki
+author:
+  - Krzysztof Zabłocki
 video: 9KOnO77msU8
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/9KOnO77msU8.jpg
 slides: null
@@ -12,6 +13,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hello, so yeah, I do a lot of open source.
 Over the years, I did over 20 open source projects that are available on my GitHub, and they're used by over 80,000 teams, including those at Apple, Airbnb, Disney.
 I hope a lot of you use it as well.
@@ -260,92 +262,94 @@ But even if one tool works, it could save you hours per week.
 Hours of time is a lot of time you could be spending with your family, you could be enjoying your other passions and not stuck in front of your Mac and being annoyed that things don't work. I write about this stuff on my blog and Twitter, sometimes, mostly blog, and I'm going to launch a video course soon, so you can follow me there. And I'm available for consulting, that's pretty much all I do right now, which is help teams be more efficient.
 And those are my contact information, and I'm open to questions. Thank you.
 Thank you, Christophe.
->> So we got some questions.
-The most specific one is about your rules.
-Are they open source?
-People can grab them and get inspired or use them?
->> They are not open source because they are project specific.
-They are pretty simple.
-I might share some after when I get my laptop.
-Didn't take it with me here.
-Yeah, I try to-- the thing is, people use defaults for source tree, for SwiftLint, stuff like that.
-But those tools really shine when you take your project needs.
-And the way I build those rules is really simple.
-If I see the same comment in my PRs, it means it should be automated.
-If it's the same pattern over and over again,
-If you have to point out, oh, this is not how we do things, you might not deprecate the API, because for some reason, it might still be needed.
-But you can write a Swift linter role so that the next time it happens, you don't have to be the bad guy.
-That's the thing.
-The linters become the bad guy.
-I don't need to be the one saying, well, this doesn't follow our best practices.
-I can just make it-- as a team, we decided this is best practice, and the bot is the bad, bad thing, not me.
-We have a question from Woody.
-And what's the future of Sorcery with Swift macros?
->> I'm not worried.
-Sorcery just enabled Linux support.
-There's a lot of workflows that Sorcery offered that macros simply cannot do.
-Like the example I mentioned with Airbnb, when they use Sorcery to discover types conforming to a protocol across the whole code base, you cannot do that with macros.
-There's also a bunch of limitations and bugs with macros right now.
-One of the limitations is due to the fact that macros use visitor pattern, which is how Swift syntax parses your code.
-And you have to be really careful, because with visitor pattern, what that means is if you have your type definition and you're building a macro that's supposed to know all the variables or all the functions, and you do any extension outside of that definition, that will not be available to your macro.
-And there will be no compile warnings or errors.
-You simply won't have the code.
-So be very careful.
-That's not the story with Sorcery, because source tree, before it runs, it builds the whole project AST, so if I have a file with 20 different file extensions, it will concatenate everything and when you run your template you have access to everything at once, which with macros it forces you to have this massive file, which is something like in the browser company we had TCA architecture and some of our state objects were actually using 10, 20 extension files, so with macros that would be problematic.
-A bit of topic question is about the tools you make.
-There is many issues in many open source ecosystems, like libraries made for JavaScript that actually are the basics for most of all JavaScript packages.
-And those maintainers are not getting paid at all, or just a few. and they actually create the modern web.
-How do you relate to those issues as a maintainer?
-Oh, yeah.
-This is a real problem.
-So maintaining projects, it's work-- like, it's a full-time job in itself.
-I have over 20 projects.
-I rely on community.
-A lot of people contributed to those tools, which is also something that's really important, because I don't want projects to go under.
-If I ever get hit by a bus, or so you will live.
-There is now, I think, around 100 people that contributed.
-There's probably like 15 people having maintainer access so they can release new versions.
-The guy that's working on it right now, the Linux support, amazing.
-He's doing an amazing job working on it.
-Free sponsorship from people doesn't really work in my experience.
-When I had GitHub sponsors, in the 10 years
-I was open sourcing, I got like total $500.
-So that's very far from the amount of hours
-I spent for community staff.
-When I did Sorcery Pro, it's a paid application which costs $20, and it adds custom editor for Sourcery.
-It also adds Xcode extension, which lets you do a lot of really cool stuff.
-You can watch it on my website.
-I made around $30,000 from that.
-So that's not bad.
-I worked on it a month over time, but obviously, Sourcery, I worked for years.
-Pulse is doing something similar, where you have the default open source thing free, and you can buy an application that's empowering you to do even more.
-So that's one model of doing it.
-I recently got sponsored by Bumble.
-So they gave me $1,000 per month.
-Airbnb sponsors, I think, $100 per month.
-Airbnb has been doing this for a long time.
-It's not a massive amount of money, but it's decent.
-I started blogging doing premium articles as a way to monetize some of that and also have more time for doing this.
-So if anyone wants to support the kind of open source work I'm doing, my blog has premium articles for people that pay, I think it's $10 per month or $9 or something like that if you subscribe for a year and you get access to premium content, you can understand how to write your own tools, stuff like that.
-But yeah, in my experience, you have to give something if you want to get something from people.
-Unfortunately, even though when the tools save you, like Sorcery saves a lot of time for people.
-But I understand not everyone can support it.
-So yeah, I generally give incentive.
-Like with my blog, people that pay premium get access to a lot of interesting stuff, especially around TCA.
-I got a lot of people interested in my writing because I chained, like I affected how TCA works now.
-So yeah, try to find ways to monetize your writing or ideas without restricting the main content as well.
-It's important for me, I want this stuff to be free.
+
+> > So we got some questions.
+> > The most specific one is about your rules.
+> > Are they open source?
+> > People can grab them and get inspired or use them?
+> > They are not open source because they are project specific.
+> > They are pretty simple.
+> > I might share some after when I get my laptop.
+> > Didn't take it with me here.
+> > Yeah, I try to-- the thing is, people use defaults for source tree, for SwiftLint, stuff like that.
+> > But those tools really shine when you take your project needs.
+> > And the way I build those rules is really simple.
+> > If I see the same comment in my PRs, it means it should be automated.
+> > If it's the same pattern over and over again,
+> > If you have to point out, oh, this is not how we do things, you might not deprecate the API, because for some reason, it might still be needed.
+> > But you can write a Swift linter role so that the next time it happens, you don't have to be the bad guy.
+> > That's the thing.
+> > The linters become the bad guy.
+> > I don't need to be the one saying, well, this doesn't follow our best practices.
+> > I can just make it-- as a team, we decided this is best practice, and the bot is the bad, bad thing, not me.
+> > We have a question from Woody.
+> > And what's the future of Sorcery with Swift macros?
+> > I'm not worried.
+> > Sorcery just enabled Linux support.
+> > There's a lot of workflows that Sorcery offered that macros simply cannot do.
+> > Like the example I mentioned with Airbnb, when they use Sorcery to discover types conforming to a protocol across the whole code base, you cannot do that with macros.
+> > There's also a bunch of limitations and bugs with macros right now.
+> > One of the limitations is due to the fact that macros use visitor pattern, which is how Swift syntax parses your code.
+> > And you have to be really careful, because with visitor pattern, what that means is if you have your type definition and you're building a macro that's supposed to know all the variables or all the functions, and you do any extension outside of that definition, that will not be available to your macro.
+> > And there will be no compile warnings or errors.
+> > You simply won't have the code.
+> > So be very careful.
+> > That's not the story with Sorcery, because source tree, before it runs, it builds the whole project AST, so if I have a file with 20 different file extensions, it will concatenate everything and when you run your template you have access to everything at once, which with macros it forces you to have this massive file, which is something like in the browser company we had TCA architecture and some of our state objects were actually using 10, 20 extension files, so with macros that would be problematic.
+> > A bit of topic question is about the tools you make.
+> > There is many issues in many open source ecosystems, like libraries made for JavaScript that actually are the basics for most of all JavaScript packages.
+> > And those maintainers are not getting paid at all, or just a few. and they actually create the modern web.
+> > How do you relate to those issues as a maintainer?
+> > Oh, yeah.
+> > This is a real problem.
+> > So maintaining projects, it's work-- like, it's a full-time job in itself.
+> > I have over 20 projects.
+> > I rely on community.
+> > A lot of people contributed to those tools, which is also something that's really important, because I don't want projects to go under.
+> > If I ever get hit by a bus, or so you will live.
+> > There is now, I think, around 100 people that contributed.
+> > There's probably like 15 people having maintainer access so they can release new versions.
+> > The guy that's working on it right now, the Linux support, amazing.
+> > He's doing an amazing job working on it.
+> > Free sponsorship from people doesn't really work in my experience.
+> > When I had GitHub sponsors, in the 10 years
+> > I was open sourcing, I got like total $500.
+> > So that's very far from the amount of hours
+> > I spent for community staff.
+> > When I did Sorcery Pro, it's a paid application which costs $20, and it adds custom editor for Sourcery.
+> > It also adds Xcode extension, which lets you do a lot of really cool stuff.
+> > You can watch it on my website.
+> > I made around $30,000 from that.
+> > So that's not bad.
+> > I worked on it a month over time, but obviously, Sourcery, I worked for years.
+> > Pulse is doing something similar, where you have the default open source thing free, and you can buy an application that's empowering you to do even more.
+> > So that's one model of doing it.
+> > I recently got sponsored by Bumble.
+> > So they gave me $1,000 per month.
+> > Airbnb sponsors, I think, $100 per month.
+> > Airbnb has been doing this for a long time.
+> > It's not a massive amount of money, but it's decent.
+> > I started blogging doing premium articles as a way to monetize some of that and also have more time for doing this.
+> > So if anyone wants to support the kind of open source work I'm doing, my blog has premium articles for people that pay, I think it's $10 per month or $9 or something like that if you subscribe for a year and you get access to premium content, you can understand how to write your own tools, stuff like that.
+> > But yeah, in my experience, you have to give something if you want to get something from people.
+> > Unfortunately, even though when the tools save you, like Sorcery saves a lot of time for people.
+> > But I understand not everyone can support it.
+> > So yeah, I generally give incentive.
+> > Like with my blog, people that pay premium get access to a lot of interesting stuff, especially around TCA.
+> > I got a lot of people interested in my writing because I chained, like I affected how TCA works now.
+> > So yeah, try to find ways to monetize your writing or ideas without restricting the main content as well.
+> > It's important for me, I want this stuff to be free.
+
 - Okay, nice.
-Very specific question as well.
-How does Pulse compare to the OS log feature?
+  Very specific question as well.
+  How does Pulse compare to the OS log feature?
 - US what, sorry?
 - OS log.
 - Oh yeah, I mean, it's much more nicer.
-The other thing is it's designed for networking, so you get a lot of custom UI with a lot of details.
-It's just better designed for those kind of stuff.
-OS log is too general purpose, so that's obviously just gonna be very raw logs instead of having this nice and polished experience.
+  The other thing is it's designed for networking, so you get a lot of custom UI with a lot of details.
+  It's just better designed for those kind of stuff.
+  OS log is too general purpose, so that's obviously just gonna be very raw logs instead of having this nice and polished experience.
 - Performance wise?
 - I mean OS lock is gonna be faster because it's using static strings and stuff.
 - Thank you Christophe.
 - Thank you.
-(audience applauding)
+  (audience applauding)

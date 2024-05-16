@@ -3,7 +3,8 @@ slug: >-
   /talks/react-native-connection-23/riccardo-cipolleschi-from-codegen-to-your-first-pr-in-core
 date: 2023-06-01T00:00:00.000Z
 title: From Codegen to Your First PR in Core
-author: Riccardo Cipolleschi
+author:
+  - Riccardo Cipolleschi
 video: frkucOdc0E4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/frkucOdc0E4.jpg
 slides: null

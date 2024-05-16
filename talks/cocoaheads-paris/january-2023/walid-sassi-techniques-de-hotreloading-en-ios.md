@@ -3,7 +3,8 @@ slug: >-
   /talks/cocoaheads-paris/january-2023/walid-sassi-techniques-de-hotreloading-en-ios
 date: 2023-01-19T00:00:00.000Z
 title: Techniques de HotReloading en iOS
-author: Walid Sassi
+author:
+  - Walid Sassi
 video: gJrcdGj8qrA
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/gJrcdGj8qrA.jpg
 slides: null

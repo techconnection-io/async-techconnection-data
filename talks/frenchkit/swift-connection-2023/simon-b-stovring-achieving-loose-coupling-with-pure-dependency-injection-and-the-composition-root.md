@@ -1,11 +1,12 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/simon-b-stovring-achieving-loose-coupling-with-pure-dependency-injection-and-the-composition-root
-date: '2023-09-21'
+date: "2023-09-21"
 title: >-
   Achieving Loose Coupling with Pure Dependency Injection and the Composition
   Root
-author: Simon B. Støvring.
+author:
+  - Simon B. Støvring.
 video: bmIW1skJQFo
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/bmIW1skJQFo.jpg
 slides: >-
@@ -16,6 +17,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 I'm here to talk about loose coupling, dependency injection and the composition route.
 And I'm also here to inspire you to think about how you compose your Swift apps.
 All right.
@@ -436,7 +438,7 @@ So if I want to work on the profile, I'll just launch the profile dev app and I'
 And these dev apps typically rely on stop data and mock behavior.
 But what's important in this context is that they become straightforward to create when you have loose coupling, initialize injection, and you adopt a composition route.
 Because each of these dev apps live in their own app target, and that app target is really just a composition route layer, similar to the app that we just saw, except they're much smaller because they only contain a single feature, right?
-If you want to have a look at this example project and if you want to see the dev apps or any of the other things we've discussed, please go to , github.com,  slash shape HQ slash coffee shop example, where you can find the entire code for this.
+If you want to have a look at this example project and if you want to see the dev apps or any of the other things we've discussed, please go to , github.com, slash shape HQ slash coffee shop example, where you can find the entire code for this.
 And here we've seen how pure dependency injection and the composition route enables us to build loosely coupled Swift apps.
 And if you think that's interesting, I recommend that you read this book, dependency injection, principles, practices, and patterns, by Steven Van Gersen and Mark Seaman.
 That's where I've learned most of this and then I've just tried to adapt it to a Swift-based app.

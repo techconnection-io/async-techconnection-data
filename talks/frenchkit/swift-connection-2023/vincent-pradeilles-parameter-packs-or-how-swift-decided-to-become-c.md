@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/vincent-pradeilles-parameter-packs-or-how-swift-decided-to-become-c
-date: '2023-09-21'
+date: "2023-09-21"
 title: Parameter Packs or How Swift Decided to Become C++
-author: Vincent Pradeilles
+author:
+  - Vincent Pradeilles
 video: aVtRv_zkglI
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/aVtRv_zkglI.jpg
 slides: null
@@ -13,6 +14,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hello.
 So I'm the last person standing between you and the after party.
 But before we go to the after party,
@@ -182,59 +184,60 @@ Eric Swift also encountered the same issue, so it combined.
 So I would say it's important to know about it, because this way, whenever you are looking at an API and you see this each repeat each, you're able to make sense of it.
 But you will definitely not use it every day, and you will use it much less often than generics, which are pretty useful.
 And the need for a generic arises much more often than the need for an undefined number of generics.
->> We have again lots of questions from Slido.
-Thanks, everyone, for using it.
-One question from Jerome.
->> Who could it be?
->> I don't know.
-Who's that guy?
-Can we use parameter packs in macros?
->> That's a good question.
-Best way would be to try.
-So I can tell you, when I prepared this content, it was with Xcode 15 beta 8.
-And if you were to use a parameter pack on the struct, for instance, the compiler would set fault.
-So that was annoying.
-I've checked just before on the release candidate.
-They have fixed it.
-So in the proposal, they say that every place you can use a regular or scalar generic type, you should be able to use a parameter pack.
-So I would say it should be.
-But because there is some complexity with the feature, it might not work.
-It might be supposed to work, but it might take fault also.
-It's a pretty new feature.
-So you can expect some bumps in the road.
-And do you know if there's an impact on the compile time whenever you use this feature?
-That's a good question.
-I would expect to have a small impact, yes.
-Because basically, my understanding is that what's happening is that earlier in the compilation, the pack is expanded and so turned into a new source code, basically, that will be compiled.
-So it will probably make compile time a little bit longer, even though it might be negligible.
-However, if you compare it with the alternative, for instance, for the total count function, which is to use any, you might win a bit at runtime.
-And you might also want to keep in mind that what I'm saying doesn't make any sense unless you have measured and make sure is actually the case because optimizations are a black box.
-So it might make your code a little bit longer to compile, but it might be a bit like--
-I haven't heard people complaining about it the way they did with generics back in Swift 3, basically.
-You have another technical question?
-No.
-So a non-technical question for you.
-I guess lots of people here know you through the different social medias where you are.
-Would you have one advice in 2023 for a developer out there who would like to start creating content, any kind of content related to code?
-That's a good question.
-I would say starting with something very simple.
-When you think about it, for instance,
-John Sandel, he started by posting screenshots of code with text written over it using preview, because you could notice that the arrows were the arrows that preview basically generates.
-So I would say start with something simple.
-For me, it was mostly the animated code that worked well.
-So start with something simple.
-See what sticks, basically.
-And when something doesn't work, it's
-OK to just let it go and try something else.
-It's harder when it's yourself to be like, OK, my idea didn't work, and it's not like me.
-I suck.
-It's harder to make the distinction.
-They would say, yeah, try things.
-Don't put too much pressure on you.
-See what sticks.
-And if it works and you enjoy doing it,
-Basically, that's when you know that you're onto something.
-Great.
-Thank you, Vincent.
-Thank you.
-[APPLAUSE]
+
+> > We have again lots of questions from Slido.
+> > Thanks, everyone, for using it.
+> > One question from Jerome.
+> > Who could it be?
+> > I don't know.
+> > Who's that guy?
+> > Can we use parameter packs in macros?
+> > That's a good question.
+> > Best way would be to try.
+> > So I can tell you, when I prepared this content, it was with Xcode 15 beta 8.
+> > And if you were to use a parameter pack on the struct, for instance, the compiler would set fault.
+> > So that was annoying.
+> > I've checked just before on the release candidate.
+> > They have fixed it.
+> > So in the proposal, they say that every place you can use a regular or scalar generic type, you should be able to use a parameter pack.
+> > So I would say it should be.
+> > But because there is some complexity with the feature, it might not work.
+> > It might be supposed to work, but it might take fault also.
+> > It's a pretty new feature.
+> > So you can expect some bumps in the road.
+> > And do you know if there's an impact on the compile time whenever you use this feature?
+> > That's a good question.
+> > I would expect to have a small impact, yes.
+> > Because basically, my understanding is that what's happening is that earlier in the compilation, the pack is expanded and so turned into a new source code, basically, that will be compiled.
+> > So it will probably make compile time a little bit longer, even though it might be negligible.
+> > However, if you compare it with the alternative, for instance, for the total count function, which is to use any, you might win a bit at runtime.
+> > And you might also want to keep in mind that what I'm saying doesn't make any sense unless you have measured and make sure is actually the case because optimizations are a black box.
+> > So it might make your code a little bit longer to compile, but it might be a bit like--
+> > I haven't heard people complaining about it the way they did with generics back in Swift 3, basically.
+> > You have another technical question?
+> > No.
+> > So a non-technical question for you.
+> > I guess lots of people here know you through the different social medias where you are.
+> > Would you have one advice in 2023 for a developer out there who would like to start creating content, any kind of content related to code?
+> > That's a good question.
+> > I would say starting with something very simple.
+> > When you think about it, for instance,
+> > John Sandel, he started by posting screenshots of code with text written over it using preview, because you could notice that the arrows were the arrows that preview basically generates.
+> > So I would say start with something simple.
+> > For me, it was mostly the animated code that worked well.
+> > So start with something simple.
+> > See what sticks, basically.
+> > And when something doesn't work, it's
+> > OK to just let it go and try something else.
+> > It's harder when it's yourself to be like, OK, my idea didn't work, and it's not like me.
+> > I suck.
+> > It's harder to make the distinction.
+> > They would say, yeah, try things.
+> > Don't put too much pressure on you.
+> > See what sticks.
+> > And if it works and you enjoy doing it,
+> > Basically, that's when you know that you're onto something.
+> > Great.
+> > Thank you, Vincent.
+> > Thank you.
+> > [APPLAUSE]

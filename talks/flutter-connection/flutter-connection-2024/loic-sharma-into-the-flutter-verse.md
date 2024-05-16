@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/loic-sharma-into-the-flutter-verse
 date: "2024-04-24"
 title: Into the Flutter-Verse
-author: Loïc Sharma
+author:
+  - Loïc Sharma
 video: 1l22fkWPnos
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/1l22fkWPnos.jpg
 slides: null

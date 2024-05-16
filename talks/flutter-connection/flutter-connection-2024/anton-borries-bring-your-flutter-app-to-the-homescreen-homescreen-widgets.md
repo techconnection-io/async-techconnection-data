@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/anton-borries-bring-your-flutter-app-to-the-homescreen-homescreen-widgets
 date: "2024-04-24"
 title: Bring your Flutter App to the HomeScreen - HomeScreen Widgets
-author: Anton Borries
+author:
+  - Anton Borries
 video: gAjZsZmMTlc
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/gAjZsZmMTlc.jpg
 slides: null

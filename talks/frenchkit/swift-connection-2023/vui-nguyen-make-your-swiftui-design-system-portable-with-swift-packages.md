@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/vui-nguyen-make-your-swiftui-design-system-portable-with-swift-packages
-date: '2023-09-21'
+date: "2023-09-21"
 title: Make Your SwiftUI Design System Portable with Swift Packages
-author: Vui Nguyen
+author:
+  - Vui Nguyen
 video: g1BB64RGm5g
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/g1BB64RGm5g.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 This is my first time visiting Paris or France, so thank you so much for having me and welcoming me and I want to thank the organizers for putting together this amazing conference and also thank you for all of you for staying until the end, so I hope you will find my talk useful.
 All right.
 So welcome to my talk.
@@ -101,7 +103,7 @@ Notice how you use the same font modifier syntax to display both.
 I'll show you how this is done.
 Now we'll go into the SDK implementation.
 First we'll start by finding a custom font.
-I went to the website , fontmirror.com,  and found the Bellota font.
+I went to the website , fontmirror.com, and found the Bellota font.
 You want to look for a free license.
 And you want to look for different weights of fonts, in this case regular, light, and bold.
 And just a warning that if you use fonts that don't have a free license, they won't load an Xcode.

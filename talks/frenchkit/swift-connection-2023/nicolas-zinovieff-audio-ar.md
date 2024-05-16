@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit/swift-connection-2023/nicolas-zinovieff-audio-ar
-date: '2023-09-21'
+date: "2023-09-21"
 title: Audio AR…?
-author: Nicolas Zinovieff
+author:
+  - Nicolas Zinovieff
 video: 0M2kQ0qcpTM
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/0M2kQ0qcpTM.jpg
 slides: >-
@@ -13,6 +14,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Yeah, I kind of hacked the conference and decided to piggyback on the whole vision thing and talk about a very dear topic of mine.
 Audio augmented reality has been around for a long, long time.
 So I'm going to tell you why you should implement it and tell you that it's actually pretty easy to do.
@@ -151,57 +153,58 @@ Thank you.
 And thank you for attending the conference.
 [APPLAUSE]
 So questions from the audience. the most important one being, what's exactly in MoMA?
+
 - I'll let you find it, but it's a piece with a lot of, okay, so it's a visual and audio piece with a lot of transitions.
-It's based on Ken Burns and stuff.
-And it's not, obviously, because I have no artistic talent whatsoever.
-I just was the tech guy, but the artist wanted my name on the thing. and I discovered it like six months later when I received a letter saying
-"Hey, you're the official owner of a piece of the MoMA, how should we conserve it?"
-I'm like, "Are you for real?"
-I thought it was a scam but I have my name there.
-Did you answer that it has to be saved on the iCloud?
-Yeah, no, it was before that.
-I actually have to maintain a 10.3 computer machine somewhere in a VM and stuff, just in case the thing just blows up and they have to redeploy it.
-Alright, I had to ask this question by Hervé, which you mentioned in your talk.
-I just read because it's awesome.
-You didn't mention binaural audio, which is a great way to emulate 3D audio.
-Yes.
-Don't you believe in this technology?
-Question mark.
-Explain your answer with spherical harmonics.
-Alright, so, yes indeed.
-Thank you. So, Binaural is a system of simulating 3D using, well, more than two speakers in the thing.
-But, it's not that I don't believe in the tech, I think it's just too expensive to make the helmets that work and that you can sell to a public that will care.
-Most, like if you go in the subway here in Paris, right?
-Most people have the wired crappy earbuds.
-So, then again, we used to say the same thing about VR helmets and now people are way more interested in VR helmets, so who knows.
-I think binaural is super interesting thing from a math and physics standpoint, but it's kind of too good.
-Yeah, it's too good.
-So we have obviously this very huge device arriving Vision Pro.
-What do you think about this?
-Now that's what I call a loaded question.
-Okay, so we've had several false starts in VR and in AR.
-It comes down to cost, it comes down to critical mass, it comes down to the quality of the applications that are going to be on that thing.
-And the problem is, it's kind of a chicken and the egg problem, unless designers start focusing real hard on how to do some best practices for these apps, it's going to be rectangles in space.
-And that, in my opinion, will never take hold because it just replaces the screen, which, you know, fair enough, you want to have an 8K display and you can't afford it, you can put it in your vision.
-But then you have the sync problem.
-If there are two people trying to see the same screen, you introduce a lot of problems around it that the screen solves better.
-It's kind of like with the binaural thing.
-The solution we have is way cheaper and solves the problem way better.
-When designers start to find some normal-- just like the iPhone normalized the touch interface, when we have some normalization of interfaces that work only in an AR or VR space, it's going to take off.
-I mean, I'm not a marketing guy, so I don't know if-- like if I say, all right, yeah, no, the Vision Pro should be like $800, because that's the only way to create critical mass.
-Sure, but is it going to?
-I don't know.
-It's more complicated than just talking about costs or critical mass because no one's actually played with it in a real environment and the only thing we can think about is, oh cool I can go on my couch and see a huge screen for me and watch a movie.
-Yeah, but I can do that in a theater and I can get a big TV and share with my family. So right now it's, we're gonna have to wait and see and I'm sure that designers will do a fantastic job of trying to find things but until we're at that point it's going to be tricky to sell that to people and it's going to be tricky for developers to invest the 200k just paying two developers and one designer to work on an application just in case they can't sell it. Like recouping that investment is going to be hard so it's going to be the big companies first or the independent designers who try things and I think it's going to come from that side rather than that side.
-Do you actually, are we actually able to hear the demo?
-Or do you have the file on the computer?
-I do have the thing, I can show it to you on the laptop itself, but it won't go through the thing.
-But it is a very simple thing, just pans left and right, and has a piece of sound that spirals around you.
-So the further it goes, the lower the sound, and left, right.
-It's not super interesting, it's just...
->> And it works in 5.1 and 7.1 and stereo.
->> All right.
-So thank you very much.
->> Thanks a lot.
-[ Applause ]
-[APPLAUSE]
+  It's based on Ken Burns and stuff.
+  And it's not, obviously, because I have no artistic talent whatsoever.
+  I just was the tech guy, but the artist wanted my name on the thing. and I discovered it like six months later when I received a letter saying
+  "Hey, you're the official owner of a piece of the MoMA, how should we conserve it?"
+  I'm like, "Are you for real?"
+  I thought it was a scam but I have my name there.
+  Did you answer that it has to be saved on the iCloud?
+  Yeah, no, it was before that.
+  I actually have to maintain a 10.3 computer machine somewhere in a VM and stuff, just in case the thing just blows up and they have to redeploy it.
+  Alright, I had to ask this question by Hervé, which you mentioned in your talk.
+  I just read because it's awesome.
+  You didn't mention binaural audio, which is a great way to emulate 3D audio.
+  Yes.
+  Don't you believe in this technology?
+  Question mark.
+  Explain your answer with spherical harmonics.
+  Alright, so, yes indeed.
+  Thank you. So, Binaural is a system of simulating 3D using, well, more than two speakers in the thing.
+  But, it's not that I don't believe in the tech, I think it's just too expensive to make the helmets that work and that you can sell to a public that will care.
+  Most, like if you go in the subway here in Paris, right?
+  Most people have the wired crappy earbuds.
+  So, then again, we used to say the same thing about VR helmets and now people are way more interested in VR helmets, so who knows.
+  I think binaural is super interesting thing from a math and physics standpoint, but it's kind of too good.
+  Yeah, it's too good.
+  So we have obviously this very huge device arriving Vision Pro.
+  What do you think about this?
+  Now that's what I call a loaded question.
+  Okay, so we've had several false starts in VR and in AR.
+  It comes down to cost, it comes down to critical mass, it comes down to the quality of the applications that are going to be on that thing.
+  And the problem is, it's kind of a chicken and the egg problem, unless designers start focusing real hard on how to do some best practices for these apps, it's going to be rectangles in space.
+  And that, in my opinion, will never take hold because it just replaces the screen, which, you know, fair enough, you want to have an 8K display and you can't afford it, you can put it in your vision.
+  But then you have the sync problem.
+  If there are two people trying to see the same screen, you introduce a lot of problems around it that the screen solves better.
+  It's kind of like with the binaural thing.
+  The solution we have is way cheaper and solves the problem way better.
+  When designers start to find some normal-- just like the iPhone normalized the touch interface, when we have some normalization of interfaces that work only in an AR or VR space, it's going to take off.
+  I mean, I'm not a marketing guy, so I don't know if-- like if I say, all right, yeah, no, the Vision Pro should be like $800, because that's the only way to create critical mass.
+  Sure, but is it going to?
+  I don't know.
+  It's more complicated than just talking about costs or critical mass because no one's actually played with it in a real environment and the only thing we can think about is, oh cool I can go on my couch and see a huge screen for me and watch a movie.
+  Yeah, but I can do that in a theater and I can get a big TV and share with my family. So right now it's, we're gonna have to wait and see and I'm sure that designers will do a fantastic job of trying to find things but until we're at that point it's going to be tricky to sell that to people and it's going to be tricky for developers to invest the 200k just paying two developers and one designer to work on an application just in case they can't sell it. Like recouping that investment is going to be hard so it's going to be the big companies first or the independent designers who try things and I think it's going to come from that side rather than that side.
+  Do you actually, are we actually able to hear the demo?
+  Or do you have the file on the computer?
+  I do have the thing, I can show it to you on the laptop itself, but it won't go through the thing.
+  But it is a very simple thing, just pans left and right, and has a piece of sound that spirals around you.
+  So the further it goes, the lower the sound, and left, right.
+  It's not super interesting, it's just...
+  > > And it works in 5.1 and 7.1 and stereo.
+  > > All right.
+  > > So thank you very much.
+  > > Thanks a lot.
+  > > [ Applause ]
+  > > [APPLAUSE]

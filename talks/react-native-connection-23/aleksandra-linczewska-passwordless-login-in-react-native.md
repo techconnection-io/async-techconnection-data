@@ -3,7 +3,8 @@ slug: >-
   /talks/react-native-connection-23/aleksandra-linczewska-passwordless-login-in-react-native
 date: 2023-06-01T00:00:00.000Z
 title: Passwordless Login in React Native
-author: Aleksandra Linczewska
+author:
+  - Aleksandra Linczewska
 video: CocLa_PCHsg
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/CocLa_PCHsg.jpg
 slides: >-

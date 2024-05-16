@@ -2,7 +2,8 @@
 slug: /talks/flutter-connection-23/guillaume-bernos-advanced-topics-with-webviews
 date: 2023-06-02T00:00:00.000Z
 title: Advanced Topics With WebViews
-author: Guillaume Bernos
+author:
+  - Guillaume Bernos
 video: QMmo6oqmBSs
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/QMmo6oqmBSs.jpg
 slides: null

@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit-2022/vincent-pradeilles-swift-quiz
-date: '2022-09-30'
+date: "2022-09-30"
 title: Swift Quiz
-author: Vincent Pradeilles
+author:
+  - Vincent Pradeilles
 video: mUBBY6JCC0c
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/mUBBY6JCC0c.jpg
 slides: >-
@@ -10,7 +11,7 @@ slides: >-
 tags: []
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: false
 ---
 

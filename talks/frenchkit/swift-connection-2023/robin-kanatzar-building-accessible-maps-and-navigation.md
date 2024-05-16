@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/robin-kanatzar-building-accessible-maps-and-navigation
-date: '2023-09-21'
+date: "2023-09-21"
 title: Building Accessible Maps and Navigation
-author: Robin Kanatzar
+author:
+  - Robin Kanatzar
 video: o8iTIaFaP3o
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/o8iTIaFaP3o.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Does anybody here remember having to use this?
 For those who aren't French, how about this?
 A paper map on a road trip.

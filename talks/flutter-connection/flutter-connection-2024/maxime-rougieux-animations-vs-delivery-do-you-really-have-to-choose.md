@@ -3,7 +3,9 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/maxime-rougieux-animations-vs-delivery-do-you-really-have-to-choose
 date: "2024-04-24"
 title: "Animations VS Delivery: Do you Really Have to Choose?"
-author: Maxime Rougieux
+author:
+  - Maxime Rougieux
+  - Thomas Coumau
 video: GkF-LO2CiL4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/GkF-LO2CiL4.jpg
 slides: null

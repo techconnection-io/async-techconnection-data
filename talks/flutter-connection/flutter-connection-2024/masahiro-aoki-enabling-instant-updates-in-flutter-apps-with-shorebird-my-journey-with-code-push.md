@@ -5,7 +5,8 @@ date: "2024-04-24"
 title: >-
   Enabling Instant Updates in Flutter Apps with Shorebird: My Journey with Code
   Push
-author: Masahiro Aoki
+author:
+  - Masahiro Aoki
 video: pRoKzWbMcNA
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/pRoKzWbMcNA.jpg
 slides: null

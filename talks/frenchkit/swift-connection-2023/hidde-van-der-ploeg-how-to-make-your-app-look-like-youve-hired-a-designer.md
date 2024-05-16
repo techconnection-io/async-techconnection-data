@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/hidde-van-der-ploeg-how-to-make-your-app-look-like-youve-hired-a-designer
-date: '2023-09-21'
+date: "2023-09-21"
 title: How to Make Your App Look Like You've Hired a Designer
-author: Hidde van der Ploeg
+author:
+  - Hidde van der Ploeg
 video: tlk9BRvIbq4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/tlk9BRvIbq4.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 First of all, thank you Swift Connection for having me.
 I'm happy to talk about design.
 My name is Hidde, it's pronounced hidden without the N.

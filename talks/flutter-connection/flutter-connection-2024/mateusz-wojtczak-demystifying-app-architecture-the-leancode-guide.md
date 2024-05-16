@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/mateusz-wojtczak-demystifying-app-architecture-the-leancode-guide
 date: "2024-04-24"
 title: "Demystifying App Architecture: The LeanCode Guide"
-author: Mateusz Wojtczak
+author:
+  - Mateusz Wojtczak
 video: T4B9NQRirKE
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/T4B9NQRirKE.jpg
 slides: null

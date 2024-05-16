@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection/flutter-connection-2024/esra-kadah-from-touch-to-code-flutters-gesture-mechanics
 date: "2024-04-24"
 title: "From Touch To Code: Flutter’s Gesture Mechanics"
-author: Esra Kadah
+author:
+  - Esra Kadah
 video: grZRXGa_gRc
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/grZRXGa_gRc.jpg
 slides: null

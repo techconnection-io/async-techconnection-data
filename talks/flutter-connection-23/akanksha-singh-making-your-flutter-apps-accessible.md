@@ -3,7 +3,8 @@ slug: >-
   /talks/flutter-connection-23/akanksha-singh-making-your-flutter-apps-accessible
 date: 2023-06-02T00:00:00.000Z
 title: Making Your Flutter Apps Accessible
-author: Akanksha Singh
+author:
+  - Akanksha Singh
 video: NFX_zqJEGJA
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/NFX_zqJEGJA.jpg
 slides: null

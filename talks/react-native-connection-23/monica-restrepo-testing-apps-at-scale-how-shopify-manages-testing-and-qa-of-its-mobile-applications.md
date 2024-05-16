@@ -5,7 +5,8 @@ date: 2023-06-01T00:00:00.000Z
 title: >-
   Testing Apps at Scale: How Shopify Manages Testing and QA of Its Mobile
   Applications
-author: Mónica Restrepo
+author:
+  - Mónica Restrepo
 video: dpO-3OoPZNM
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dpO-3OoPZNM.jpg
 slides: >-

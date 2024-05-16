@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/aviel-gross-your-life-with-and-without-observation
-date: '2023-09-21'
+date: "2023-09-21"
 title: Your Life With (and Without) Observation
-author: Aviel Gross
+author:
+  - Aviel Gross
 video: NhgTZu0Hi98
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/NhgTZu0Hi98.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hi everyone, welcome to your life with and without observation.
 Hopefully you get the reference, if not, go fill those gaps.
 From the Barbie movie, by the way.
@@ -91,7 +93,7 @@ And to that access list, we call add access, and we give, again, the key path th
 So that thread local.value, it basically stores all the registrations, so whenever some registrar calls add access, it is basically getting into the same value, the same static value,
 And that is because thread local.value is a TLS thread local storage, which means it's essentially global value for the thread.
 So it's almost like a single tone, but for this one specific thread that we're running on currently, which is probably the main thread in the case of SwiftUI.
-And the type is, like I said, observation tracking._accesslist.
+And the type is, like I said, observation tracking.\_accesslist.
 So when we call add access in access list, so access list itself has this dictionary of entries, which are basically identifiers to an entry.
 This entry you can see inside add access, it's basically -- it's just a value that contains that context, that holds on to that context we got from the registrar, which again is just a state of the registrar, and then we add the key path.
 And so eventually we're going to have this dictionary that has all the key paths from all the registrars with the context about those registrars.
@@ -183,149 +185,150 @@ At some point we want to update the data.
 And so let's say that we obviously want animation because we want the app to look great and be animated.
 And so the code here is just a weird way to basically replace between the first and the second value, right?
 We take we grab the value index 0, we give 1 to 0, and then we give the temporary to
-1.
-So, we basically replaced the values inside the model between 0 and 1.
-So that means that if we had if the values were also these numbers, like 0, 1, 2, 3,
-You would see that the top row, suddenly the number changes, and the second row, the number also changes.
-And that's exactly what you can see.
-The animation is a little bit fast, so, but I'm going to spoil it to you, one and two are going to be replaced, but because we didn't change the identity here, we only changed the dependencies, each row in the list essentially says, oh, I can handle this update myself,
-I don't need the list to handle this animation for me.
-And so they don't know about each other.
-So one just fades into two and two just fades into one.
-So look at that for a second.
-There you go.
-Hope you didn't miss it.
-And so maybe this is what we want, maybe not.
-But this is what happens when the dependencies change but not the identity of the view.
-What if we change the model itself?
-So we actually take the object that we have at data at index zero, we give it to -- sorry,
-We take index 1, give it to index 0, we take index 0, give it to index 1, now we change the objects themselves, now the text view actually changes the identity.
-Because the object changed and not just dependencies inside that object.
-This actually changes the animation, so now the object is saying I changed as a view,
-I don't know how to animate myself, I don't know how to animate my changes, I need my parent, which is the list to take care of that.
-And then the list animates those changes, and now you're going to see an animation that maybe you were expecting, which is the two rows replacing themselves.
-There you go.
-So this is kind of like an interesting example of where you can just visually very clearly see what happens when the dependencies of your view change, but it's the same view, versus when the identity of the view change, and it's just a different view and then SwiftUI has to basically take away the old view and put a new view instead.
-And it's very easy to get confused with observation.
-So that's that.
-The next thing is escaping content closure.
-So there is this design pattern in SwiftUI whenever you are creating container objects, right?
-You are taking this content closure, some generic type, and you are taking it in the initialiser, and usually the best practice is to open that closure inside init and not hold closure, but instead to hold the content itself after you already opened it.
-Let's think about it for a second with observation.
-This initialiser is going to get called in a body of some view, right?
-Some parent view is going to create the subview and create and call the initialiser because they create that view inside the body.
-So we are now inside the body of some other parent view.
-So this means that whatever happens inside content in whatever property is getting called inside this closure, even though only we the subview care about it, the parent view is the one that's going to register it and observe it.
-So if we have this content view, we pass content and it's some text that access model.value.
-Model.value is registered to content view, not to subview.
-Because this is when the closure is called.
-And observation doesn't care, you know, where was it in the code, all it cares is that it was called as part of the same apply closure, as part of the same body.
-And then later we change model.value from whatever it was first to some other string.
-And you can see here content view is only using other value.
-And if you remember the example I showed all the way at the beginning, this looks like that example where I could say, oh, this is great, value changes, but we don't care about value because we're not using it, so we're not going to be refreshed.
-But yes, we are going to be refreshed, because that closure we passed to subview was getting called inside our body.
-And the interesting thing is because we already opened the closure, maybe we don't even show that content.
-So here we pass show some boolean flag, we pass false, we're not even using that content in the subview, that doesn't matter.
-The content view is still going to be refreshed and also the subview is going to be refreshed because of that, even though we're just not presenting this content anywhere.
-So instead if you drop that customise initialiser and you just keep the content as a closure in this case, it's not going to be called and it's not going to be refreshed unnecessarily.
-So first of all, content view never refreshes in this case, because like I said we don't use model.value, we only use model.other value.
-And then even subview will only observe and be refreshed when show it is actually true.
-So as long as show it is false, we don't even use that content, we don't even open that closure and it doesn't even matter what happens to model.value, it can change a thousand times, it doesn't matter, that view will never be refreshed, only when show it is true, now we care about the content, now we are going to observe model.value.
-You might be asking, okay, so should I stop opening closures everywhere in my app?
-I'm not saying that.
-I think it's a case by case situation, so I don't know if there is suddenly a new best practice versus what we have until now, but I think this is just something to keep in mind and it's very interesting way to see the difference between what we had before and the behaviour we have with observation and how the fact that observation doesn't care which view using which property, all it cares is that when you call somebody of some view, anything that got called inside that body for whatever reason is going to be observed for that body.
-Then lastly, there are some things that are not supported with observation.
-Some of them are by design, some of them will maybe be supported later, some of them are just bugs that we're still waiting on the team at Apple to improve, but as of today, so first of all, you cannot do lazy properties, if you have lazy var, you're just going to get an error, cannot be used on a computed property, because if you remember, this value now is not data anymore, it's a computed property, and the computed property cannot have lazy.
-Property wrappers, if you have some custom property wrappers, exactly the same scenario, you will have exactly the same error, cannot be applied to computed property.
-And finally, no value types.
-Observation as a decision as of the second review that passed in August, just simply does not support value types, it's only classes, only reference types.
-So a few takeaways, I think it's really useful to learn how observation works, because it looks at the beginning like, you know, just a simplified version of what we had before and nicer syntax, but actually there is a lot of confusion and a lot of changes in the logic that I think is important to know, and I think once you do know that and you have that in mind, it really helps to build solid apps, or if they're not solid, then at least easier to debug issues when you do have them.
-And then, like I said, it's not just new syntax, there's a lot of behavioural changes and it's important to keep them in mind.
-And then know your state or know the syntax you need to be using for each framework, because
-Xcode unfortunately is not going to help you.
-And finally, it is a very powerful framework, I think it's a great framework and I think it has a lot of potential and benefit, but it's not a silver bullet.
-That's it.
-[Applause] >> I'd start with a question on -- that applies to both things, which is about debugging.
-So how do you debug those stuff, both observables and async streams?
-Apparently, I can't debug a microphone.
-Async streams, it's pretty standard.
-You're following the flow through.
-It's just the async side of it.
-And Apple introduced some nice testing macros so that you can test some async things too,
-So that's been helpful.
-Well, with observation, I think Xcode, first of all, did an amazing job with the fact that you can just expand the macro.
-Something I didn't show is that once you expand the macro, you can actually just copy the entire code base, the entire snippet of that expanded macro, and paste it as is, and then drop the @observable declaration.
-And you get exactly the same behavior.
-You don't lose anything.
-Everything walks exactly the same.
-And then it's your code.
-And then you can just debug it.
-And you can see what's going on.
-And so you can see exactly how it runs.
-And you can add print statements or whatever you need and breakpoints.
-You can also set a breakpoint inside the expanded macro.
-Even better.
-And then you can just print from there.
-Even better.
-So what I'm getting from both subjects is should we expect at some point combined to be dropped completely?
-Or is it still something that we're going to have for a long time before it can be completely replaced from SwiftUI and everything else?
+
+1.  So, we basically replaced the values inside the model between 0 and 1.
+    So that means that if we had if the values were also these numbers, like 0, 1, 2, 3,
+    You would see that the top row, suddenly the number changes, and the second row, the number also changes.
+    And that's exactly what you can see.
+    The animation is a little bit fast, so, but I'm going to spoil it to you, one and two are going to be replaced, but because we didn't change the identity here, we only changed the dependencies, each row in the list essentially says, oh, I can handle this update myself,
+    I don't need the list to handle this animation for me.
+    And so they don't know about each other.
+    So one just fades into two and two just fades into one.
+    So look at that for a second.
+    There you go.
+    Hope you didn't miss it.
+    And so maybe this is what we want, maybe not.
+    But this is what happens when the dependencies change but not the identity of the view.
+    What if we change the model itself?
+    So we actually take the object that we have at data at index zero, we give it to -- sorry,
+    We take index 1, give it to index 0, we take index 0, give it to index 1, now we change the objects themselves, now the text view actually changes the identity.
+    Because the object changed and not just dependencies inside that object.
+    This actually changes the animation, so now the object is saying I changed as a view,
+    I don't know how to animate myself, I don't know how to animate my changes, I need my parent, which is the list to take care of that.
+    And then the list animates those changes, and now you're going to see an animation that maybe you were expecting, which is the two rows replacing themselves.
+    There you go.
+    So this is kind of like an interesting example of where you can just visually very clearly see what happens when the dependencies of your view change, but it's the same view, versus when the identity of the view change, and it's just a different view and then SwiftUI has to basically take away the old view and put a new view instead.
+    And it's very easy to get confused with observation.
+    So that's that.
+    The next thing is escaping content closure.
+    So there is this design pattern in SwiftUI whenever you are creating container objects, right?
+    You are taking this content closure, some generic type, and you are taking it in the initialiser, and usually the best practice is to open that closure inside init and not hold closure, but instead to hold the content itself after you already opened it.
+    Let's think about it for a second with observation.
+    This initialiser is going to get called in a body of some view, right?
+    Some parent view is going to create the subview and create and call the initialiser because they create that view inside the body.
+    So we are now inside the body of some other parent view.
+    So this means that whatever happens inside content in whatever property is getting called inside this closure, even though only we the subview care about it, the parent view is the one that's going to register it and observe it.
+    So if we have this content view, we pass content and it's some text that access model.value.
+    Model.value is registered to content view, not to subview.
+    Because this is when the closure is called.
+    And observation doesn't care, you know, where was it in the code, all it cares is that it was called as part of the same apply closure, as part of the same body.
+    And then later we change model.value from whatever it was first to some other string.
+    And you can see here content view is only using other value.
+    And if you remember the example I showed all the way at the beginning, this looks like that example where I could say, oh, this is great, value changes, but we don't care about value because we're not using it, so we're not going to be refreshed.
+    But yes, we are going to be refreshed, because that closure we passed to subview was getting called inside our body.
+    And the interesting thing is because we already opened the closure, maybe we don't even show that content.
+    So here we pass show some boolean flag, we pass false, we're not even using that content in the subview, that doesn't matter.
+    The content view is still going to be refreshed and also the subview is going to be refreshed because of that, even though we're just not presenting this content anywhere.
+    So instead if you drop that customise initialiser and you just keep the content as a closure in this case, it's not going to be called and it's not going to be refreshed unnecessarily.
+    So first of all, content view never refreshes in this case, because like I said we don't use model.value, we only use model.other value.
+    And then even subview will only observe and be refreshed when show it is actually true.
+    So as long as show it is false, we don't even use that content, we don't even open that closure and it doesn't even matter what happens to model.value, it can change a thousand times, it doesn't matter, that view will never be refreshed, only when show it is true, now we care about the content, now we are going to observe model.value.
+    You might be asking, okay, so should I stop opening closures everywhere in my app?
+    I'm not saying that.
+    I think it's a case by case situation, so I don't know if there is suddenly a new best practice versus what we have until now, but I think this is just something to keep in mind and it's very interesting way to see the difference between what we had before and the behaviour we have with observation and how the fact that observation doesn't care which view using which property, all it cares is that when you call somebody of some view, anything that got called inside that body for whatever reason is going to be observed for that body.
+    Then lastly, there are some things that are not supported with observation.
+    Some of them are by design, some of them will maybe be supported later, some of them are just bugs that we're still waiting on the team at Apple to improve, but as of today, so first of all, you cannot do lazy properties, if you have lazy var, you're just going to get an error, cannot be used on a computed property, because if you remember, this value now is not data anymore, it's a computed property, and the computed property cannot have lazy.
+    Property wrappers, if you have some custom property wrappers, exactly the same scenario, you will have exactly the same error, cannot be applied to computed property.
+    And finally, no value types.
+    Observation as a decision as of the second review that passed in August, just simply does not support value types, it's only classes, only reference types.
+    So a few takeaways, I think it's really useful to learn how observation works, because it looks at the beginning like, you know, just a simplified version of what we had before and nicer syntax, but actually there is a lot of confusion and a lot of changes in the logic that I think is important to know, and I think once you do know that and you have that in mind, it really helps to build solid apps, or if they're not solid, then at least easier to debug issues when you do have them.
+    And then, like I said, it's not just new syntax, there's a lot of behavioural changes and it's important to keep them in mind.
+    And then know your state or know the syntax you need to be using for each framework, because
+    Xcode unfortunately is not going to help you.
+    And finally, it is a very powerful framework, I think it's a great framework and I think it has a lot of potential and benefit, but it's not a silver bullet.
+    That's it.
+    [Applause] >> I'd start with a question on -- that applies to both things, which is about debugging.
+    So how do you debug those stuff, both observables and async streams?
+    Apparently, I can't debug a microphone.
+    Async streams, it's pretty standard.
+    You're following the flow through.
+    It's just the async side of it.
+    And Apple introduced some nice testing macros so that you can test some async things too,
+    So that's been helpful.
+    Well, with observation, I think Xcode, first of all, did an amazing job with the fact that you can just expand the macro.
+    Something I didn't show is that once you expand the macro, you can actually just copy the entire code base, the entire snippet of that expanded macro, and paste it as is, and then drop the @observable declaration.
+    And you get exactly the same behavior.
+    You don't lose anything.
+    Everything walks exactly the same.
+    And then it's your code.
+    And then you can just debug it.
+    And you can see what's going on.
+    And so you can see exactly how it runs.
+    And you can add print statements or whatever you need and breakpoints.
+    You can also set a breakpoint inside the expanded macro.
+    Even better.
+    And then you can just print from there.
+    Even better.
+    So what I'm getting from both subjects is should we expect at some point combined to be dropped completely?
+    Or is it still something that we're going to have for a long time before it can be completely replaced from SwiftUI and everything else?
+
 - So people get upset when I say this, but it's the line from Castle Blanket that combines going away, not today, but soon and for the rest of your life.
 - And one of the things that hit me when you talked about observation.
-And I was like, OK, there's so many things happening away from what I'm doing myself because there are some microbes, et cetera.
-Should we be really worried about some memory issues?
-Should we think about, oh, there's going to be so much trouble with zombies, et cetera?
-I am not aware of any memory issues with using observable.
-You mean the access list, right?
-I'm not aware of any memory issues.
-I can only assume that Apple ran tests.
-But who knows?
-I do see that they occasionally add more and more.
-In the last three months, I've been tracking that part of the Swift 2 Pro.
-And every time I see a new PR with a new test to check a new edge case, they found-- like for example just a month ago I think they realized that nested, if you call it with observation tracking and inside you call it with observation tracking again, it was broken in some way, so they fixed it and added a test to that.
-So they keep finding those edge cases and they keep fixing them and adding tests to them.
-I'm not aware, I haven't seen anything about anybody's complaint or seen anything.
-One of the things I love about Observable is if you have a class that you make observable and you're observing it in a view way here, you can put controllers in between even structs and computed properties since this is registered to say I want to know when anything changes.
-It like reaches through and says I'm tracking number all the way here.
-This is a computed property that uses number then it gets those updates too.
-There's a lot of just really nice magic because the first thing people said who came from combined was, well, how do I republish something?
-I consume it and then republish it.
-You don't have to.
-Computed properties makes it very easy.
-Exactly.
-And that's actually why nested observable objects don't work, because they are very explicit.
-They call object will change, right?
-And then that doesn't make the outer observable object to also call object will change to notify the view, OSwiftUI.
-In this case, like I said, nobody cares.
-It just doesn't matter.
-A property gets accessed, it gets registered, you're done.
-A question that is more about architecture than about the implementation itself.
-What's your advice on the granularity of using observability or async streams in your SwiftUI views?
-So should we have them, observability, basically in subviews, even nested subviews, or whether or not?
-Well.
-But yeah, I think it's a really good question, because I already showed a couple of those caveats and I think there were some things that it took maybe a year or two, but eventually we realised, okay, this is how we should do this in SwiftUI, this is how we should do that in SwiftUI, for example, the Redux pattern, you know, Apple doesn't say it explicitly, but they sort of say it implicitly, you probably should not do Redux style, which is a huge context with everything, because of how observable, sorry, because of how observed object is working, and then observable came and kind of like threw all of that out the window, but it has other caveats, and I think we might see some changes in patterns or in best practices in terms of performance, in terms of architecture, in terms of how to organise your code and how to organise your views with, for observable, that might be actually very different from
-So, we have a lot of things that we can do.
-We can do a lot of things that we can do to make it more user-friendly, but we have a lot of things that we can do.
-We can do a lot of things that we can do to make it more user-friendly, but we have a lot the more power you're getting.
-And then if you need to reach back and change something, you need the @bindable to do that.
+  And I was like, OK, there's so many things happening away from what I'm doing myself because there are some microbes, et cetera.
+  Should we be really worried about some memory issues?
+  Should we think about, oh, there's going to be so much trouble with zombies, et cetera?
+  I am not aware of any memory issues with using observable.
+  You mean the access list, right?
+  I'm not aware of any memory issues.
+  I can only assume that Apple ran tests.
+  But who knows?
+  I do see that they occasionally add more and more.
+  In the last three months, I've been tracking that part of the Swift 2 Pro.
+  And every time I see a new PR with a new test to check a new edge case, they found-- like for example just a month ago I think they realized that nested, if you call it with observation tracking and inside you call it with observation tracking again, it was broken in some way, so they fixed it and added a test to that.
+  So they keep finding those edge cases and they keep fixing them and adding tests to them.
+  I'm not aware, I haven't seen anything about anybody's complaint or seen anything.
+  One of the things I love about Observable is if you have a class that you make observable and you're observing it in a view way here, you can put controllers in between even structs and computed properties since this is registered to say I want to know when anything changes.
+  It like reaches through and says I'm tracking number all the way here.
+  This is a computed property that uses number then it gets those updates too.
+  There's a lot of just really nice magic because the first thing people said who came from combined was, well, how do I republish something?
+  I consume it and then republish it.
+  You don't have to.
+  Computed properties makes it very easy.
+  Exactly.
+  And that's actually why nested observable objects don't work, because they are very explicit.
+  They call object will change, right?
+  And then that doesn't make the outer observable object to also call object will change to notify the view, OSwiftUI.
+  In this case, like I said, nobody cares.
+  It just doesn't matter.
+  A property gets accessed, it gets registered, you're done.
+  A question that is more about architecture than about the implementation itself.
+  What's your advice on the granularity of using observability or async streams in your SwiftUI views?
+  So should we have them, observability, basically in subviews, even nested subviews, or whether or not?
+  Well.
+  But yeah, I think it's a really good question, because I already showed a couple of those caveats and I think there were some things that it took maybe a year or two, but eventually we realised, okay, this is how we should do this in SwiftUI, this is how we should do that in SwiftUI, for example, the Redux pattern, you know, Apple doesn't say it explicitly, but they sort of say it implicitly, you probably should not do Redux style, which is a huge context with everything, because of how observable, sorry, because of how observed object is working, and then observable came and kind of like threw all of that out the window, but it has other caveats, and I think we might see some changes in patterns or in best practices in terms of performance, in terms of architecture, in terms of how to organise your code and how to organise your views with, for observable, that might be actually very different from
+  So, we have a lot of things that we can do.
+  We can do a lot of things that we can do to make it more user-friendly, but we have a lot of things that we can do.
+  We can do a lot of things that we can do to make it more user-friendly, but we have a lot the more power you're getting.
+  And then if you need to reach back and change something, you need the @bindable to do that.
 - No questions?
-All right, I see more questions from the audience.
-There's all specific about observables.
-I had personal questions, not personal to you, but to what's going on in this field.
-So basically we've been living until very recently with no async in Swift.
-And then all of a sudden, we go combine async streams observables.
-So as a developer, I would say, what's going on?
-So is Apple getting a [INAUDIBLE] roadmap or something like this?
-I'd say more that we have been using async for a long time, but now we're being more careful about it.
-You can't say that KVO and notifications-- we've been using async since the beginning, but now we're finding out that we made a lot of bad mistakes and bad decisions and we weren't careful.
-Async is forcing us to really be careful with things.
-So I recently went through code base for one of my apps and you notice I'm very careful instead of importing foundation or Swift UI import combined so I could find every use of it and replace it with observable and I'm delighted.
-The code has gotten smaller, easier, and I really was a fan of combined.
-So this is not a combined hater.
-I remember one of your talks on Eric's Swift back in the day.
-So, yeah.
+  All right, I see more questions from the audience.
+  There's all specific about observables.
+  I had personal questions, not personal to you, but to what's going on in this field.
+  So basically we've been living until very recently with no async in Swift.
+  And then all of a sudden, we go combine async streams observables.
+  So as a developer, I would say, what's going on?
+  So is Apple getting a [INAUDIBLE] roadmap or something like this?
+  I'd say more that we have been using async for a long time, but now we're being more careful about it.
+  You can't say that KVO and notifications-- we've been using async since the beginning, but now we're finding out that we made a lot of bad mistakes and bad decisions and we weren't careful.
+  Async is forcing us to really be careful with things.
+  So I recently went through code base for one of my apps and you notice I'm very careful instead of importing foundation or Swift UI import combined so I could find every use of it and replace it with observable and I'm delighted.
+  The code has gotten smaller, easier, and I really was a fan of combined.
+  So this is not a combined hater.
+  I remember one of your talks on Eric's Swift back in the day.
+  So, yeah.
 - I guess so.
-All right.
-So, that's all.
-So, thank you very much indeed.
-(audience applauding)
-(audience applauding)
+  All right.
+  So, that's all.
+  So, thank you very much indeed.
+  (audience applauding)
+  (audience applauding)

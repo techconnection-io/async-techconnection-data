@@ -1,8 +1,9 @@
 ---
 slug: /talks/frenchkit-2022/robin-kanatzar-testing-for-accessibility
-date: '2022-09-30'
+date: "2022-09-30"
 title: Testing for Accessibility
-author: Robin Kanatzar
+author:
+  - Robin Kanatzar
 video: 59uLAKVB-d4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/59uLAKVB-d4.jpg
 slides: >-
@@ -11,7 +12,7 @@ tags:
   - Accessibility
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 

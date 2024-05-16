@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/herve-berenger-playing-with-the-limits-can-your-app-run-arbitrary-binary-code
-date: '2023-09-21'
-title: 'Playing With the Limits: Can Your App Run Arbitrary Binary Code?'
-author: Hervé Bérenger
+date: "2023-09-21"
+title: "Playing With the Limits: Can Your App Run Arbitrary Binary Code?"
+author:
+  - Hervé Bérenger
 video: fvuUIwnAwJA
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/fvuUIwnAwJA.jpg
 slides: null
@@ -13,6 +14,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hello, everyone.
 I feel a bit stressed.
 We are together for more than one hour, if I don't fall.

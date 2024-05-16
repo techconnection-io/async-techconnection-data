@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit-2022/audrey-sobgou-zebaze-the-journey-of-widgets-begins-with-one-step
-date: '2022-09-30'
+date: "2022-09-30"
 title: The Journey of Widgets Begins With One Step…
-author: Audrey Sobgou Zebaze
+author:
+  - Audrey Sobgou Zebaze
 video: XRMcdUUA0HU
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/XRMcdUUA0HU.jpg
 slides: null
@@ -12,7 +13,7 @@ tags:
   - SwiftUI
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 

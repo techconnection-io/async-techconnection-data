@@ -1,8 +1,9 @@
 ---
 slug: /talks/cocoaheads-paris/october-2022/kelian-clerc-observabilite-du-cote-client
-date: '2022-10-18'
+date: "2022-10-18"
 title: Observabilité du coté client
-author: Kélian Clerc
+author:
+  - Kélian Clerc
 video: KoODeKiugN8
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/KoODeKiugN8.jpg
 slides: null

@@ -3,7 +3,8 @@ slug: >-
   /talks/react-native-connection-23/michal-pierzchala-scaling-teams-with-federated-super-apps
 date: 2023-06-01T00:00:00.000Z
 title: Scaling teams with Federated Super Apps
-author: Michał Pierzchała
+author:
+  - Michał Pierzchała
 video: Br2dkgZtnic
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Br2dkgZtnic.jpg
 slides: >-

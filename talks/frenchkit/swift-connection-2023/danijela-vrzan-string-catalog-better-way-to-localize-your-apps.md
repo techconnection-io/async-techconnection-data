@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/danijela-vrzan-string-catalog-better-way-to-localize-your-apps
-date: '2023-09-21'
-title: 'String Catalog: Better Way to Localize Your Apps'
-author: Danijela Vrzan
+date: "2023-09-21"
+title: "String Catalog: Better Way to Localize Your Apps"
+author:
+  - Danijela Vrzan
 video: 7XVhDu74v0c
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/7XVhDu74v0c.jpg
 slides: null
@@ -13,6 +14,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hello, everyone.
 My name is Danijela Vrzan.
 I am a Croatian that currently lives in Canada for about four years now.
@@ -324,70 +326,71 @@ And they explain everything, even the migration from the old way to the new one.
 I really suggest watching it.
 And yeah.
 [APPLAUSE]
->> Thank you very much. So we can move to the Q&A.
-All right. Many questions.
-So, actually, I think the most interesting one is, how the hell do you zoom in your screen?
->> Actually, I learned that today.
-It's an accessibility feature in Mac OS.
-There's a zoom option.
-And then there are different ways to zoom, but the default one is holding a control and just swiping on the touch pad.
-It's really cool.
-I'll be using that more now.
-It's been in since 10.0.
-Yeah, I learned it today.
-You learn something new every day.
-[LAUGHTER]
-When using localizations, there's many hubs who use third-party frameworks to download the localization.
-For example, there's Localize or Phrase.
-Do you know if we can already use and support directly the format of file here?
-I haven't tried it, so I'm not sure.
-I know, for example, at work, we use Sorcery to generate all of the files.
-I haven't tried it, so I'm not sure honestly if it will work.
-But as long as you have localize of the strings files or any types of dot strings files, which I think most of-- even if you use third party frameworks, you should have that.
-I think the migration should be easy.
-Can you use this also for--
-I mean, different languages for different build configuration, for instance-- sorry, different translations different build configurations.
->> I think you can.
-Just in the next quarter's settings, you can make sure that's all working.
-Yeah, it can be.
->> Considering you've been to the other side of translation and doing the localization for the developer, do you have some best practice to give us?
-For example, I don't know, if the app is really large and we want to have some modules or I don't know, to better make it... to make it really easier for translator to work with it.
-Good question.
-I mean, there's like... I would say there's like easy way really, because what translator gets is just a bunch of strings. probably something that a developer can do better is make sure that every string has a comment.
-Even simple strings, you saw like a cancel button, you know, might be something that you don't really consider something as a cancel button, you know, it's -- you don't really need to describe a cancel button, right?
-But in fact you saw that you actually do for some languages, so just make sure every string has a comment in there.
-Because that really helps.
-And is there like some exception, because I know in my code I've made some pretty standard okay translation, and at some point is there any use of really simple word like okay or cancel, we don't expect them to have different translations, but should we have a different localization for every use or...
-It's hard to know that, right, because I speak like Croatian and English, but I don't know anything about other languages.
-And I'm sure there are languages that are more complex than Croatian.
-So I would say maybe the best idea would be to have all those separate strings and just make sure you add the context to a translator.
-It can be the same string, but it doesn't have to be, right?
-Okay, so I have another question which is a bit more awkward.
-You know what day is it today?
->> Who asked that?
->> Actually, no, I did.
->> Do I have to say?
->> Yeah, if you want.
->> It's my birthday.
-[ Applause ]
->> All right.
-Yeah.
-There was the final.
-All right, yeah.
-There goes the final.
-That's a very cringy moment of the conference.
-Oh, wow.
-[SINGING HAPPY BIRTHDAY]
-Thank you.
-I have to vlog it?
-[SINGING HAPPY BIRTHDAY]
-Thank you.
-We are extremely sorry for this.
-We know it's stressful, but yeah.
-This is a big cake.
-You will eat it backstage.
-Yeah.
-All right.
-I'm leaving with the cake, sorry.
-All right, thank you very much.
-Thank you so much.
+
+> > Thank you very much. So we can move to the Q&A.
+> > All right. Many questions.
+> > So, actually, I think the most interesting one is, how the hell do you zoom in your screen?
+> > Actually, I learned that today.
+> > It's an accessibility feature in Mac OS.
+> > There's a zoom option.
+> > And then there are different ways to zoom, but the default one is holding a control and just swiping on the touch pad.
+> > It's really cool.
+> > I'll be using that more now.
+> > It's been in since 10.0.
+> > Yeah, I learned it today.
+> > You learn something new every day.
+> > [LAUGHTER]
+> > When using localizations, there's many hubs who use third-party frameworks to download the localization.
+> > For example, there's Localize or Phrase.
+> > Do you know if we can already use and support directly the format of file here?
+> > I haven't tried it, so I'm not sure.
+> > I know, for example, at work, we use Sorcery to generate all of the files.
+> > I haven't tried it, so I'm not sure honestly if it will work.
+> > But as long as you have localize of the strings files or any types of dot strings files, which I think most of-- even if you use third party frameworks, you should have that.
+> > I think the migration should be easy.
+> > Can you use this also for--
+> > I mean, different languages for different build configuration, for instance-- sorry, different translations different build configurations.
+> > I think you can.
+> > Just in the next quarter's settings, you can make sure that's all working.
+> > Yeah, it can be.
+> > Considering you've been to the other side of translation and doing the localization for the developer, do you have some best practice to give us?
+> > For example, I don't know, if the app is really large and we want to have some modules or I don't know, to better make it... to make it really easier for translator to work with it.
+> > Good question.
+> > I mean, there's like... I would say there's like easy way really, because what translator gets is just a bunch of strings. probably something that a developer can do better is make sure that every string has a comment.
+> > Even simple strings, you saw like a cancel button, you know, might be something that you don't really consider something as a cancel button, you know, it's -- you don't really need to describe a cancel button, right?
+> > But in fact you saw that you actually do for some languages, so just make sure every string has a comment in there.
+> > Because that really helps.
+> > And is there like some exception, because I know in my code I've made some pretty standard okay translation, and at some point is there any use of really simple word like okay or cancel, we don't expect them to have different translations, but should we have a different localization for every use or...
+> > It's hard to know that, right, because I speak like Croatian and English, but I don't know anything about other languages.
+> > And I'm sure there are languages that are more complex than Croatian.
+> > So I would say maybe the best idea would be to have all those separate strings and just make sure you add the context to a translator.
+> > It can be the same string, but it doesn't have to be, right?
+> > Okay, so I have another question which is a bit more awkward.
+> > You know what day is it today?
+> > Who asked that?
+> > Actually, no, I did.
+> > Do I have to say?
+> > Yeah, if you want.
+> > It's my birthday.
+> > [ Applause ]
+> > All right.
+> > Yeah.
+> > There was the final.
+> > All right, yeah.
+> > There goes the final.
+> > That's a very cringy moment of the conference.
+> > Oh, wow.
+> > [SINGING HAPPY BIRTHDAY]
+> > Thank you.
+> > I have to vlog it?
+> > [SINGING HAPPY BIRTHDAY]
+> > Thank you.
+> > We are extremely sorry for this.
+> > We know it's stressful, but yeah.
+> > This is a big cake.
+> > You will eat it backstage.
+> > Yeah.
+> > All right.
+> > I'm leaving with the cake, sorry.
+> > All right, thank you very much.
+> > Thank you so much.

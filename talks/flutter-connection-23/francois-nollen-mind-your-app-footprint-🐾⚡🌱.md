@@ -2,7 +2,8 @@
 slug: /talks/flutter-connection-23/francois-nollen-mind-your-app-footprint-🐾⚡🌱
 date: 2023-06-02T00:00:00.000Z
 title: Mind Your App Footprint! 🐾⚡🌱
-author: François Nollen
+author:
+  - François Nollen
 video: JQFp2vXTtgQ
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/JQFp2vXTtgQ.jpg
 slides: null

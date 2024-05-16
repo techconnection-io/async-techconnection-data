@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/andreas-lang-mastering-swiftui-previews-how-the-project-structure-can-help
-date: '2023-09-21'
-title: 'Mastering SwiftUI Previews: How the Project Structure can help'
-author: Andreas Lang
+date: "2023-09-21"
+title: "Mastering SwiftUI Previews: How the Project Structure can help"
+author:
+  - Andreas Lang
 video: 0yUdC_PawYo
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/0yUdC_PawYo.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 Hello, my name is Andreas Lang and I'm a senior software architect working at
 EnBW. So let's start first, what is EnBW? We are one of the biggest German energy producer and supply company but we are not only working in Germany maybe it's more interesting for you we have also subsidiaries in whole Europe or some countries in Europe and even in Turkey. If you have an electric car you might know our app Mobility Plus in which you can find more than 100 more than half a million of charge points in 17 countries in Europe and you can then charge electric vehicle there and pay with it.
 With that app we have more than 100,000 monthly active users.
@@ -108,29 +110,31 @@ It's also embedded there.
 And if you have a question, please contact me.
 About previews, you said that Xcode 15 runs notably better on SwissPreview.
 Did you have any examples for that?
->> This is my experience, the error codes that it puts.
-Before, I always had, or most of the time, when there was an error in the preview,
-I had to go somewhere in the log folders inside the library folder to see the log of the preview.
-Now in the last days I saw it when I had an error or directly in Xcode what was the problem.
-For instance, when you have an environment set in your view but you do not set it in the preview, then you get an error because it is not there.
-I think, if I remember correctly, now in Xcode it says that it is missing and before I had to check all these build or runtime logs to find what the error was.
-Yes, SwiftUI is bringing obviously lots of questions regarding architecture.
-Do you think at some point we will have some kind of main architecture that will rise where everybody will use this one with SwiftUI?
-It is difficult because I think, let us see the TCA,
-I think that is very complex, the architecture,
-And it's good.
-I think it's a nice architecture, but probably too complex for most of the apps.
-So I think it depends a bit what is the use case of your app.
-If it's a simple view where you maybe don't need really an architecture, I support it.
-You always have to think about the architecture.
-But you have the TCA, which is very complex, and maybe for some developers, or when you have bigger teams, or when your developers change also regularly because you have maybe external resources, then maybe it is also not the correct architecture.
-I think it is depending on what you want to achieve.
->> We could call it MVC UI, which would be quite a good name, or MVVM UI.
->> I mean, also in your iKit you had, for instance,
-Viper or other things.
-Speaking about Viper, do you actually try it or even manage to keep a Viper architecture with SwiftUI?
->> I tried in a mixed app. There it was more possible, but in only SwiftUI app, I do not see it really, because then what do you do with the router or with the view model and what is the interactor in the SwiftUI?
-There I do not see it.
-All right, okay, thank you very much indeed.
+
+> > This is my experience, the error codes that it puts.
+> > Before, I always had, or most of the time, when there was an error in the preview,
+> > I had to go somewhere in the log folders inside the library folder to see the log of the preview.
+> > Now in the last days I saw it when I had an error or directly in Xcode what was the problem.
+> > For instance, when you have an environment set in your view but you do not set it in the preview, then you get an error because it is not there.
+> > I think, if I remember correctly, now in Xcode it says that it is missing and before I had to check all these build or runtime logs to find what the error was.
+> > Yes, SwiftUI is bringing obviously lots of questions regarding architecture.
+> > Do you think at some point we will have some kind of main architecture that will rise where everybody will use this one with SwiftUI?
+> > It is difficult because I think, let us see the TCA,
+> > I think that is very complex, the architecture,
+> > And it's good.
+> > I think it's a nice architecture, but probably too complex for most of the apps.
+> > So I think it depends a bit what is the use case of your app.
+> > If it's a simple view where you maybe don't need really an architecture, I support it.
+> > You always have to think about the architecture.
+> > But you have the TCA, which is very complex, and maybe for some developers, or when you have bigger teams, or when your developers change also regularly because you have maybe external resources, then maybe it is also not the correct architecture.
+> > I think it is depending on what you want to achieve.
+> > We could call it MVC UI, which would be quite a good name, or MVVM UI.
+> > I mean, also in your iKit you had, for instance,
+> > Viper or other things.
+> > Speaking about Viper, do you actually try it or even manage to keep a Viper architecture with SwiftUI?
+> > I tried in a mixed app. There it was more possible, but in only SwiftUI app, I do not see it really, because then what do you do with the router or with the view model and what is the interactor in the SwiftUI?
+> > There I do not see it.
+> > All right, okay, thank you very much indeed.
+
 - Thank you Andres.
-(audience applauding)
+  (audience applauding)

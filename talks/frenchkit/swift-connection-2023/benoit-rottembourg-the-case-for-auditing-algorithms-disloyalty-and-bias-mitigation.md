@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/benoit-rottembourg-the-case-for-auditing-algorithms-disloyalty-and-bias-mitigation
-date: '2023-09-21'
-title: 'The Case for Auditing Algorithms: Disloyalty and Bias Mitigation'
-author: Benoit Rottembourg
+date: "2023-09-21"
+title: "The Case for Auditing Algorithms: Disloyalty and Bias Mitigation"
+author:
+  - Benoit Rottembourg
 video: rKoBVN6OywE
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/rKoBVN6OywE.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 So, as you can see, I'm trying to improve the average age of the session.
 Thank you.
 And maybe some of you don't know INRIA,
@@ -82,8 +84,8 @@ And you try to check if female, male, black, white,t cetera, old, young, et cete
 But you have many conditions to meeto be able to do it in a proper wayo go in justice at some point.
 It's quite delicate.
 You have to be frugal.
-Suppose you bombard , booking.com,  in Copenhagen next week,ut you don't buy, you just ask questions.
-The feeling that , booking.com,  or the algorithm of , booking.com,  will haves that "Oh, the price is too expensive, I have to put down the price."
+Suppose you bombard , booking.com, in Copenhagen next week,ut you don't buy, you just ask questions.
+The feeling that , booking.com, or the algorithm of , booking.com, will haves that "Oh, the price is too expensive, I have to put down the price."
 So you cannot bombard, you are harming the platformf you bombard it in a wrong way.
 So there are many conditions, and at some pointou don't want to check everything,ou want to find a prejudice situation, and it's often very local.
 Female, 50-ish, black, curvy, etc.
@@ -113,103 +115,105 @@ That will be all for me today.
 We are not necessarily, we developers, are not necessarily the guilty ones,ut not taking care with all the skills we have,ith all the data we have, not taking care is being guilty.
 Please take care.
 [APPLAUSE]
->> Thank you very much.
-We can go here on the left part of the screen.
-Thank you very much for your talk.
-There is something that started to make me thinkbout our role as a developer.
-So, as you said, with all the skills we have,e should step up and try to avoid making bad things or evil things in a way.
-Very hard question.
-How do you think we should act as developershich don't actually own the part of the AR coding?
-Sometimes, the business metrics are leading towards a technical choice,ut what we can do as developers to avoid this?
-I think it's clearly a product owner constraint that has to be added.
-Every time I produce something, I produce like you do quality tests or what we calln the old days regression tests.
-It's a form of regression test that we have which is they are the metrics we have, were obsessed with optimizing something and you introduce counter metrics as far as youiscover them.
-So that might be official countermetrics, female, age, we have 25 sensitive variablesn France for your information.
-So you have 25 countermetrics.
-And so typically I think it has to be introduced.
-But you need someone else in the company not involved in the product development, a formf auditor or compliance officer, like banks are doing, by the way.
-They are not doing it for the pleasure, obliged to do it.
-So probably we have to put a kind of external point of view just to challenge a little bit.
-Have you thought about this?
-Can we see that?
-Is there a data drift?
-Because the problem might not be at the beginning of the application.
-We have interesting questions already from the Q&A.
-How do you evaluate the boundary between legitimate user-based segmentation and discrimination?
-Well, I've been doing pricing for 20 years.
-There is no pricing without discrimination.
-No, that's cool.
-So saying that at the beginning, on a Friday afternoon, guy who is buying a ticket is more in a hurry.
-So you can a little bit increase the pricen a Friday afternoon.
-This is some form of discrimination.
-What you don't have to do is probably,nd there is bias in the history of the data.
-There is bias.
-Society is biased.
-Probably a definition of what is fair to mes don't do worse than what you findhen you arrive in the data set.
-So if your algorithm is increasing the bias compared to the data you receive,robably you're going in the wrong direction.
-It's a counterfactual way of not doing dirty stuff.
-But it's vicious to know where.
-The way I understand it, it's not only...
-At some point you might make a mistake where you don't understandow you're integrating some data that shouldn't be there.
-And the question that I have is that with the growing usef AI with people, for example, with Apple SDK,e can use AI without being an expert in AI.
-Isn't there a risk that people will use technologieshey don't master to the point they are not reliable,ut also in the end they are because they are the only oneorking on it?
+
+> > Thank you very much.
+> > We can go here on the left part of the screen.
+> > Thank you very much for your talk.
+> > There is something that started to make me thinkbout our role as a developer.
+> > So, as you said, with all the skills we have,e should step up and try to avoid making bad things or evil things in a way.
+> > Very hard question.
+> > How do you think we should act as developershich don't actually own the part of the AR coding?
+> > Sometimes, the business metrics are leading towards a technical choice,ut what we can do as developers to avoid this?
+> > I think it's clearly a product owner constraint that has to be added.
+> > Every time I produce something, I produce like you do quality tests or what we calln the old days regression tests.
+> > It's a form of regression test that we have which is they are the metrics we have, were obsessed with optimizing something and you introduce counter metrics as far as youiscover them.
+> > So that might be official countermetrics, female, age, we have 25 sensitive variablesn France for your information.
+> > So you have 25 countermetrics.
+> > And so typically I think it has to be introduced.
+> > But you need someone else in the company not involved in the product development, a formf auditor or compliance officer, like banks are doing, by the way.
+> > They are not doing it for the pleasure, obliged to do it.
+> > So probably we have to put a kind of external point of view just to challenge a little bit.
+> > Have you thought about this?
+> > Can we see that?
+> > Is there a data drift?
+> > Because the problem might not be at the beginning of the application.
+> > We have interesting questions already from the Q&A.
+> > How do you evaluate the boundary between legitimate user-based segmentation and discrimination?
+> > Well, I've been doing pricing for 20 years.
+> > There is no pricing without discrimination.
+> > No, that's cool.
+> > So saying that at the beginning, on a Friday afternoon, guy who is buying a ticket is more in a hurry.
+> > So you can a little bit increase the pricen a Friday afternoon.
+> > This is some form of discrimination.
+> > What you don't have to do is probably,nd there is bias in the history of the data.
+> > There is bias.
+> > Society is biased.
+> > Probably a definition of what is fair to mes don't do worse than what you findhen you arrive in the data set.
+> > So if your algorithm is increasing the bias compared to the data you receive,robably you're going in the wrong direction.
+> > It's a counterfactual way of not doing dirty stuff.
+> > But it's vicious to know where.
+> > The way I understand it, it's not only...
+> > At some point you might make a mistake where you don't understandow you're integrating some data that shouldn't be there.
+> > And the question that I have is that with the growing usef AI with people, for example, with Apple SDK,e can use AI without being an expert in AI.
+> > Isn't there a risk that people will use technologieshey don't master to the point they are not reliable,ut also in the end they are because they are the only oneorking on it?
+
 - Yeah, I think clearly it's a riskhat if you don't really know the unbalancer some side effects of what you use,ou might go very fast and probably go in the wrong directionut it's speaking about honest peopleut there are guys also who are cheating.
-Some, and I can say it, some insurance companiesuring the hiring process for data scientists,
-They ask for a way to circumvent female versus male information.
-So I think there is also a culture which is no, there are things you cannot do.
-A very pragmatic question but interesting.
-Can you give us some example of the 24 variables you were mentioning about segmentation?
-Yeah, so I think age is obvious, but being pregnant for instance, and it's quite easyo detect fortunately.r let's say monotheism is something super easy to detect.
-The way you buy food one week before Ramadan, I think everyone knows, by the way, your neighborsnow, etc.
-So religion, you have also some income, I think some situation, etc.
-So you can see it, "Défenseurs des droits" in France, and you will see the 25 rules.
-So it's not only the variable, it's a situation where you are not allowed to use those variables.
-And don't think only about the variables, but correlated variables, like reading Marie
-Claire, maybe it's not exactly being a female, but I can tell you it's very close.
-And it's good enough, we love the good enough, it's good enough to know the gender, etc.
-There's one question that seems really interesting to me.
-What as a developer, when you're not in charge of designing the features, when you're askedo do something and you're like, okay, this is going to be a problem, what are your optionsnd who should you talk to?
-So in good companies, you have alert, I don't know how they call it, whistleblower, somewhere.
-So I had this situation in a very big company where I saw form of fraud.
-I went to the guy and we fixed the problem, by the way.
-But there are companies that are probably a poor way to look at it.
-Here, I think it's a choice you make.
-It's like for green washing or for et cetera.
-It's your own responsibility in the end.
-If you are confronted to a situation like this a lot, and it's at the core of your business,ike building, making cigarettes.
-I mean, it's difficult to say to me,ou save humanity making cigarettes, for instance.
-I think it's a bit the same.
-Some companies are deeply engravednto manipulating customer data.
+  Some, and I can say it, some insurance companiesuring the hiring process for data scientists,
+  They ask for a way to circumvent female versus male information.
+  So I think there is also a culture which is no, there are things you cannot do.
+  A very pragmatic question but interesting.
+  Can you give us some example of the 24 variables you were mentioning about segmentation?
+  Yeah, so I think age is obvious, but being pregnant for instance, and it's quite easyo detect fortunately.r let's say monotheism is something super easy to detect.
+  The way you buy food one week before Ramadan, I think everyone knows, by the way, your neighborsnow, etc.
+  So religion, you have also some income, I think some situation, etc.
+  So you can see it, "Défenseurs des droits" in France, and you will see the 25 rules.
+  So it's not only the variable, it's a situation where you are not allowed to use those variables.
+  And don't think only about the variables, but correlated variables, like reading Marie
+  Claire, maybe it's not exactly being a female, but I can tell you it's very close.
+  And it's good enough, we love the good enough, it's good enough to know the gender, etc.
+  There's one question that seems really interesting to me.
+  What as a developer, when you're not in charge of designing the features, when you're askedo do something and you're like, okay, this is going to be a problem, what are your optionsnd who should you talk to?
+  So in good companies, you have alert, I don't know how they call it, whistleblower, somewhere.
+  So I had this situation in a very big company where I saw form of fraud.
+  I went to the guy and we fixed the problem, by the way.
+  But there are companies that are probably a poor way to look at it.
+  Here, I think it's a choice you make.
+  It's like for green washing or for et cetera.
+  It's your own responsibility in the end.
+  If you are confronted to a situation like this a lot, and it's at the core of your business,ike building, making cigarettes.
+  I mean, it's difficult to say to me,ou save humanity making cigarettes, for instance.
+  I think it's a bit the same.
+  Some companies are deeply engravednto manipulating customer data.
 - Specifically, yeah.
-Okay, but if your company is not willingo fix the problem once you've raised it,s there like, I don't know,
-NGO or governmental organization?
+  Okay, but if your company is not willingo fix the problem once you've raised it,s there like, I don't know,
+  NGO or governmental organization?
 - Yeah, there are.
-You can, there are websites where you can sayhat you have encountered this situation.
-La repression des fraudes, DGCCRF in France,ou can anonymously say something.
-Kneel, say.
-Well, it's not very clean, but this is a way to solve it.
-Specifically about our ecosystem, which is mainlyOS apps, Mac OS apps, there is one more actorhan in traditional environments, whichs basically app stores.
-So Apple, Play Store.
-What role should they play in your opinion in this part?
+  You can, there are websites where you can sayhat you have encountered this situation.
+  La repression des fraudes, DGCCRF in France,ou can anonymously say something.
+  Kneel, say.
+  Well, it's not very clean, but this is a way to solve it.
+  Specifically about our ecosystem, which is mainlyOS apps, Mac OS apps, there is one more actorhan in traditional environments, whichs basically app stores.
+  So Apple, Play Store.
+  What role should they play in your opinion in this part?
 - I think there are two levels.
-The app store itself might favor some kinds of appersus other apps.
-So is this neutral?
-And I think it has been discussed.
-So it's one thing.
-The second thing is the data you use in the app.
-And I would say on this side,robably Apple is probably better than other GAFAM.
-But you have to check your own, the own data.
-It might be subtle.
-I give an example, face recognition.
-You, yes, in face recognition you think, ah, black, white,bese, not obese, et cetera.
-There are very subtle stuff like the age of your iPhone.
-If you have an old Android or an old iPhone,
-The quality of the image is so poor that the face recognition is not easy.
-So here poor guys are wrongly detected by the application.
-So you really have to imagine what could be the side effects.
-And here there are lots of apps now that you can you have to check, you take a kind ofelfie or you say three words and then you can enter the application.
-It might not be neutral.
-Very interesting.
-All right, thank you very much.
-Thank you very much indeed.
-(audience applauding)
+  The app store itself might favor some kinds of appersus other apps.
+  So is this neutral?
+  And I think it has been discussed.
+  So it's one thing.
+  The second thing is the data you use in the app.
+  And I would say on this side,robably Apple is probably better than other GAFAM.
+  But you have to check your own, the own data.
+  It might be subtle.
+  I give an example, face recognition.
+  You, yes, in face recognition you think, ah, black, white,bese, not obese, et cetera.
+  There are very subtle stuff like the age of your iPhone.
+  If you have an old Android or an old iPhone,
+  The quality of the image is so poor that the face recognition is not easy.
+  So here poor guys are wrongly detected by the application.
+  So you really have to imagine what could be the side effects.
+  And here there are lots of apps now that you can you have to check, you take a kind ofelfie or you say three words and then you can enter the application.
+  It might not be neutral.
+  Very interesting.
+  All right, thank you very much.
+  Thank you very much indeed.
+  (audience applauding)

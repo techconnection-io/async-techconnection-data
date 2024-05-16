@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit/swift-connection-2023/avi-tsadok-offline-first-mobile-app-design
-date: '2023-09-21'
+date: "2023-09-21"
 title: Offline-First Mobile App Design
-author: Avi Tsadok
+author:
+  - Avi Tsadok
 video: V9Dcrnjg_n4
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/V9Dcrnjg_n4.jpg
 slides: >-
@@ -14,6 +15,7 @@ conference: frenchkit
 edition: swift-connection-2023
 allow_ads: false
 ---
+
 My name is Avi.
 I'm going to talk about how to design mobile apps for offline.
 Let me introduce myself.
@@ -396,45 +398,46 @@ And every small issue can break-- just break into sync.
 It's not that a small data is not syncing.
 It just stops the sync.
 That's the problem.
+
 - Okay, from what I get, you said there are many implementation of CRDT, and from what I get, the kind of issue you might run into really depends on how you interpret the difference that are applied.
-And so in the end, isn't it related to the core of your application?
-And so my question is, is there a possibility to have like a library that is generic enough?
-Or if you need to implement CRDT, are you doomed to go from scratch?
-So I just said that there are libraries for that.
-The most famous, I think, is Firebase.
-It does that for us.
-A Cloud Kit you can use.
-I don't know.
-But someone told me that you can use Git for that.
-But Git is also not suitable for text editing.
-So I don't know if someone can tell.
-None of it. There is a library that can solve text editing issues between devices.
-But for all the others, you can use Fab as a Cloud Kit fluently.
-We'll take a question from the audience, from Simon actually.
-Are there any cases of apps that should not adopt an offline-first approach?
-Should not?
-Ah, should not.
-Yes, so I always said that in Adobe we did that,
-In my company, I work in a FinTech company, and it's payments.
-So it's very, very hard to do a payment when you're not online.
-So you can't do that.
-And payments, it's also some regulations and legal issues that you can't do because you are not online and we've got some engines that check.
-So I think that FinTech world is a problem.
-By the way, not only for payments, but also for retrieving data.
-So the things that are sensitive, like crypto and fintech, stuff like that, are problems in offline mode.
-So we need to be more careful over there.
-Do you have a last question?
-So the question that's wondering, how can you convince your back-end team to move away from REST and towards CRDT.
-And so the question is also, how much work should you plan when you need to move from one way of working towards the other?
-So the question is from REST to CRDT.
-You talk about optimistic UI updates, actually, when you say go to that.
-So one of the best things about moving to optimistic UI is when you get rid of many endpoints, because you have one endpoint.
-And this is very, very--
-OK, so it's decoupled the work between the client and the back end.
-This is what happened, because you don't need as a client the back end for every small task.
-You can just generate and change everything on the client and just sync the stuff to the server, and the server doesn't need to know about it.
-On the other hand, it requires more work from the back end size to set up everything at the beginning.
-But I guess it's much more fast after you do that, both for the back end and the client.
-Thank you, Avi.
-Thank you.
-[APPLAUSE]
+  And so in the end, isn't it related to the core of your application?
+  And so my question is, is there a possibility to have like a library that is generic enough?
+  Or if you need to implement CRDT, are you doomed to go from scratch?
+  So I just said that there are libraries for that.
+  The most famous, I think, is Firebase.
+  It does that for us.
+  A Cloud Kit you can use.
+  I don't know.
+  But someone told me that you can use Git for that.
+  But Git is also not suitable for text editing.
+  So I don't know if someone can tell.
+  None of it. There is a library that can solve text editing issues between devices.
+  But for all the others, you can use Fab as a Cloud Kit fluently.
+  We'll take a question from the audience, from Simon actually.
+  Are there any cases of apps that should not adopt an offline-first approach?
+  Should not?
+  Ah, should not.
+  Yes, so I always said that in Adobe we did that,
+  In my company, I work in a FinTech company, and it's payments.
+  So it's very, very hard to do a payment when you're not online.
+  So you can't do that.
+  And payments, it's also some regulations and legal issues that you can't do because you are not online and we've got some engines that check.
+  So I think that FinTech world is a problem.
+  By the way, not only for payments, but also for retrieving data.
+  So the things that are sensitive, like crypto and fintech, stuff like that, are problems in offline mode.
+  So we need to be more careful over there.
+  Do you have a last question?
+  So the question that's wondering, how can you convince your back-end team to move away from REST and towards CRDT.
+  And so the question is also, how much work should you plan when you need to move from one way of working towards the other?
+  So the question is from REST to CRDT.
+  You talk about optimistic UI updates, actually, when you say go to that.
+  So one of the best things about moving to optimistic UI is when you get rid of many endpoints, because you have one endpoint.
+  And this is very, very--
+  OK, so it's decoupled the work between the client and the back end.
+  This is what happened, because you don't need as a client the back end for every small task.
+  You can just generate and change everything on the client and just sync the stuff to the server, and the server doesn't need to know about it.
+  On the other hand, it requires more work from the back end size to set up everything at the beginning.
+  But I guess it's much more fast after you do that, both for the back end and the client.
+  Thank you, Avi.
+  Thank you.
+  [APPLAUSE]

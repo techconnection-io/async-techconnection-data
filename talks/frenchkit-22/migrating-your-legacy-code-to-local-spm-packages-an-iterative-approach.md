@@ -1,9 +1,10 @@
 ---
 slug: >-
   /talks/frenchkit-2022/zouhair-mahieddine-migrating-your-legacy-code-to-local-spm-packages-an-iterative-approach
-date: '2022-09-30'
+date: "2022-09-30"
 title: Migrating Your Legacy Code to Local SPM Packages - An Iterative Approach
-author: Zouhair Mahieddine
+author:
+  - Zouhair Mahieddine
 video: bXCuVzsdyDo
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/bXCuVzsdyDo.jpg
 slides: null
@@ -12,7 +13,7 @@ tags:
   - Architecture
 year: 2022
 conference: frenchkit
-edition: '2022'
+edition: "2022"
 allow_ads: true
 ---
 
