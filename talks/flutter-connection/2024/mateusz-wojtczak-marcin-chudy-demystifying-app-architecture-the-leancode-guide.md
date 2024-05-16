@@ -15,13 +15,13 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Mateusz]
+### Mateusz
 Welcome to Demystifying App Architecture, the Lean Code Guide. We'll try to have a walkthrough about app architecture, how we approach it, why we approach it that way and when it's probably a good way for you and maybe when you should think about what you build and maybe do some fixes to that. So, I'm Mateusz and I'm head of mobile at Lean Code, also a Flutter and Dart GDE.
 
-[Marcin]
+### Marcin
 And I'm Marcin, I'm a senior Flutter developer at Lean Code.
 
-[Mateusz]
+### Mateusz
 Yeah, and you can find us on X slash Twitter at these handles. So, let's start. At Lean Code, over the last two years, we've developed over 40 Flutter apps.
 
 And from that experience, we thought, okay, we can think about what apps we actually build. So, we prepared a couple of logos of our clients and we thought, okay, let's categorize them. So, you can categorize them in different dimensions.
@@ -30,7 +30,7 @@ One of them is what's the type of the project and size of the project. So, as yo
 
 And majority of them are also B2C, so we cannot compromise on UI, we cannot compromise on quality, we have to be pixel perfect, we have to deliver very quality performance also. So, how can we approach all of that? Now that we know our niche, we know our clients, how to fit it in our architecture, right?
 
-[Marcin]
+### Marcin
 So, that's where the notion of architectural drivers comes in. And architectural drivers is something that is very well known in backend communities, but I believe it's a little less known in mobile and Flutter community. So, I think it will be worth to give a brief introduction to what they are.
 
 So, they are basically factors that influence the design decisions and shape the architecture. And in general, they can be split into four categories. Technical constraints, business constraints, functional requirements, and quality attributes.
@@ -45,7 +45,7 @@ But on the other hand, when it comes to user experience, the requirements are a 
 
 And you would actually like to show someone if their account exists or not, because it's just easier for them to proceed.
 
-[Mateusz]
+### Mateusz
 Yeah, and we all know one popular fast food chain app that traded UX for security. So, it's important to know what trade-offs are for you. So, what trade-offs are for us?
 
 So, our assumptions are that as a software studio, we need to optimize for quality of course, but also quick start. So, we want to offer some common features ready from day one like being able to log in with Apple or Google or from the beginning have navigation and deep links and push notification support, stuff like that. Also, we want to be able to scale the project team if our client wants to scale in terms of features and wants to grow.
@@ -84,7 +84,7 @@ And this is very important about pragmatism. And if you want to be pragmatic, ju
 
 But maybe, for example, if you made it in your project, you just needed these two lines of code, right? Okay. So let's go to our architecture.
 
-[Marcin]
+### Marcin
 Yeah. So now that you know what drives us when it comes to architecture, we want to take you for a tour of how we actually build our apps. So we're going to go through some key points that every app needs to implement, needs to think about.
 
 And let's start with the classic one. So state management. So when it comes to state management, the short answer is that we use block.
@@ -133,7 +133,7 @@ And we also, again, have our own Lean Code hooks utils. So one of the most heavi
 
 We kind of combine the block, which is our default solution with hooks, and other into a use block. So in our screens, you would see use block instead of block provider.
 
-[Mateusz]
+### Mateusz
 Yeah, and let's go to another important part, which is API communication. It's actually a bit connected to state management. But the most important thing is that you don't want to write API contracts yourself.
 
 And you might want, I think you certainly want to have any API contract. So either you use some external backend or maybe you have your internal backend team and you can sit side by side with them. You must have a contract with the backend.
@@ -146,7 +146,7 @@ You don't want to think about it here. You just want to have it pretty nice enca
 
 If you do that, if you have your contracts with API, if you have encapsulated your API communication transport layer in your client, then you probably can, for example, dispose of one or two layers. So you can simplify your code and simplify the usage of this. So this is, in my opinion, this is really important when delivering business value.
 
-[Marcin]
+### Marcin
 Okay, so now let's move on to forms. And forms in Flutter are simple when you have a simple form like for logging, you have two text fields or something. But we had some projects where forms were really complex.
 
 The best example would be banking apps where there were forms with dozens of fields which would show and hide in different scenarios. So this with raw forms in Flutter is very hard to implement. So we realized that in our two banking apps that we wrote, we actually developed custom solutions, custom frameworks for forms.
@@ -181,7 +181,7 @@ So it's not like we're getting updates from upstream, because that would be hard
 
 With buttons, maybe it's quite simple. But with text fields, as you probably know, it's very hard to take the material and adapt it to your needs.
 
-[Mateusz]
+### Mateusz
 Yes. So as you can see, pragmatism also means that sometimes you just want to copy and paste stuff, which is probably better to think of an abstraction of a text field that will work only in one project. So, yeah, let's go to another important part, which is dependency injection, often mistaken for state management, unfortunately.
 
 So in Flutter, you have basically two options. It depends on what you want to do with your object. If you want your object to live as long as some widget in your widget tree, then you probably want to use Provider, which is the best implementation of inherited widget.
@@ -208,7 +208,7 @@ For example, we check if your qubit name has qubit in the end, like the suffix, 
 
 Also, for example, if your hook widget does not use hooks, then we can detect that. So also about design system, as Marcin said, we want to use only components from design system, because the worst thing is when you have a design system, but some other people use material stuff, and you have all of the components, and you know that everyone should use them. So use design system item is a great custom lint for that, so you can definitely check it out.
 
-[Marcin]
+### Marcin
 Okay, now let's move on to our last point, which is testing. So we try to follow some testing policy. The most important thing is that we try to test all business logic, so typically most of our business logic resides in qubits and some other classes.
 
 We test complex UI logic with widget tests. We're also experimenting heavily recently with golden tests, so all of our design system components are tested on a unit test level for every low-level component. We write integration tests for whole screens, so if you use golden tests in the project, we want to have every page have at least one golden test, so we can easily track changes across the UI of the whole app.
@@ -225,17 +225,17 @@ It comes with example features. Some integrate with example back-ends, so we als
 
 Some features are integrated. Those are features like authentication, so authentication logging with Facebook, Google, Apple, et cetera, things like first update feature flags that you typically want in most of your apps, at least at some point, so it's good to have them from day one. It provides a huge cost optimisation for our clients, and, at first, we tried to make the template an interactive script, but that didn't really work well, so we thought it would be cool if we start a new project, you can choose which features you want, which features you don't want, but that was just hard to maintain.
 
-[Mateusz]
+### Mateusz
 Also, usually, you might want the same features.
 
-[Marcin]
+### Marcin
 So, last thought that we want to leave you with is that you're not forced to follow a single architecture in a project, so, especially in a big app, you can have most of your app follow a feature-based architecture, a typical stuff with qubits, but you might have some parts of the app, some subdomains that doesn't really fit this, so you might have a feature that is very reactive, you might have some feature that is heavily offline, so you don't need to follow every feature in your app, it doesn't have to follow the same pattern.
 
 Those can be in different folders, or even different Dart packages, but you're not forced to follow everything in a single pattern. So, some key takeaways to finish our talk. Be pragmatic, not dogmatic, there are no silver bullets, but we build something which makes sense for us as a software studio.
 
 Find your architectural drivers, the most important thing is that they can change during the lifetime of the project. Don't hesitate to challenge the status quo. Initial architecture might not be valid anymore at some point, and you might have multiple architectures in your app.
 
-[Mateusz]
+### Mateusz
 Yes, and last but not least, we've been working on something new and wanted to tell you about it, which is Flutter CTO survey, it's one of a kind report presenting opinions from CTOs, tech leads, mobile tech leads, Flutter tech leads, front-end tech leads that used Flutter or evaluated Flutter and want to share their experience so that we can know from the first hand from the decision makers, important people that used Flutter, how they feel about it, what are their experiences.
 
 So we plan to release it in July, and if you want to take part in our survey, you can just scan this QR code or go to this link and sign up for that. Thanks!

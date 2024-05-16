@@ -14,7 +14,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Elaine]
+### Elaine
 So, yes, yes, I'm that person talking about AI on a tech conference. Hopefully you enjoy it. So let's get you started with Gen AI on Flutter apps.
 
 So this is me. I'm Elaine. I work at Sfeir here in Paris. I'm a Flutter GDE. Right now my current role is Android development. And I am actually a former Google Assistant GDE.
@@ -159,87 +159,87 @@ Those are the ones that I have found. But and behind all of those, you have to, 
 
 And I'm really looking forward to exploring that more. So that's it for me. Thank you.
 
-[Romain]
+### Romain
 Thanks.
 
-[Simone]
+### Simone
 We won't have much time because for obvious reasons, we are running a bit late. So we're going to be quite fast. But I assume there are lots of super interesting questions.
 
 So if you stick at the bar, I think there are lots of people wanting to talk with you. I have some questions myself, by the way, which are basically, so we saw so many, so much stuff that could run on a physical device. Is there a recommended device on iOS or Android by Google to run Gemma?
 
-[Elaine]
+### Elaine
 I haven't actually talked about Gemini Nano. Gemini Nano is under preview right now. It is the way to run Gemini officially on Android.
 
 It's tightly, it is tightly coupled with the system with Android. And as far as I know today, it's only available for a Pixel 8 Pro and Galaxy S24 devices because it is running, it's actually a physical problem. It's running on TPUs or, yes.
 
-[Simone]
+### Simone
 And just linking a question that just arrived. This is for LLM and still for locally, do you have any like a prompt to image solution that they could run on an Android device?
 
-[Elaine]
+### Elaine
 I only saw text-to-text.
 
-[Simone]
+### Simone
 Okay.
 
-[Elaine]
+### Elaine
 I only saw text-to-text. Yeah, for now. But maybe there exists.
 
-[Romain]
+### Romain
 Yeah, it will. So much stuff. Yes.
 
 Do you know if there are some legal restrictions for these tools usage, either from the country the app is targeted for, for example, or from Apple or Google? Are there some restrictions?
 
-[Elaine]
+### Elaine
 Right now, unfortunately, we cannot use Gemini APIs in Europe. I hope it is only, yes, a legal issue that they have to figure out. But it should be available to everyone.
 
 So I'm not aware. Maybe there are some restrictions. But the only restriction that I know is this one.
 
-[Romain]
+### Romain
 Is it based on where the user is with its phone or? Yes.
 
-[Elaine]
+### Elaine
 It detects if you are in Europe, you have an European IP and you're using some application that is implemented in the Gemini API, it will say invalid region, something like that.
 
-[Romain]
+### Romain
 Okay. So it's based on the IP?
 
-[Elaine]
+### Elaine
 Yes.
 
-[Romain]
+### Romain
 So if we use some tools to change the IPs?
 
-[Elaine]
+### Elaine
 Yes. In order to create the, as a developer, in order to create the key, the API key, you have to use the same tool. Okay.
 
-[Simone]
+### Simone
 I think we have time for our last question. When do you think you'll see a Gen AI capable enough to answer with, I guess, a flutter to visualize answers? Like having a Gen AI that is able to produce and run, of course.
 
 Yeah. Because in a way- It depends on the app.
 
-[Elaine]
+### Elaine
 If it's an app, there's only a show in the button, it's available today.
 
-[Simone]
+### Simone
 Yeah, exactly. Because in a way, with OpenAI, to put more context. So with OpenAI, we already have an interpreter, which is based on Python.
 
 Do you know any initiative of having an interpreter based on Dart or?
 
-[Elaine]
+### Elaine
 I don't know. No, I don't know. But maybe one day.
 
 But I don't think it's going to be perfect. I don't know. Well, this is a very, very long discussion that we can have.
 
 But yes, for real apps, I think that those tools, they can help us. Yeah, sure. They're never going to be completely- They are not going to replace us completely.
 
-[Simone]
+### Simone
 I mean, so far.
 
-[Elaine]
+### Elaine
 We'll see.
 
-[Simone]
+### Simone
 All right. Thank you very much, indeed.
 
-[Elaine]
+### Elaine
 Thank you.

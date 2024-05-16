@@ -13,7 +13,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Aloïs]
+### Aloïs
 So, yeah, my talk today is about server-driven UI with Flutter. Before diving into the topic, I want to present myself. So I'm French.
 
 I'm based in Brittany, in the west of France. I'm also a Flutter GD. I've been Flutter G for a couple of years now, mainly because of my open source contributions.
@@ -144,174 +144,174 @@ So yeah, be careful also with the rules from the stores. So in conclusion, I wou
 
 And it's really fun to use, too. Thank you for following this talk, and don't hesitate to reach out on X or GitHub or on my blog and whatever.
 
-[Guillaume]
+### Guillaume
 Thank you very much, Alois.
 
-[Simone]
+### Simone
 Can we have a bigger applause for this person doing live coding with slides made on Figma? It's impressive. I was impressed, honestly.
 
-[Guillaume]
+### Guillaume
 And that's the first live coding of the day, right?
 
-[Simone]
+### Simone
 Yes. So yeah.
 
-[Aloïs]
+### Aloïs
 It's not really live coding.
 
-[Guillaume]
+### Guillaume
 Kudos to you. I'm not showing the code.
 
-[Aloïs]
+### Aloïs
 I mean, it's...
 
-[Guillaume]
+### Guillaume
 It's a live demo. Yeah. I mean...
 
 I have my own personal question, actually, to start. What happens if I want to use a hero animation between a locally built widget and a server UI rendered one? Does it work out of the box, or does it...
 
-[Aloïs]
+### Aloïs
 Currently, you don't have any material widget in Swap, but it's perfectly doable. You could, yes, send a hero widget, and it would be used in the exact same way. It's just a way to serialize it and deserialize it on the other side.
 
 So yeah, it would work perfectly fine if you define this custom widget, this custom hero widget, which is not part of Swap currently.
 
-[Guillaume]
+### Guillaume
 So I'm guessing, because there are many questions about animation, I'm guessing if your widget or component is rendered on the server side, how does your application would be able to manage the transition between those two components?
 
-[Aloïs]
+### Aloïs
 Yeah.
 
-[Guillaume]
+### Guillaume
 Well, it's not on your application at the time your animation is supposed to start, when you navigate from one page to another. It's not even there. So...
 
-[Aloïs]
+### Aloïs
 Yeah. You can define a custom event for navigation. For example, you could say...
 
 You can define your own navigation page to say, navigate to this page and load this remote widget, for example. If you tap a button in the remote widget, it would trigger this whole thing and create a new page, load the remote widget.
 
-[Guillaume]
+### Guillaume
 Okay, so as long as you preload it, then it should work.
 
-[Aloïs]
+### Aloïs
 You have to anticipate at least the basic mechanism for navigation, yeah.
 
-[Guillaume]
+### Guillaume
 All right. Thanks.
 
-[Simone]
+### Simone
 I mean, you said that it's just a light wrapper around RWF. Is there anyway a small performance impact or zero at all?
 
-[Aloïs]
+### Aloïs
 No. I think it's even more performant than RFW, because there's a parser for the custom language that needs to process this text, this raw text to build the instances, whereas with Swap, it's directly Dart instances. So I think...
 
 I guess it's more performant, in fact.
 
-[Guillaume]
+### Guillaume
 So another question is, does Swap have support for versioning to avoid pushing outdated code to your app?
 
-[Aloïs]
+### Aloïs
 It's up to you. You can do it with your APIs. It's just a way to receive code.
 
 You can invoke code to your APIs and receive data. So you can define your own headers, for example, for your calls and manage it on your server. So it's doable.
 
 It's doable. It's not built in. There's no way to do it in a standard way, but yeah.
 
-[Guillaume]
+### Guillaume
 It's up to you. The way you define your API and versioning is always a pleasure when working with API.
 
-[Aloïs]
+### Aloïs
 Does it work with the web? That's a good question. It does not work with the web, but I have a prototype for serializing W instances with Node.
 
 So it's doable. If I have time in the future, I could eventually develop a TypeScript library for that. But yeah.
 
 It's doable. It's doable.
 
-[Simone]
+### Simone
 I think it... Well, anyway, it's very interesting stuff. It's more...
 
 Well, does it work on Flutter web?
 
-[Aloïs]
+### Aloïs
 Oh, on Flutter web? Yeah. Yeah.
 
 Yeah. It should work. I haven't tried, to be honest, but I'm sure it will work.
 
-[Guillaume]
+### Guillaume
 As everything with Flutter.
 
-[Aloïs]
+### Aloïs
 Yeah. It just works.
 
-[Guillaume]
+### Guillaume
 Does Swap or RFW support a caching system that avoids long reload when...
 
-[Aloïs]
+### Aloïs
 I have a basic caching mechanism in Swap. Not in RFW, because RFW is really basic. It's just the protocol, the serialization, and the language.
 
 But yeah. I have a basic store that won't send a request that has already been sent, and you can customize just a bit, adding a custom store for that if you want to store it in file, in a database, or whatever. But yeah.
 
-[Guillaume]
+### Guillaume
 Okay. So yeah. Yeah.
 
 That's... The question is easy, but the answer might not be. What's the difference with Shorebird?
 
-[Aloïs]
+### Aloïs
 Yeah. That's a good question. I'm not a Shorebird expert myself, but I see Shorebird more like a way to push an update to every user at the same time, whereas here, it's more like if you want to send a specific version of a widget to every user, customized experience, it's more adapted this way, in my opinion, than pushing patches and doing crazy stuff to push the patch to specific users.
 
 It feels like easier this way if you just need a custom page for several users, for example, and you want a really dynamic page for all of your users, something that changes every day, and it won't affect the rest of your app.
 
-[Guillaume]
+### Guillaume
 I would add that on the technical side for that question, Shorebird is actually uploading a new patch that would change your application locally on the device, while yours would be just at runtime injecting some components. So yeah. It's technically different, and I guess the use cases are also different then.
 
-[Simone]
+### Simone
 Yeah. It doesn't also involve to have a specific version of the Flutter SDK.
 
-[Aloïs]
+### Aloïs
 No.
 
-[Simone]
+### Simone
 Yeah. It just works.
 
-[Aloïs]
+### Aloïs
 Yeah. That's a good point. Yeah.
 
 Yeah. You don't need any, you have to have the same FW protocol, so you need to declare the same widgets on both sides, but yeah. You can update it at any time, so it's easier to manage, yeah.
 
-[Guillaume]
+### Guillaume
 So another question is what happens when you need to import packages? So we've discussed this last week, but there's actually one question about that. So if you're using a specific package for the widget you're injecting, should it be serialized along what you're passing through the network, or should it be installed on the front application already?
 
-[Aloïs]
+### Aloïs
 That's a good question. You have to anticipate for custom widgets, you have to declare them as serializable widgets, so you have to create a custom encoder on the server side and decoder on the Flutter side. But as soon as you have all of your widgets declared this way, you can compose them the way you want.
 
 But yeah, you need to have them in the release.
 
-[Guillaume]
+### Guillaume
 Yeah. So you probably are not able yet actually to serialize the entire package, and it's probably not recommended because of the size of the bundle.
 
-[Aloïs]
+### Aloïs
 Oh, yeah. You mean creating like a swap package with all of these lines?
 
-[Simone]
+### Simone
 Yeah. Or even bundling a package. Yeah.
 
-[Aloïs]
+### Aloïs
 I don't think it would be a great experience.
 
-[Guillaume]
+### Guillaume
 So please don't do that.
 
-[Simone]
+### Simone
 I think you are the speaker with most questions. It's very, I mean... Yeah, there are so many.
 
-[Guillaume]
+### Guillaume
 So one last one, maybe, yeah, what strategy would you recommend for offline behavior when using Rmw?
 
-[Aloïs]
+### Aloïs
 It depends a lot of your use case. If it's like a dashboard, you could perfectly cache the whole dashboard and show it offline. It makes sense.
 
 But if you, like in the demo, if you have navigation buttons and so on, I wouldn't cache it. I would simply say that the widget isn't available offline and just disable it. But yeah, it's really dependent on the use case, in my opinion.
 
-[Guillaume]
+### Guillaume
 Okay. So no standard strategy, just take a look at your use case. Thank you very much, Alois.
 
 You're welcome. Yeah. Thank you.

@@ -16,7 +16,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Masahiro]
+### Masahiro
 Enabling Instant Updates in Flutter Apps with Shobo, my journey with CodePush. I'm Masahiro Aoki, founder of OpenCI, a free CI-CD service for Flutter. If you have some interest about OpenCI, you can go to OpenCI.io. And because it is closed beta, you can join our Discord channel if you are interested. I was a former software engineer at IBM, startup co-founder, CDO, and as I mentioned to you, I just became an organizer of Flutter Tokyo a few hours ago. So, if you have a chance to come to Japan, let's do some Flutter meetups. Of course, I have loved Flutter and Dart for five years.
 
 And I'm based in Tokyo, Japan. So, disclaimer, all demos are run by MacBook Pro, I have a Mac, 64GB, XR, iPhone 12, Pixel 8 Pro, and I'm not a member of the Shobo team, nor have I received any money, just a user. And today's goal is to understand what CodePush is, how Shobo works, and how to use Shobo even in a production environment, and the pricing of Shobo.
@@ -219,85 +219,85 @@ And Maru always helps me organize my slides, talks, and supports me. So, feel fr
 
 Thank you so much.
 
-[Guillaume]
+### Guillaume
 Thank you very much. We have time for a couple of questions. There's a bunch of questions on the Slido.
 
 Thanks a lot. There are a lot of questions. We will send them all to you and probably to the showbot team too so they can help you answer.
 
 The first one is how Apple and Google managed the 3.2.2 paragraph? Are they watching your app?
 
-[Masahiro]
+### Masahiro
 I think they don't know. Yeah. So, that is the reason I talk about do not deceive the stores.
 
 Yeah. Maybe some of your competitors will report that you changed the app features. Maybe this is one possible way they know to deceive the stores.
 
-[Guillaume]
+### Guillaume
 Well, you can try and play but if you lose, then you lose big. Maybe it's too big a bet. The second one is have you encountered any unexpected limitations like incompatibility with native Flutter tooling while developing using Shorebird?
 
-[Masahiro]
+### Masahiro
 I'm guessing because it's fork and shouldn't be any but for now I haven't experienced the difference between the native Flutter. But the Shorebird team sometimes said that the native Flutter to output is not useful for the Shorebird so they have to add some modification for the output of the Flutter command.
 
-[Simone]
+### Simone
 Is Shorebird for updates of your app no matter the update or just for pushing crucial fixes in case you have some major bug?
 
-[Masahiro]
+### Masahiro
 Okay. I think you should try updating the app if your app doesn't have the native code changes and if you run the Shorebird patch sometimes the warning and for my advice don't ignore the warning because if you ignore the warning maybe your app will crash and one of my clients experienced the crashing so don't ignore the warning.
 
-[Simone]
+### Simone
 By the way, do you have a way to limit the users that you push the patch to? Let's assume you have 20,000 users but you want just 100 users or 1,000 users to receive the patch.
 
-[Masahiro]
+### Masahiro
 I think there is no way but I think there is an issue so maybe it's better to ask the Shorebird team about that because if your app has 300,000 users maybe the cost can be huge.
 
-[Simone]
+### Simone
 You can use Shorebird I think for A-B testing if you want to test a small feature to a small number of users.
 
-[Masahiro]
+### Masahiro
 Maybe in that case using the flavor is a good option. For all the plans you can make unlimited number of apps so you can use the flavors.
 
-[Guillaume]
+### Guillaume
 Another practical question can you combine Shorebird CLI with Flutter management version system like FBM?
 
-[Masahiro]
+### Masahiro
 That's a good question. I haven't seen this kind of comments in the Shorebird Discord. I think you cannot use the FBM with Shorebird CLI but there is the argument of setting the Flutter version of the Shorebird so you can use the argument.
 
 Like Shorebird version 3.19 5 something like that.
 
-[Guillaume]
+### Guillaume
 I'm guessing if it's a fork of Flutter it's using version defined by the CLI of Shorebird so you can pass a tag to the version but it wouldn't make sense to be able to choose from the version that you have locally. I guess. Thanks.
 
-[Simone]
+### Simone
 There are 20 questions.
 
-[Masahiro]
+### Masahiro
 You can ask me any time when I'm free.
 
-[Guillaume]
+### Guillaume
 Maybe one last one that had many votes. Would you recommend to always after pushing a patch would you recommend to always push a new release with that same patch? We've heard of some performance issue impact on a patch so is it a best practice to push a patch to make sure that user the bug is fixed and then afterwards when the bug is actually fixed push a release.
 
-[Masahiro]
+### Masahiro
 Fixing bugs of Shorebird? No, no. Or bugs of the app?
 
-[Guillaume]
+### Guillaume
 No. You're fixing a bug in your application and using Shorebird patch and afterwards should you push a new release to make sure that you have a new stable version that is not patched but actual new release?
 
-[Masahiro]
+### Masahiro
 I think it's better to if you can you have to submit a new version of the build with Shorebird release not patching because maybe they have the native code changes.
 
-[Guillaume]
+### Guillaume
 But is it considered a best practice to do this every time you do a patch a few days later to have a new release or not necessarily and you can push some patches in a batch?
 
-[Masahiro]
+### Masahiro
 I see it depends but for I think it's better to patch every time because it reduces the development time and it reduces the chance of the rejecting from the stores. Yeah. So for the business and for the customers I think it's better option to use patch every time.
 
-[Guillaume]
+### Guillaume
 Yeah. Definitely seems safer that way.
 
-[Masahiro]
+### Masahiro
 Yeah.
 
-[Guillaume]
+### Guillaume
 Thank you very much Masahiro and let's have lunch.
 
-[Masahiro]
+### Masahiro
 Yeah. Thank you so much.
