@@ -1,7 +1,7 @@
 ---
 slug: >-
   /talks/flutter-connection/flutter-connection-2024/alois-deniel-server-driven-ui-with-flutter
-date: "2024-04-24"
+date: '2024-04-24'
 title: Server-Driven UI with Flutter
 author:
   - Aloïs Deniel
@@ -11,10 +11,9 @@ slides: null
 tags: []
 year: 2024
 conference: flutter-connection
-edition: 2024
+edition: flutter-connection-2024
 allow_ads: false
 ---
-
 [Aloïs]
 So, yeah, my talk today is about server-driven UI with Flutter. Before diving into the topic, I want to present myself. So I'm French.
 
