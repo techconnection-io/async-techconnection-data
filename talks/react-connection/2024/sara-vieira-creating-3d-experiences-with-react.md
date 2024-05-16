@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Sara]
+### Sara
 I'm here to talk about 3D on the web. So Rachel did useful things during their pandemic. I tried to learn Blender, and I failed miserably.
 
 But now I get to do talks about it. So that's nice. Yes, I'm here to talk about 3D on the web.
@@ -348,34 +348,34 @@ And if you're wondering why Nikita, it's exactly why you think it is. My parents
 
 Thank you so much. Okay, yes, 2Ks, and you can find this code at GitHub, at that URL, and yeah, thank you so much, and I realize that I actually cannot leave the stage, so this is actually kind of awkward now.
 
-[Christophe]
+### Christophe
 Thank you, Sarah. Who liked that? 3D, that's what we do every day, right?
 
 Can we sit in the middle?
 
-[Sara]
+### Sara
 Can I sit in the middle? Do you want to sit in the middle? No.
 
 Oh, yeah, no, there's an X there.
 
-[Christophe]
+### Christophe
 Okay. You grab the mic. Thank you for that.
 
 We're going to try and have just a couple questions in order to less delay your intake of calories, which is scheduled a bit further in the day. Do you have good questions in Slido?
 
-[Romain]
+### Romain
 Not really. I think your talk was perfect, so ...
 
-[Christophe]
+### Christophe
 I don't think that's my ... Yeah, everybody was like, so when is the shadow coming?
 
-[Sara]
+### Sara
 What the fuck is she talking about?
 
-[Christophe]
+### Christophe
 So anyway, what I was wondering about is like, okay, so yeah, COVID and everything, and trying to find a reason to grab the keyboard, but what got you interested in 3D specifically?
 
-[Sara]
+### Sara
 Honestly, that's a very good question. So my dad, when I was a kid, used to do 3D renderings, but not cool renderings. He used to do buildings and shit.
 
 So he used 3DS Max, and I don't know. I started seeing a lot of stuff about Blender and how it was easy to get started. That was a lie.
@@ -384,36 +384,36 @@ Blender is not easy to get started with. So I don't know. I think I've always al
 
 So to answer your question, I like pain.
 
-[Christophe]
+### Christophe
 All right.
 
-[Sara]
+### Sara
 Masochistic.js. Yes, that's why my keyboard is in Portuguese.
 
-[Christophe]
+### Christophe
 Oh, there you go. Well, this is a French audience, so we know what it is to hit three keys to do a curly brace. I have the three keys.
 
 Especially on Mac, right? It's a choice. Like there's a hidden pipe in there somewhere, and at some point, your muscle memory ...
 
-[Sara]
+### Sara
 Yeah, I can't change to American. I don't know why.
 
-[Romain]
+### Romain
 For sure. So I like 3D, too, but I'm really bad at it.
 
-[Sara]
+### Sara
 Same.
 
-[Romain]
+### Romain
 But maybe I like pain less than you.
 
-[Sara]
+### Sara
 That's fair.
 
-[Romain]
+### Romain
 What kind of advice can you give me to start making 3D on web?
 
-[Sara]
+### Sara
 First of all, there's a lot of free models online. Like if you go on things like Sketchfab and BlendSwap, BlendSwap has a lot of actual CC0 models. There is also this Dutch guy called Kenny that makes a lot of models that are completely free and CC0 for anyone to use.
 
 So if you want to do Blender ... If you want to do Blender, sorry, if you want to do web stuff but you don't really want to do 3D in Blender or anything, there are many, many models that you can use. A lot of the stuff that I've done over the years in 3D has not used models that I've made.
@@ -422,42 +422,42 @@ So you just sometimes have to credit them, sometimes you don't. But yeah, that's
 
 So you have these, I would say, these two options. Sketchfab is a really good resource, by the way.
 
-[Christophe]
+### Christophe
 I had not seen the donut as a comprehensive feature set.
 
-[Sara]
+### Sara
 It is absurdly comprehensive. It's absurd.
 
-[Christophe]
+### Christophe
 But it's going to be the best-looking donut.
 
-[Sara]
+### Sara
 It is the best-looking donut you will ever see in your life. You also learn how to make the sprinkles, and you randomly generate the sprinkles, because Blender now has geometry nodes, which is something that you're like ... It's kind of like coding.
 
 You can also code in Blender. It's Python. So there's so much in there.
 
 There's so much. It's beautiful.
 
-[Christophe]
+### Christophe
 Okay. Okay, so just one more way of being creative with React, and we're going to have a talk later today by Mael Nisson about other ways to use React in areas you wouldn't think of. Thank you very much, Sarah.
 
-[Sara]
+### Sara
 You're very welcome.
 
-[Christophe]
+### Christophe
 Feel free to talk to Sarah outside of the talk. She has plenty of great anecdotes for you.
 
-[Sara]
+### Sara
 Ask me about the Berlin airport.
 
-[Christophe]
+### Christophe
 It's bad.
 
-[Sara]
+### Sara
 I can leave now, right? Okay, thank you.
 
-[Christophe]
+### Christophe
 You are free to leave.
 
-[Sara]
+### Sara
 Thank you, Sarah. Thank you.

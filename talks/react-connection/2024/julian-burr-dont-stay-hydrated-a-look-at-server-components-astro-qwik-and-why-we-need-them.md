@@ -16,7 +16,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Julian]
+### Julian
 I'm going to talk about server components, they have been mentioned here and there already. I'm not going to talk much about the what they are, how to use them, et cetera. I'm going to focus more on the why.
 
 Why do we need them? What problems are they trying to solve? A disclaimer up front.
@@ -157,91 +157,91 @@ We're going to find that sweet spot between developer experience and user experi
 
 This is the GitHub repo with the slides. And the demo app, I actually did create that demo app in various frameworks to compare how things work. And yeah, thank you for listening.
 
-[Christophe]
+### Christophe
 Thank you very much, Julian. Please join us. OK, most of us have slides that look like crap compared to that.
 
 So jealous. Those slides were like proprietary technology, like custom SPO or something?
 
-[Julian]
+### Julian
 That is, yeah, custom web form.
 
-[Christophe]
+### Christophe
 I liked how the shape of the computer morphed, and you went through a round robin of all the browser names.
 
-[Julian]
+### Julian
 I don't know if you could tell, but I spent way more time on that than on the actual talk.
 
-[Christophe]
+### Christophe
 Yeah, that happens. That happens.
 
-[Simone]
+### Simone
 The best talks are just visual.
 
-[Christophe]
+### Christophe
 Fortunately, flights from Brisbane are long.
 
-[Simone]
+### Simone
 Actually, I think you win the prize for the best slides, at least visually. I mean, content, of course, was good. And I think you're the first participant at the conference, since you come from, I mean, you are cheating in a way, but you came from Australia.
 
-[Julian]
+### Julian
 Yeah, if anyone was hoping for like a cool Australian accent, I am very sorry. Actually, German, I just live in Australia.
 
-[Christophe]
+### Christophe
 But you don't have that German speaking English thing where the lamp was delicious, you know what I'm saying? So yeah, it throws us off. So yeah, so one question is actually not a question.
 
 It's like gorgeous slides, we can all agree. And so there's a question that I think you sort of answered, which is like, do you not, OK, that's like there's, so please agree with that guy, he seems feisty. Do you not think that RSCs are sort of a copy of islands in Astro and stuff like that?
 
-[Julian]
+### Julian
 100%. Like, they're trying to do the same thing.
 
-[Christophe]
+### Christophe
 Same concept.
 
-[Julian]
+### Julian
 It's just React's approach to it. You can see it in other frameworks as well. Vue has that island concept, and Astronaut has that concept.
 
 Even adopting that terminology of server components, which I kind of dislike because most of us can agree, like server components is not a great name for what they're trying to do. It's very misleading. But yeah, there's other, like Astro heavily on that island, and you can use whatever framework under the hood is trying to do the same thing.
 
-[Christophe]
+### Christophe
 Yeah, it's pretty popular, too, growing.
 
-[Simone]
+### Simone
 Would you actually use, so what would you be the best flavor of Astro, like adding React or not for your components, let's say?
 
-[Julian]
+### Julian
 It really depends, like, I hate to say it, it depends. It depends on your use case. It depends on what stack you're comfortable with as well.
 
-[Christophe]
+### Christophe
 What was that? Personal code aesthetics.
 
-[Julian]
+### Julian
 Yeah, yeah, 100%.
 
-[Christophe]
+### Christophe
 Subjective.
 
-[Julian]
+### Julian
 It depends on your team. Like, what is your team most comfortable with? Personally, in my side projects, I like that, what you just mentioned of like Astro and then using those React islands to do whatever you need.
 
 But just because I love React and the concept of Astro, of like actually being very explicit about static, dynamic, it's great. The one thing about Astro that I would say is you suddenly realize how nice it is to have, like, event business and stuff within the JSX in React because Astro itself, it makes it very tedious. Again, it's back to the jQuery days where you have to have your selectors and then add, like, on click and then that.
 
 And it's, this is where we're at right now. It's like a trade-off in developer experience to get the user experience right. Somehow we will eventually find the balance, I think.
 
-[Simone]
+### Simone
 Let's introduce some politics here. No, I mean politics, developer politics.
 
-[Julian]
+### Julian
 Let's go.
 
-[Simone]
+### Simone
 Yeah, exactly.
 
-[Simone]
+### Simone
 Let's talk about Trump. No, no, seriously. Is there a world in which actually in the future, I mean, a no Next.js solution will be the default in your opinion?
 
 In no Next.js. I mean, a project without Next.js for server components.
 
-[Julian]
+### Julian
 I hope so. Like, nothing against Next.js. I do agree with what's been said here before that with big companies like Bacel backing it for their own reasons. But they still do a lot of innovation and a lot of stuff.
 
 But I hope, especially like comparing it now to Astro and Quick, I hope that competition will just naturally grow into something where it's more diverse again. Remix is doing an amazing job. I love Remix.
@@ -252,7 +252,7 @@ You can. Use the URL. Store the state where we used to store it when we were ser
 
 And I hope, yeah, there's going to be competition around that. And hopefully it's not going to be a monopoly of like one framework once in a while.
 
-[Christophe]
+### Christophe
 Yeah, there already is. Like, we have Redwood and Shopify does their own thing. Yeah.
 
 And then Remix. And well, through Remix, I would say better. And this actually ties in.
@@ -261,25 +261,25 @@ Another question was you said, and I couldn't agree more, that React didn't nail
 
 Is it the purview of the frameworks around React? We saw this like notion that I found a bit toxic that true React is more like Next is the true React, something which I find dangerous.
 
-[Julian]
+### Julian
 Yeah, I agree with that. So I think it's probably a mixture of both because the point of the frameworks is to abstract stuff out. So if they want to name it something else, they should totally be able to do that.
 
 But given that server components are a React feature, I think they will, I'm sure they will listen to a lot of the feedback that we have now with the early versions of Next. And yeah, keep evolving that concept. I don't know how easy that is, because like once you're logged in, it's probably hard to completely change stuff.
 
-[Christophe]
+### Christophe
 And also half the React core team has been co-hired by Vercel at this point.
 
-[Julian]
+### Julian
 But yeah, we don't want to, that's the politics part.
 
-[Simone]
+### Simone
 Yeah, I think we are making it clear that Vercel didn't sponsor this conference, and so we'll do everything we can against Vercel. No, it's not true. We can cut this in post-prod anyway.
 
-[Christophe]
+### Christophe
 Someone has to pay those devs to do that R&D and iterate on top of it for sure.
 
-[Simone]
+### Simone
 All right.
 
-[Christophe]
+### Christophe
 Thank you very much. Thank you so much, Julian. Julian Burr, everyone.

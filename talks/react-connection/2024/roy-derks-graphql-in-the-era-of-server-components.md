@@ -13,7 +13,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Roy]
+### Roy
 So, my talk will be about GraphQL and the era of server components. There's been lots of discussing around GraphQL, do I need it, do I don't need it, and then there's the same sort of discussions around server components. So, a bit about me, my name is Roy, I used to work at a GraphQL start-up called Stepsen, and then we were acquired by this small company that you might know as IBM.
 
 I've also been doing lots of things in the, well, ever since I started coding, and a lot of different topics, a lot of different sort of start-ups I built and created, and then besides those things, I also created content. So, maybe you saw some of my books about React or GraphQL. So, if you have any questions about those things later, then please let me know.
@@ -150,44 +150,44 @@ And as this is mostly natural language, AI can also make sense of all of this. A
 
 So, with that, I'd like to thank you and I hope to say hi again.
 
-[Christophe]
+### Christophe
 Thank you, Roy. Please come along. I don't know if Simona is around.
 
 Yes.
 
-[Simone]
+### Simone
 Yes, of course.
 
-[Christophe]
+### Christophe
 Good. So, I've got a number of questions from the audience. I'm actually going to probably wrap three in one because they're like different takes on the same underlying question, I think, when someone asked, how can we handle scaling large applications with GraphQL?
 
 Someone said, does it make sense to use GraphQL as a solo dev or small team, which you partially addressed. And someone said, how do you deal with the potential overhead of using GraphQL? So, this seems to me like three sort of ways of expressing the same question.
 
-[Roy]
+### Roy
 Yeah. So, my biggest advice would be if you really like GraphQL, use it, because, well, if you like technology, try to use it as much as you can. You really only get the upsides if you either have multiple backends and you're trying to federate them.
 
 So, that's how you call it when you have microservices and you combine them into a GraphQL schema or when you have multiple frontends that need the same data, but they need it in a slightly different way. And then if you want to scale this, then I really look at Relay because Relay will help you to not only handle calls to the GraphQL APIs, but it'll also help you to handle the data flows in your application in a nice way that is really better than making a call to a GraphQL API, because maybe you know, maybe you don't know, GraphQL is usually served over HTTPS. So, calling a GraphQL API is like calling a REST API.
 
 The request is just slightly different. And a lot of GraphQL clients, they just do the REST way of calling GraphQL over HTTPS without the benefits of the data flow. So, I'd say a combination of make sure you have multiple frontends or backends and then using Relay on the client to make sense of this whole technology together.
 
-[Christophe]
+### Christophe
 Yeah, because Relay is one of the techs for doing GraphQL on the client, but it's really focused on like scale resilience, I guess, in terms of complexity.
 
-[Roy]
+### Roy
 Yeah, definitely. And there are some good talks giving like different conferences about does it make sense to use GraphQL without Relay? Because like I said, it's just HTTPS usually.
 
 So, you send a request over HTTPS and you get your data back. So, in the frontend, you don't really get all the advantages of GraphQL. You just load less data.
 
-[Christophe]
+### Christophe
 Which isn't nothing, right?
 
-[Roy]
+### Roy
 No, it's a good upside. Exactly what you need is already a pretty good upside. Yeah, but if that's the only upside, then you might think our team knows how to do REST and how to scale it, so why should I even think of GraphQL?
 
-[Simone]
+### Simone
 How would you tackle the most advanced use cases and some of the biggest issues of GraphQL like the fact that you are actually posting versus getting in those scenarios?
 
-[Roy]
+### Roy
 Yeah, so that's a good thing to distinct. You can retrieve data, but you can also mutate data using GraphQL. I think the upsides are bigger in retrieving data.
 
 Well, probably most of you have used GitHub. So, GitHub has both a REST API and a GraphQL API. So, I would always advise if you're trying out GraphQL, have a look at the GitHub GraphQL API because it's pretty big and it gives you an idea of whatever you can do.
@@ -196,15 +196,15 @@ But most of the big companies use GraphQL in some shape or form now. I was booki
 
 So, it's everywhere and you might not see it as the user of the website but just open a network tab of your favorite products and see if they're doing GraphQL requests because there's a high chance that they're using it.
 
-[Christophe]
+### Christophe
 Yeah, most of the Fortune 500 stuff use it at least internally. Even many of the prominent web names use GraphQL at least for their internal API, sometimes for the public API. And when it comes to GitHub, the REST API is actually their v3 API.
 
 So, several years back and their v4 API, which was released like five years ago, is exclusively GraphQL and it's a lot better usage-wise than the REST API. So, if you want all the GitHub API goodness, you're going to have to do GraphQL.
 
-[Simone]
+### Simone
 Okay, what about caching GraphQL responses?
 
-[Roy]
+### Roy
 Yeah, so caching is always an interesting topic everywhere. So, caching GraphQL is slightly different from caching REST APIs and there's multiple places where you can cache. You can cache on your backend and you can also cache on your frontend, so on your client.
 
 So, a lot of these GraphQL clients that I showed, they will help you do caching similar to how you can do caching with Red Query, for example. It's slightly different because you're caching either operation level fields. So, these are like your queries to retrieve data.
@@ -213,10 +213,10 @@ You can also cache types. So, maybe you have a type that is occurring in differe
 
 But caching is always tricky. I think there is, what's the saying? There's like two things that are hard in life, like naming and caching validation.
 
-[Christophe]
+### Christophe
 And not by one errors.
 
-[Roy]
+### Roy
 Yeah. All right. All right.
 
 Thank you very much. Thank you, Roy. Yes, thank you all.

@@ -14,7 +14,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Skander]
+### Skander
 As you may have noticed, I'm replacing Charlotte, who could not be here, to present her talk about React internals. And I won't be speaking about the React library, but rather about another commonly used library when we develop with React, which is the React Query Library, also known as the Tanstack Query Library. Before getting started, I will just introduce myself.
 
 My name is Skander. I work at BAM.tech, where we develop mobile applications using native frameworks, the Flutter framework, and, of course, mostly the React Native Framework. So for our React Native applications, most of the time, to not say always, we use the React Query Library.
@@ -79,98 +79,98 @@ And I hope with this talk, I have convinced you to download it and to use it in 
 
 It may be two years old, but it covers a lot of render optimizations, such as the tracked queries, which we have seen, but other optimizations, like the structure chaining. Thank you for your attention, and I hope you enjoyed the talk.
 
-[Christophe]
+### Christophe
 Thank you, Skander. Please come here.
 
-[Simone]
+### Simone
 We will ask you very, very bad questions. It's your...
 
-[Christophe]
+### Christophe
 What is the atomic number of zinc?
 
-[Simone]
+### Simone
 630, by the way. I have a different question. How does it feel to wake up in the morning and say, okay, I'm going to have a boring day as usual, and then ending up speaking at an international conference with millions of people in front of you?
 
 More online.
 
-[Skander]
+### Skander
 Online, yeah. It's at the same time stressing, but also very cool.
 
-[Simone]
+### Simone
 Cool. Is tracking... Sorry.
 
 How do you activate or deactivate tracking in React query?
 
-[Skander]
+### Skander
 In React query, tracking is by default enabled, I think at least for React query version 4, and maybe for version 3 or so, I don't know. And if you want to disable it, you can pass a prop for notify on change props, and you can list the props that you want to be notified when they change. Typically, if you want to be notified when the query fails, and you don't get the error state, you can pass on change props error, and you will be notified when it fails.
 
-[Christophe]
+### Christophe
 All right. You mentioned in your closing slide that external resources, resources really from the TK2D and everything, for further explorations and further optimization pathways. Is there one of these that you're particularly interested in that you'd like to mention?
 
-[Skander]
+### Skander
 Personally, I love the structure sharing, because for those who don't know the structure sharing, it is equivalent to replace deep equal, and by replace deep equal, we will just... If we fetch the query, and just a key has changed between the first query and the second query, React query will keep the reference of the first object, and will change only the reference of the key that has changed. Why is this very cool?
 
 It's because when we use useMemo or useEffect or something like that, we will not cause any other...
 
-[Christophe]
+### Christophe
 Yeah, you'll keep referential identity, and so you'll have less re-render because of that.
 
-[Skander]
+### Skander
 Yeah. So, you can optimize your useMemo or useCallback.
 
-[Christophe]
+### Christophe
 Or your future React code when React Compiler does that for you.
 
-[Skander]
+### Skander
 Yeah.
 
-[Christophe]
+### Christophe
 Okay, cool. And have you seen... Oh, we got questions coming in.
 
-[Simone]
+### Simone
 Cool. Awesome.
 
-[Christophe]
+### Christophe
 Go ahead.
 
-[Simone]
+### Simone
 Okay. All right. Do you have other ideas or...
 
 Sorry, scenarios in which this solution can be helpful, apart from pure itself?
 
-[Skander]
+### Skander
 Usually, this will be very good for large states. But at the same time, large states should not exist. So, I think as a temporary solution for large states, it will be very cool.
 
 But the long-term solution would be to split the state into atoms by using Jota or something like that.
 
-[Simone]
+### Simone
 While you are waiting for refactoring, you can at least introduce that as a local optimization and then proceed to a larger-scale refactoring. Yeah.
 
-[Christophe]
+### Christophe
 There was a question about, do you know other packages that use the same trick, like tracking, so essentially getters or proxies to achieve the same kind of thing?
 
-[Skander]
+### Skander
 Honestly, no. But I would be curious.
 
-[Christophe]
+### Christophe
 I think Vue does it. Vue reactivity in Vue 3 uses ES proxies to do that kind of thing in computation tracking.
 
-[Simone]
+### Simone
 Yeah, I think...
 
-[Christophe]
+### Christophe
 Some signals libraries do that, too.
 
-[Simone]
+### Simone
 Yeah, I think so. Yeah, I was thinking about that. Yeah, I think most...
 
 I'd say most reactive frameworks libraries use that. All right.
 
-[Christophe]
+### Christophe
 Thank you very much, Skander.
 
-[Simone]
+### Simone
 Okay. Thank you very much, indeed. Thank you.
 
-[Christophe]
+### Christophe
 A big round of applause for Skander. This was his first talk. Hopefully, not the last.

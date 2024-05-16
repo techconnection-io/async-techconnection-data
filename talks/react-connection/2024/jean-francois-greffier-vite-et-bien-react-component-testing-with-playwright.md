@@ -14,7 +14,7 @@ conference: react-connection
 edition: '2024'
 allow_ads: false
 ---
-[Jean-François]
+### Jean-François
 I'm Jean-François Greffier, I'm from France, I'm from Rennes. I like software craft testing and I am a Playwright Ambassador. It basically means that I'm paid with stickers and merch by Microsoft.
 
 So I bring some for you actually, if you want some merch, some stuff, I have some. So, first thing is, what is Playwright? Anyone using Playwright right now?
@@ -183,50 +183,50 @@ But I think it's a great workbench because it can help you to isolate your compo
 
 So it's really cool, and I hope I convinced you to try it out. Thank you.
 
-[Christophe]
+### Christophe
 Thank you, Jean-Francois. Please come and take a seat. There you go.
 
 So we might create the questions a bit more and have a few less questions in order to sort of catch up a bit on the timeline, but absolutely go, Jean-Francois, for talking about Playwright during the breaks. Playwright's awesome. So really, even if you're over the Cypress persuasion, it's just you haven't seen the light yet.
 
 So don't hesitate to come and talk to Jean-Francois after. Do you have any...
 
-[Romain]
+### Romain
 Yeah, especially that we have many questions about tests. Maybe I will try to take three questions, but in one question. When it comes to UI testing, you have unit testing, end-to-end testing, performance testing.
 
 When would you recommend to use Playwright compared to other tools like Jest, RTL, and things like that?
 
-[Jean-François]
+### Jean-François
 First, you probably need Playwright for end-to-end testing to test at least your happy path because you need to test your app and not just your component and not just a set of components. At some point, you need to test the whole thing. So end-to-end also means the backend.
 
 So for happy path, for example, if you are doing e-commerce website or something, you need to check that people, your client can actually check out and buy stuff. Otherwise, you don't have business.
 
-[Christophe]
+### Christophe
 You want to test the entire story.
 
-[Jean-François]
+### Jean-François
 Yeah, that's for sure. For component testing, it's a bit more complicated because when do you want to test components with rendering? Then it depends on...
 
 I guess you can do it when your components are reused several times. And even better, if you have a design system, you should test it, and you should probably make your image snapshot and this kind of...
 
-[Christophe]
+### Christophe
 Yeah, and also if your component uses some web APIs that stuff like Happy DOM or JS DOM do not support, and you have to be in a browser anyway.
 
-[Jean-François]
+### Jean-François
 Yeah, exactly. Some stuff are not possible with a virtual DOM. Just like I wanted to show, I know it's a bit artificial, but I wanted to show with my button that doesn't work that the CSS have in Python the functionalities.
 
-[Christophe]
+### Christophe
 Another question?
 
-[Jean-François]
+### Jean-François
 There are a lot of questions.
 
-[Christophe]
+### Christophe
 It's on you. People can pass to you about not having picked their questions. Yeah.
 
-[Romain]
+### Romain
 So I will take the voted. How to make a full end-to-end test including the backend? Do you have any advice?
 
-[Jean-François]
+### Jean-François
 Small problem of environment. So you need to run your end-to-end test against something. So you can do it against your prod maybe with some service account or something.
 
 I'm not sure many people do that. Or then you should have some pre-prod environment. Or if you can, just mount the whole in some Docker Compose or Kubernetes or whatever.
@@ -235,13 +235,13 @@ So it's more like a DevOps program. But yeah, it's interesting. The ideal thing 
 
 But it's not always possible. So it depends.
 
-[Christophe]
+### Christophe
 Yeah, it's really like either Docker or when the backend maintains up-to-date mocks that MSW can reuse so that you can actually have half end-to-end kind of thing.
 
-[Jean-François]
+### Jean-François
 Yeah, it's always hard to maintain the mocks and to have exactly something that reacts like the real thing. So it's about how realistic you want your test to be also. Degree of confidence.
 
-[Christophe]
+### Christophe
 Okay, we'll have to cut that short. But please do come to Jean-Francois with all your questions during the breaks. Thank you very much, Jean-Francois.
 
 Thank you. Thank you.
