@@ -14,7 +14,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Leigha]
+### Leigha
 Thanks so much for coming, and I'm so excited to talk to you today about Flutter Flow. So Paris is one of my favorite cities to visit, and I already have seen a lot of familiar faces here, so I look forward to connecting with you all throughout the day. I'm Leah, and I've been involved in the Flutter community for a couple years now.
 
 I was previously one of the product managers for Flutter over at Google, and now I'm leading up product and developer relations at Flutter Flow. So I joined the Flutter Flow team about three months ago, and I was really excited about Flutter Flow's company mission, which is to help the world build great products. And I was excited about this mission because to me this means democratizing access to building apps, giving everyone the ability to bring their ideas to life.
@@ -197,124 +197,124 @@ This is things like breaking up our app state into different modules, being more
 
 So I'm looking forward to hearing some questions.
 
-[Guillaume]
+### Guillaume
 Thank you very much, Leigha. If you care to join us to the Q&A table. With the X?
 
 Yeah, you can sit on that one.
 
-[Leigha]
+### Leigha
 Sounds good.
 
-[Guillaume]
+### Guillaume
 So people can see you. Thank you very much.
 
-[Leigha]
+### Leigha
 Thank you.
 
-[Guillaume]
+### Guillaume
 For this awesome glimpse at what's under the hood of Flutter Flow and how things are working. We have, like, so many questions. Yeah.
 
 People are really interested.
 
-[Simone]
+### Simone
 I think we have just a big sum, and we'll do screenshots to forward so you can be able to answer. Sounds great.
 
-[Guillaume]
+### Guillaume
 Exactly. So, yeah. The first one is can you take a built-in component or a page of your Flutter Flow app, export it, and, yeah, embed it inside a Flutter app classic?
 
-[Leigha]
+### Leigha
 Yeah, you can. There's nothing stopping you from doing that. And, in fact, we're trying to make that even easier.
 
 We're trying to make it into a kind of happy path where you could export your Flutter Flow project as, like, a package that you would use and consume in any apps or that you could maybe use in other Flutter Flow projects itself. So possible right now. I haven't personally done that myself.
 
 So I'd be curious to hear what the issues are that you run into with going through that workflow. But it's definitely a path we're working on making even easier.
 
-[Guillaume]
+### Guillaume
 So please try it and give some feedback to Leah.
 
-[Leigha]
+### Leigha
 Yes.
 
-[Guillaume]
+### Guillaume
 Yeah. So Guillaume is asking can Flutter Flow detect which is the most optimized widget that you should be using? For example, using a single child scroll view or a custom scroll view or something else?
 
 How is it possible to optimize? Is it optimizing?
 
-[Leigha]
+### Leigha
 We've definitely done our best to optimize the widgets that we're offering. So we're really focused more on kind of, like, the business aspect. What are the common types of UI that you want to create in an app?
 
 And then we'll research, you know, Flutter and Dart best practices to make sure that our default configurations are putting your app in the best spot possible. But I think a lot of that also has to do with the settings that you're using inside of Flutter Flow and what widgets you're adding or any custom code. So in general, we do our best to make sure that, like, the default option is as optimized as possible.
 
 But a lot of it's up to you to kind of configure.
 
-[Simone]
+### Simone
 And what do you think is the maximum team size for collaborating on a Flutter Flow project?
 
-[Leigha]
+### Leigha
 That's a great question. So right now we're really focusing a lot of our attention on branching. And I think branching is so key to working on a project at scale.
 
 Right now there are a couple of known issues with branching. So, like, I wouldn't recommend Flutter Flow for a huge team. But I would say check back in a couple of weeks or months because we have lots of exciting branching stuff coming out soon.
 
-[Simone]
+### Simone
 Weeks even.
 
-[Leigha]
+### Leigha
 Yes. Awesome. Stuff is coming out.
 
 Today is Wednesday, right? Tomorrow more branching stuff is coming out. So hours.
 
-[Simone]
+### Simone
 Hours. Yeah. Awesome.
 
-[Guillaume]
+### Guillaume
 Do you manage automatic golden tests?
 
-[Leigha]
+### Leigha
 We don't right now. But that's actually something that we've talked about. Because we have this cool opportunity where we have a preview of what you think your project should work or should look like.
 
 So I do think it's something that we'll do later down the line. But it's not something we're doing right now.
 
-[Simone]
+### Simone
 And more about, like, an everyday question. Can you actually use Flutter Flow while you are offline?
 
-[Leigha]
+### Leigha
 So right now, no. And I know this is kind of frustrating, especially because we have a desktop app. And even myself, I open up the desktop app, and I was like, great, I don't have Wi-Fi.
 
 And was kind of disappointed when I realized it didn't work. Again, I think it's something we'd love to do longer term. But it's just not set up to work right now.
 
-[Guillaume]
+### Guillaume
 All right. Are tests also automatically generated?
 
-[Leigha]
+### Leigha
 Tests are not automatically generated. But we do have testing capabilities where you're able to set up integration tests. Which is actually quite nice.
 
 It's kind of easier to do in a user interface, I think. You can also set up unit tests for things like custom functions that you create where you set up what you think the expected value should be. So we have some testing capabilities.
 
 They're not automatically set up. And I think there's lots of room for improvement. Like golden tests or maybe anticipating what types of tests you should create.
 
-[Guillaume]
+### Guillaume
 All right. One last one. Because I think this one is very interesting.
 
 It's from someone that has actually used it, I think. Has FlutterFlow been able to reduce the amount of duplicated generated code?
 
-[Leigha]
+### Leigha
 So I think a lot of the duplication actually comes from the structure of your app. I gave a really good example where when I first created that page, I was just copying and pasting some widgets. FlutterFlow is not going to detect automatically, hey, you copied this.
 
 I need to create a class. You have to be the one to create a component which makes it into a reusable class. So it's similar to writing code.
 
 If you copy and paste it, that code is going to be duplicated. But if you create a reusable class and use that in multiple places, that's not duplicated. That just creates a class in your code base.
 
-[Simone]
+### Simone
 Awesome. All right.
 
-[Guillaume]
+### Guillaume
 There are so many more questions, but we don't have time, so we'll definitely share them to you so that you can give the community some answers.
 
-[Leigha]
+### Leigha
 We'll do. And I'll be around, so come find me and we can talk about FlutterFlow.
 
-[Guillaume]
+### Guillaume
 Thank you very much, Lea.
 
-[Leigha]
+### Leigha
 Thank you.

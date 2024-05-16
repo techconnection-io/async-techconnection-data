@@ -15,17 +15,17 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Thomas]
+### Thomas
 We're going to talk about animation versus delivery, and do we really have to choose between those two? I am Thomas, a lead developer at BAM, and you are?
 
-[Maxime]
+### Maxime
 Yeah, I'm Maxime, I'm a tech lead at BAM too, and one thing that is very much important and the reason why we wanted to do this talk is that we actually love animations. And there's been a lot of animation talks in the past, and there's one reason we wanted to do another one is that we realized that we are not using them a lot in our application, even with the fact that we love them. So to understand that, let's have a look at what a classic feature delivery flow looks like.
 
 Okay, it's very simplified, but you have product needs that comes from somewhere, then you have a design phase where you have some mockups, then us tech arrives and do some technical conceptions, then we develop it in the app. For the purpose of this talk, we're going to assume that those tasks are done by different teams or at least different people, which is usually the case, but sometimes you have product designers also. Let's say these are different teams, okay?
 
 So now let's have a look at what is the classic delivery flow for an animation.
 
-[Thomas]
+### Thomas
 Yeah, so because we looked at our delivery flow for an animation, and we want to match it to the feature flow, so it will be easier to introduce in our apps. And the first flux we actually encounter is the fancy dev flux. Why is that?
 
 It's because you're making your application in the dark and you said, oh, this animation could fit there. And you put it in your app, it's in production and nobody on your team knows it, but it's there. So let's go for it.
@@ -38,15 +38,15 @@ But because the one we want is the God flux, because I believe it exists really,
 
 We can make it easy and boom into production. So here are the different flow of animations we encountered during our lifetime at BAM.
 
-[Maxime]
+### Maxime
 Yeah. And yeah, so what's broken?
 
-[Thomas]
+### Thomas
 What's broken in this flux? Why can't we achieve the God flux? The first time I arrived at BAM and I tried to make animation, one of my mentors told me animation, it's easy.
 
 You just have to, and then a bunch of others still don't understand to these days. So I understood that I didn't know how to make animations.
 
-[Maxime]
+### Maxime
 Okay. And so what do you do when you don't know something? You engage practice mode.
 
 So that's what we did. We introduced a thing that we called Flutter UI Dodgers. Easy to understand.
@@ -65,7 +65,7 @@ It works. It's very easy. It's magic.
 
 And it's the easiest way to do animations. But sometimes you need to do some things a bit more complicated.
 
-[Thomas]
+### Thomas
 Because we love animation, but we also love skateboards. So what if I want to actually make a skateboard animation who can do flips, like front flips, back flips, any flips? Then my animated container wouldn't be enough.
 
 So that's why we get introduced to animation controller. The first thing you want to do when adding an animation controller is to actually add a controller and also provide an extension with a single tickle provider state mixin. So this enables your widgets to rebuild on every tick of the clock.
@@ -76,7 +76,7 @@ Not really. Because if you only do this, it would not get animated. You have to 
 
 So for example, a button who can just launch your animation on reverse, repeat, or just forward, or even pause it, if you want.
 
-[Maxime]
+### Maxime
 All right. That's already some of them. Yeah, so a bit more complex, of course, than the PC animation.
 
 That's some of them, but there's a lot of ways to animate. We won't have time to go through all of them. But basically, we have already come a long way with Flutter UI Dodgers.
@@ -101,7 +101,7 @@ So it's OK. This is done. OK.
 
 The actual trickier problem is it brings no value because it's kind of beyond our tech scope to kind of know, even if we have intuitions about it, what brings and what doesn't bring value in an application. And so to help with that, we have to go to our allies, which, of course, there will be our designers, right? So let's ask our designers what they do about this.
 
-[Thomas]
+### Thomas
 So when we asked our designers, they told us, like, you just have to reflect on how do you judge that a feature is valuable in your app? And we have a framework which is called the minimum viable product, which is based on three different points, the viability of the feature, the desirability of the feature, and then the feasibility of the feature. And this is our expectation of this minimal viable product.
 
 Everything is round, square, and everything is beautiful. But in reality, this is not what we really see. The features are really more delivery-oriented and the viability becomes a business viability only.
@@ -114,7 +114,7 @@ And so we are based on still the desirability, so what the user desires, but als
 
 No, I'm joking, obviously. But if you get put between those two planes, if we told you the plane on the right doesn't have 18 seats, but the plane on the left has, you would still choose to take the plane on the right, even if it has less features, but is more lovable.
 
-[Maxime]
+### Maxime
 Right, so a bit quick there, kind of shortcut, but let's say that all that we said convinces our product that animations are good. Actually, it's a very good way of convincing them. And then the flux is repaired again, right?
 
 Yeah, so it's a bit of a lie, obviously. The flux that we just presented is not the actual one, the current one that we are using right now. The one we are implementing right now is more like something we call fancy designer flux.
@@ -127,86 +127,86 @@ Now, we have to really focus, and this is our focus for the next month and proba
 
 Thank you, thank you. Thanks a lot. All right.
 
-[Thomas E.]
+### Thomas E.
 I think we can do the Q&A here. Thank you a lot for your talk.
 
-[Simone]
+### Simone
 I have a very technical question for you. How does it feel, you know, to have a very relaxing Tuesday and going home and say, okay, I'm going to take a shower, watch a Netflix movie, and then being told by Guillaume, oh, you should be on stage tomorrow morning, like be the second speaker of the conference.
 
-[Maxime]
+### Maxime
 It's your duty, right? First, we hesitated, but we said, let's go for it. We had already given this talk before, the only constraint was the time slot.
 
 I think we kind of made it.
 
-[Simone]
+### Simone
 Yeah, yeah, definitely, definitely. So, let's start with the questions from the audience. Like, animations are hard to communicate about, of course, because it's not as easy as static design.
 
 How can you improve, how can we improve sharing and talking about it without too much design effort?
 
-[Thomas]
+### Thomas
 Actually, we are putting in place, we are enhancing the dojos we talked about. Now, we are based on different animation or screens our designer gave us. And we try to implement the screen, add animation, give some feedbacks, say, okay, this took this much time.
 
 It's too hard, so we just will remove it. Or this is good, and it's really easy, so you can pick more of this animation, it's a quick win. And so, we try to change our formats to this format, so we can have more feedbacks between both teams.
 
-[Maxime]
+### Maxime
 Yeah, because we are the best persons to know how much time animation can take. We are not the best persons to know what animations to do, because we are not really designers. And so, we have to, it's a collaboration.
 
 You have to tell your designers, oh, this is easy, this is hard. They have to, okay, try to do this, try to do this. So, this is a collaboration that teaches us all.
 
-[Thomas]
+### Thomas
 Still in development. Yeah.
 
-[Thomas E.]
+### Thomas E.
 We have also a question about performances with Flutter animation. Do you see some performances issues? And if so, how do you make the choice between a lot of animations and a good performance?
 
-[Maxime]
+### Maxime
 So, as you may know, Flutter is a very good framework for performance. Still, there is some issue. It's a really hard question, because there's plenty of animation types.
 
 The easy answer and the only one that fits, I think, is that if performances are an issue for your product, you should definitely measure it. And there is no, like, the real answer to that.
 
-[Thomas]
+### Thomas
 For me, the only thing is just, animation is just about three builds on the ticker of the clock. So, be careful of what you rebuild on every animation, because it could cause some issues of performance, obviously. And then, just to add, I think it's SNCF and Connect who told us at conferences that they were releasing a package to understand the performance of your devices.
 
 So, you can just judge based on the device if you want to put this animation or not.
 
-[Maxime]
+### Maxime
 And you can use Flashlight, of course.
 
-[Simone]
+### Simone
 Always. How would you... So, this is hard.
 
 How would you unit test animations? That's a hard one.
 
-[Maxime]
+### Maxime
 Yeah, actually, we don't. Yeah, easy answer. I think the tricky part about animations, of course, is that it moves.
 
 And most of our tests for UIs are static tests, like golden testing, for example. So, if you really want to test animation, I mean, you can take multiple goldens, but this is not something I would, yeah. I think taking one golden and seeing that the animation exists and is in any state, I mean, maybe it's enough to prove that, yeah, it's there.
 
 So, I guess this is already something.
 
-[Thomas E.]
+### Thomas E.
 We have one question about the FlutterAnimate package. And how do you see the abstraction above all the Flutter animations basics that it gives you? Is it a good thing?
 
 I think the question is, is it a good thing? Because it's a lot of abstraction.
 
-[Thomas]
+### Thomas
 I think it's a good thing. On one dojo, we tricked our different developers to tell them, do this animation in less than 15 minutes. And nobody could do it, even the senior developers.
 
 And we told them, just use FlutterAnimate. And in three minutes, even the junior ones did the animation. So, I think if you want to add some value quickly and prove your products, that you can add animation to your app.
 
 And also, we don't encounter any performance issues with it. So, I think it's a good thing to add. But if you want more control on your animation, just do the animation controller and use custom painters.
 
-[Simone]
+### Simone
 Since you're an agency, Edmem, do you see value, at least, do you see how you could do to maybe share pre-developed animations across multiple projects or across different teams?
 
-[Maxime]
+### Maxime
 Yeah, there's not really an animation that fits every product. There's concepts that you can reapply. Like, for example, I'm sure you all know hero animations.
 
 If you don't, you really should give it a look, because it's pretty cool. Which makes things move between navigation. I think that, yeah, mostly it's a reusing concept.
 
 That's also why we do some dodges, because we know that it's the concept that matters and not really the animation itself, because it's really based on what the product wants.
 
-[Simone]
+### Simone
 All right. Thank you very much. Thank you.
 
 Thank you.

@@ -14,7 +14,7 @@ conference: flutter-connection
 edition: '2024'
 allow_ads: false
 ---
-[Lukas]
+### Lukas
 Welcome and thanks for joining my talk today. My name is Lukas Goldner, and I'm going to talk about Flutter element embedding today. So first, let me introduce myself.
 
 As I said, I'm called Lukas Goldner. That's my Twitter handle. I'm currently working as a Flutter engineer at a Japanese company called uTrust, German-Brazilian, 23 years old.
@@ -33,22 +33,22 @@ So this opens up a lot of potential. And the feature came out with 3.7 like one 
 
 Rauf?
 
-[Rauf]
+### Rauf
 Hey, Lukas. How's it going? So I've released a new app. Can you check out the home page real quick, please?
 
-[Lukas]
+### Lukas
 I'm in a presentation.
 
-[Rauf]
+### Rauf
 Come on, please.
 
-[Lukas]
+### Lukas
 OK, I guess.
 
-[Rauf]
+### Rauf
 OK, thanks a lot.
 
-[Lukas]
+### Lukas
 OK, so Rauf just called and sent me this web page, so let's have a look. RedCounter, so this looks very interesting. Haven't seen an app like that before.
 
 It has so many nice features. But I think we can take this a step further. So as I've said, we can take any app that supports WebBuild and put it into the website.
@@ -113,61 +113,61 @@ Yeah. You see it works. You just need some adjustments and yeah.
 
 Thanks for listening. And this was it. Yeah, you just clap.
 
-[Romain]
+### Romain
 Thanks a lot. Please come with me.
 
-[Simone]
+### Simone
 All right. Since Alois had live demo, Lucas coded a live thing while Alois was talking to have a live demo as well. So no, I'm joking.
 
 So do you, just in loading the questions, do you have any, do you know of any website already doing or using this in production?
 
-[Lukas]
+### Lukas
 Okay.
 
-[Simone]
+### Simone
 I mean, not solution particularly, but this kind of an embedding and back and forth from JavaScript and Flutter.
 
-[Lukas]
+### Lukas
 I haven't encountered a website like this. If you have any example, please let me know. I want to look at them as well.
 
 I used it in my own, I had a timer. I used it in my own website, like for documentation purposes, I embedded the actual app inside of the website. So you can test out directly as I send and see, but I don't know.
 
 I can't think of any website right now.
 
-[Romain]
+### Romain
 Another question that we have is, do you have in mind any use case where you wouldn't recommend it? Maybe because of performance or security issues?
 
-[Lukas]
+### Lukas
 Yeah, so it takes not, okay, it depends on your app, of course, how big it is. Then it could like take a little bit of time to load it. So if that's a requirement that you have, then you probably shouldn't use it.
 
 Depends of course on your requirements. For example, with the React app, since I needed to update the output of the Flutter app, I couldn't use the minimization of Flutter when it builds the web app. So that's a case where it would be even slower and the client has to download a larger bundle then.
 
 It depends.
 
-[Simone]
+### Simone
 Would you recommend a React native app with a web view that contains React, that contains Flutter?
 
-[Lukas]
+### Lukas
 I mean, I had, so I had this, I built the website in React and I had, and it embedded my Flutter app and inside of the Flutter app, there was this red counter page demo, which was a completely separate site. And inside of that, I also embedded a Flutter app. So you can go crazy here.
 
-[Romain]
+### Romain
 Flutterception. You told about the communication between JavaScript and Dart. Do you know about some packages like Python that we could have for meta channels to help us serialize the data and have a better communication or?
 
-[Lukas]
+### Lukas
 I haven't tried it out with Python. I have no idea if it supports that. It would be great though, but for now, I haven't seen anything like this aspect.
 
 Would be nice though for type safety, of course.
 
-[Simone]
+### Simone
 Well, what about the size of the final app? I mean, what's the final bundle that you download from the web?
 
-[Lukas]
+### Lukas
 Can we look at that in the browser? I don't know the exact size. We can check later whoever asked that.
 
 All right.
 
-[Simone]
+### Simone
 Awesome. So I think it's all for these questions.
 
-[Romain]
+### Romain
 Thank you very much.
