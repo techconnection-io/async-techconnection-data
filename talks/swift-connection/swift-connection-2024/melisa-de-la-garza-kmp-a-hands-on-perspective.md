@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/melisa-de-la-garza-kmp-a-hands-on-perspective
-date: '2024-09-23'
-title: 'KMP: A Hands-On Perspective'
+  /talks/swift-connection/swift-connection-2024/melisa-de-la-garza-kmp-a-hands-on-perspective
+date: "2024-09-23"
+title: "KMP: A Hands-On Perspective"
 author:
   - Melisa De la Garza
 video: 0AvHyr6e0_s
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/0AvHyr6e0_s.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/KMM%202024%20SwiftConnection.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Melisa
+
 Hello, everyone. My name is Melissa, and today, I want to tell you about my experience with Kotlin multiplatform. Please don't kill me, okay?
 
 First of all, how dare I? I know, I'm sorry. This is a Swift conference, not KotlinConf.
@@ -120,27 +122,35 @@ Technology is nothing. What's important is that you have faith in people and tha
 Thank you.
 
 ### Zino
+
 Thank you, Melissa. You're welcome. So through all the pain points and the problems and stuff, it seems that the major reason why you kept going was because of fun.
 
 ### Melisa
+
 Yeah, definitely.
 
 ### Zino
+
 Do you consider that a huge part of the development process? Should developers have fun?
 
 ### Melisa
+
 Definitely. I think it can be a soul-numbing job if you're not having fun, because you're basically just talking to the computer all day, every day. So you at least should have fun with what you're doing, and that's it.
 
 ### Zino
+
 And bashing your brain against cupboards is fun.
 
 ### Melisa
+
 Exactly. It's fun. Try it.
 
 ### Robin
+
 Well, I've got a question for you. You were talking about potentially befriending these Android developers that we like to push away. Since KMM is coming from an Android language, has that ever made you think, oh, maybe I could develop for both?
 
 ### Melisa
+
 Yeah, definitely. That was sort of the initial thought behind it. Maybe we could do both.
 
 Have you seen that be a point of both? I actually have a very good example. When we were starting the project, of course, it was like a senior task to back their heads against the wall, and the junior devs were just kept to a distance so that they would just learn from our mistakes, and one of the junior Android devs actually started growing with the company, and he got very excited about learning about Swift as well, and two years later, he's doing both really well, really exciting to see how he's even good at Swift UI now, and he's super excited with it and he's doing both, and I think it's great.
@@ -152,9 +162,11 @@ Yeah, definitely. I mean, they're so similar that why not? Yeah.
 Yeah.
 
 ### Zino
+
 I have more of a technical question based because, you know, I'm a data kind of guy, so the problem with transpiling and having multiple platforms is usually performance-based. Did you notice any performance hits?
 
 ### Melisa
+
 At the beginning, when we were trying to figure it out, definitely. Some of them. Some functions were recommended to help with that, like the freeze function in Android.
 
 I don't know. Stuff like that. But thankfully with the coroutines, it helped a lot handling of the threat management to the GCD, so, yeah, after we did that setup correctly, it went very well, very fine.
@@ -162,41 +174,53 @@ I don't know. Stuff like that. But thankfully with the coroutines, it helped a l
 I mean, the only problem might be the build time for developers, but performance-wise for the users was fine.
 
 ### Zino
+
 Performance is always great on Objective-C.
 
 ### Melisa
+
 Yeah.
 
 ### Robin
+
 Famously. Well, I've got a question for you that's coming from the audience. In your project setup, is it possible that you can put a break point into the Kotlin code, or is that just a black box that we can't get to?
 
 ### Melisa
+
 Yeah. Unfortunately, it's a black box. It's just an API for Swift developers.
 
 But in any case, you have to have both projects there, so you can read the code over there and sort of have a break point in which function it's crashing or just stopping and then go to the Android Studio and look at it there and see what's going on.
 
 ### Zino
+
 All right. I don't have any more questions.
 
 ### Robin
+
 I've just got one more question for you, and this is a personal one. Since you've added this into your project, has that had any effect on the hiring process on your team?
 
 ### Melisa
+
 Yeah, that's a good question. It has. Unfortunately, whenever we were trying to hire some iOS developers and we mentioned that our project was already having this part ingrained in the project, some of them were not really excited about it and also not willing to learn Kotlin.
 
 But that also meant that for us, maybe they didn't have sort of the fun mindset and the challenge mindset. It was a challenge, but I mean, we got there. OK.
 
 ### Robin
+
 Good. Well, thank you. Do you have any more questions, Zina?
 
 ### Zino
+
 I do not.
 
 ### Robin
+
 No? Well, another round of applause for Melissa.
 
 ### Zino
+
 Thank you, Melissa.
 
 ### Robin
+
 Thank you. Thank you so much.

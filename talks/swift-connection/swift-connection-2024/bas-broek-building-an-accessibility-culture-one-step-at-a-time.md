@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/bas-broek-building-an-accessibility-culture-one-step-at-a-time
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/bas-broek-building-an-accessibility-culture-one-step-at-a-time
+date: "2024-09-23"
 title: Building an Accessibility Culture, One Step at a Time
 author:
   - Bas Broek
@@ -12,9 +12,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Bas
+
 Good afternoon, everyone, how are we doing? Good first few talks? Good first experience at FrenchKid or SwiftConnection for those first time here?
 
 Amazing. Well, I'm so happy to be here and talk to you about a topic that is very near and dear to my heart, as some of you might know. And that is accessibility.
@@ -160,9 +162,11 @@ And one last thing. If you want to, feel free to come up to me afterwards. I wou
 Thank you very much. And thank you, Bas.
 
 ### Ellen
+
 Thanks, Bas. I wanted to start by asking, you mentioned that one place where you can really streamline this process is getting designers involved early. Do you know of any sort of tools or techniques that, as the designers are working with something like Sketch or something like Figma, that allow them to sort of annotate stuff for accessibility?
 
 ### Bas
+
 I think we use Figma if we transfer, and Figma has a whole load of tools for accessibility. Excuse me. I don't know exactly how they work, how you download them, do you pay extra, I don't know.
 
 But there's a lot of tooling out there that can help. You can also do it manually, right? You can kind of duplicate your design and add your labels there to indicate the how and what.
@@ -170,12 +174,15 @@ But there's a lot of tooling out there that can help. You can also do it manuall
 But, yeah, there's a lot of tools out there that you can use to make that work.
 
 ### Ellen
+
 Cool. Some questions from the audience?
 
 ### Julien
+
 Yeah, I'm going to rephrase slightly, but how do you feel about the European Accessibility Act? Quite a big seed, right?
 
 ### Bas
+
 It's an interesting one. Because first of all, that's about finishing audits, like checking boxes to some extent, and not necessarily about going that extra mile and making an experience actually accessible. And then on the other hand, rules are great, but they will have to be enforced.
 
 Because otherwise, why would we do them, right? I think in 2021, something similar went into effect for web, and web is not a great accessible place. So, I mean, I hope for the best.
@@ -185,25 +192,31 @@ I think it will help. But it won't be... I won't expect every company to be jump
 Because it really just still needs to start with us, with you. Maybe I'm proven wrong, hopefully. Let's see next year.
 
 ### Ellen
+
 It's interesting. In the United States, under the Americans with Disabilities Act, people couldn't sue you if your app is not accessible. Domino's lost a whole bunch of money on that.
 
 And that's something that I think people have used to sort of be like, okay, this is actually like a business problem, in addition to actually being something that humans want to use.
 
 ### Bas
+
 Yeah, it does feel a little bit weird that it needs to be that, you know? But also, I guess it's better than nothing.
 
 ### Ellen
+
 Yeah. It's definitely... You want the carrot, but sometimes you need the stick.
 
 ### Bas
+
 Exactly.
 
 ### Ellen
+
 I wanted to ask, so you mentioned that you guys use something called Fable at WeTransfer. I'm sure that they're probably some sort of paid resource. So for people who are more working on their own and are looking to figure out, like, how do I even figure out, like, what assistive technologies my users are using?
 
 What's the best way to find out about that, other than, like, waiting for them to complain?
 
 ### Bas
+
 It's a really difficult one, because it's also quite frowned upon to track it in apps, which would be kind of one way. But that's also, like, a chicken and egg problem, because, like, oh, only 1% of my users have it. So I guess it's not that important.
 
 I'm like, well, you know, if you think that way, that number is definitely not going up. It's a difficult one. I would say social media, reach out, you know, try to get that kind of feedback actively rather than just waiting for it.
@@ -211,12 +224,15 @@ I'm like, well, you know, if you think that way, that number is definitely not g
 And, you know, again, as I mentioned as well, Apple Viz, free to go to and ask questions and get feedback from users. So that would be another good opportunity to look at.
 
 ### Ellen
+
 Thank you.
 
 ### Julien
+
 Well, do you have examples of apps with nicely integrated accessibility that we could inspire from?
 
 ### Bas
+
 The WeTransfer app, for now. Well, Apple as well, right, has great apps. Spotify does well.
 
 What else can I think of? There's an app called Be My Eyes, which is really interesting. What they do is solve an accessibility need.
@@ -226,9 +242,11 @@ So what users can do that have eyesight problems is they can call someone else t
 So also definitely take a look at that one. And go take a look at your favorite apps, right? You can also learn from the apps that are not necessarily great.
 
 ### Ellen
+
 Are there other accessibility tools? So you definitely mentioned like a Braille keyboard and voiceover and voice control. Are there other accessibility technologies that people should be thinking about as well?
 
 ### Bas
+
 I think it's a good place to start. You have full keyboard access as well to navigate by keyboard, which is kind of built on top of voice control. You have assistive touch, which a lot of users might or a lot of us might remember like back in the days when we were worried that our home button would break, you could actually put a virtual home button on your screen.
 
 Think about haptics, think about sounds. I think that might be more important than checking all the boxes of all the assistive tech. The last interesting one is, and I forget its name.
@@ -236,9 +254,11 @@ Think about haptics, think about sounds. I think that might be more important th
 Switch control. Exactly. So this is really where you can navigate your phone with just one button, which as you can imagine might be pretty tedious, but try it out and you will understand that this is life changing for people when you can actually do this.
 
 ### Ellen
+
 Watching people who are paralyzed and that's how they interact with their machines, it's really impressive to see how much people can do with just one button.
 
 ### Bas
+
 And a recent addition as well is assistive, no, what is it? It's basically what you can do, assistive access, that's the one. You can reboot your phone or your iPad and everything is big.
 
 So imagine maybe your parent or grandparent that might have difficulty because all the letters are very small. You can have everything in a grid system or in a row system. Everything is large touch points.
@@ -246,15 +266,19 @@ So imagine maybe your parent or grandparent that might have difficulty because a
 The messages app is optimized so you might say your keyboard is only emoji and simplify it that way. I hope to see some improvements in the future where our apps can actually opt in for it a little bit better, but I think that's also a really exciting thing. Also as we ourselves grow older and maybe at some point want to use that.
 
 ### Ellen
+
 We're all getting older.
 
 ### Bas
+
 But all at the same time, so, you know, no worries.
 
 ### Julien
+
 Last question from the audience, there is a question about measurement, how do you measure how many users with disability you have and I would add a personal one because I struggle most of the time with accessibility to test. How do you automate testing? How can you have metrics like code coverage, code complexity related to accessibility?
 
 ### Bas
+
 Okay, so first question, sorry, what was it? The first one is how do you know your audience? I don't want to know because again it's kind of frowned upon and Apple is kind of not really introducing APIs anymore that let you check which accessible tech users are using.
 
 I do it because we should do it because it is important to individuals, right? It's not that, oh, it's only 5% so whatever. If we need to measure it, yeah, you can dig up some APIs to do it, but I don't think we should.
@@ -262,35 +286,45 @@ I do it because we should do it because it is important to individuals, right? I
 Second question, tools, automation is really tricky and the reason for that is you can check, you know, does this button have a label and is it like longer than a few characters, but if we label a button, you know, cow and it is actually a close button, maybe there is some AI tooling coming up that can hint at it being wrong.
 
 ### Ellen
+
 What about UI tests?
 
 ### Bas
+
 What about UI tests?
 
 ### Ellen
+
 Can you set up your UI tests to make sure that you are using, rather than like selecting a particular identifier for a view, that you use the accessibility items to sort of tap through it?
 
 ### Bas
+
 I would recommend against that. That's why we have accessibility identifier, which if you ask me should be called automation identifier.
 
 ### Ellen
+
 I meant more accessibility labels rather than the accessibility identifier.
 
 ### Bas
+
 If we go and use accessibility labels, we might change them in the future. Maybe that's what you want in your test breaks, but it's not necessarily wrong. They're localized.
 
 Yeah.
 
 ### Ellen
+
 I think one thing that I have done in the past is have sort of a shared set of strings where you basically say, okay, like here is basically a static let that points at the localized string that I am using, so that even if the copy changes and particularly also like if you are testing in a different language, it's still basically pointing to the right thing. It's always going to be the same thing in both places.
 
 ### Bas
+
 I think it's something you could do to keep an eye on it, right? And to see, like, okay, if something breaks or if something changes, maybe a test will fail. I think it's hard to make clear in a test then, like, okay, why did it fail?
 
 What should we do to fix it? But at the same time, hey, if it works for you, you should go for it.
 
 ### Ellen
+
 Yeah. Absolutely.
 
 ### Julien
+
 With his wise words, we stop here. Thank you, Bras. Thank you.

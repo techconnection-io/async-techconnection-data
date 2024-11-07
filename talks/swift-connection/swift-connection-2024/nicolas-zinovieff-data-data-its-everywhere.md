@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/nicolas-zinovieff-data-data-its-everywhere
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/nicolas-zinovieff-data-data-its-everywhere
+date: "2024-09-23"
 title: Data? Data! It's everywhere!
 author:
   - Nicolas Zinovieff
 video: f_4JQIuTqRg
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/f_4JQIuTqRg.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Serialization%20Data.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Zino
+
 Thank you Simone. So yeah, we're going to talk about data because data is super important. First question of course is, why?
 
 Well I come from a math and computer science background so I like numbers better than feelings and when I talk to people about what they use for data they go like, oh I like this better and I'm like yeah, but how fast is it? So when I offered to measure it, I just did and it seems like a very important trait of data mining, right? Because if you've ever done that, changing the underlying structure of your data storage is something that has a huge impact on the rest of your application in development.
@@ -92,30 +94,37 @@ Sorry, it was a lot of numbers. You are surrounded. I am surrounded.
 Yes. I surrender.
 
 ### Ellen
+
 So how did you... So I'm a little bit curious about the benchmark framework. I know that you were sort of saying it's really good for, you know, for, you know, working with a CLI.
 
 Were you able to use it? And you said that there was a serious problem because you weren't able to spin up core data without access to core services. How were you able to eventually get benchmark to work with that?
 
 ### Zino
+
 So I cheated by trying to build a SwiftUI application. Because when you write a Swift package that includes SwiftUI, it somehow magically spins out an application rather than a CLI tool. So there are some things going on under the hood that you can cheat with.
 
 But if you try to go the, like, pure CLI, you will not get, like, Swift data is actually kind of the same because it's based on core data. It will just tell you you can't do that outside of a core services context. But it will tell you that after it crashed a couple times.
 
 ### Ellen
+
 Yeah.
 
 ### Zino
+
 So, you know. But, yeah, if you're in doubt when using, when testing that kind of thing, try including some SwiftUI code. Because then macOS or iOS interprets it as an application rather than a tool.
 
 ### Ellen
+
 Cool. I just want to point out, Zeno's wearing a shirt that said, Ne me posez pas de questions si vous n'êtes pas prêts de rentrer à la réponse. Which basically means, please don't ask me a question if you're not ready to listen to the answer.
 
 ### Julien
+
 Sorry. And this is a good transition with the next question from the audience. Uh-huh.
 
 How about Realm?
 
 ### Zino
+
 Okay. All right. So, how about insert any multi-platform technology here?
 
 The thing is, as you can see with Swift data and core data and SQLite, the more layers you add, the more trade-offs you get. So, I'm sure Realm is super convenient when you're trying to do some multi-platform stuff or when you're trying, because you know that kind of stuff. I'm sure it is.
@@ -125,27 +134,35 @@ I haven't had to write a cross-platform application for a long time, so, super h
 I'm just saying, test things before you choose, because it has a huge impact on your development cycle. Anyone who's ever had to retool the whole low level of your application, you know what I mean. Test things, make the best show you can, and have an escape hatch somewhere.
 
 ### Ellen
+
 Yeah, I think, speaking of Realm, they recently deprecated their major sync SDK, so, good luck with that. Another question I had was, there was a slide in there where you said that Swift data is more designed to use with sort of smaller data sets, where it's mostly just one screen being displayed at a time.
 
 ### Zino
+
 Not necessarily data sets, but smaller extracts.
 
 ### Ellen
+
 Okay.
 
 ### Zino
+
 Smaller manipulations with the database.
 
 ### Ellen
+
 So, what you would say is maybe more like, maybe sections of the data set?
 
 ### Zino
+
 Yeah.
 
 ### Ellen
+
 Okay.
 
 ### Zino
+
 So, my guess is that, because, and that particular test, because it's serializing one full gigabyte, 1.2 actually, but it doesn't matter, it kind of goes, like, if you imagine something like a social feed or whatever, where you have small views that encapsulate a long piece of data, my guess from the way it works and kind of crashes I got, is that it's optimized for that. Like, small queries that give you one or two or ten objects, rather than I want to grab the whole thing and do some heavy calculation. And it was not meant for that kind of test, right?
 
 Like, if you are trying to do what I did, like grab 7,000 students and try to calculate the average grade for one of the students, certainly that is not your friend. Because it has to load the whole data set at some point. So, yeah.
@@ -153,9 +170,11 @@ Like, if you are trying to do what I did, like grab 7,000 students and try to ca
 Okay.
 
 ### Julien
+
 Have you tried to benchmark it on a real physical device and did you find a huge difference?
 
 ### Zino
+
 Yes. It is all on a physical device, it's Mac OS rather than iOS. Running the same code on iOS yields the same kind of results.
 
 I just got my new iPhone, so I haven't tried on it, and my old iPhone is an SE generation 1. So, again, I thought that the benchmark would not be fair. But in the limited tests I did, it is fairly accurate.
@@ -163,10 +182,13 @@ I just got my new iPhone, so I haven't tried on it, and my old iPhone is an SE g
 You see the same kind of delta. If this thing is three times as fast, then this one is going to be three times as fast on all platforms. Okay.
 
 ### Julien
+
 Thank you, Zeno.
 
 ### Ellen
+
 Thanks, Zeno.
 
 ### Julien
+
 Thanks a lot.

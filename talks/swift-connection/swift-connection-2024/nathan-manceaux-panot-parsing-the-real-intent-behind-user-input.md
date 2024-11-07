@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/nathan-manceaux-panot-parsing-the-real-intent-behind-user-input
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/nathan-manceaux-panot-parsing-the-real-intent-behind-user-input
+date: "2024-09-23"
 title: Parsing the real intent behind user input
 author:
   - Nathan Manceaux-Panot
 video: riK8aL_yZGw
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/riK8aL_yZGw.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Parsing%20user%20intent.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Nathan
+
 So I'm Nathan, although I'm only the first Nathan you'll see today, there's a second one later on, and watch this space, he's much better. But I am a macOS developer, independent macOS developer. My slides will show up quite quickly, I hope.
 
 If we could, Melissa, please change the, thank you very much. So, yeah, macOS developer, these days I'm working on retcon, which is a git client for rewriting git history really, really fast, like, before pushing your personal branch and opening a pro request, for instance. So you can say reorder commits just by drag and dropping, and like that's done, no step two, drag, drop, you're finished.
@@ -112,6 +114,7 @@ And the last thing is, we have some resources. The QR code will stay visible dur
 You have my personal links, and you have a link to Redcon, which is a good client to rewrite history really pretty fast. Thank you.
 
 ### Rob
+
 I feel like maybe there could be some kind of guidelines, like about human interfaces. That sounds like a good idea. If only someone had that.
 
 But let's be serious. You talk about things like the hitbox. So famously we had the old 44-pixel hitbox.
@@ -119,6 +122,7 @@ But let's be serious. You talk about things like the hitbox. So famously we had 
 Is there something for mice and for other types of things, or do you just kind of play with it, or like how far people should swipe or things like that, or do you just need to play with it?
 
 ### Nathan
+
 So I don't know of guidelines about that specifically, but there might very well be. However, yeah, I think the main advice would be to play with it. Like for all these interactions, it's about you try it first.
 
 You saw the first version of my sample app, and it was miserable to use. But also, as I said, it was technically correct. Like it's the most naive version you can build.
@@ -134,11 +138,13 @@ And you can actually just try it. And as long as you're frustrated with it, yeah
 That's something you can test for yourself, and that you can test on users. You can give the app to users and see, you know, how long they tolerate it.
 
 ### Rob
+
 So you say, I mean, you pulled this from App Home, but App Home does go even more. I mean, how do you avoid... One of the things I'm worried about would be false positives, when you start having these little swipes, or people start to pull and then come back.
 
 I mean, does the code get more and more and more complicated, or does it turn out that there's some simple things that work for almost all the cases?
 
 ### Nathan
+
 Right. I don't think there's a simple silver bullet. Implementation-wise, I mean, once again, I reinvented the wheel here, so that's not a great example, but, like, well, there's, in the resources, you have something guides around that, like, doing gestures, and, like, Apple has amazing APIs for that, like, where you can really combine gestures, define them, and say, like, oh, this gesture actually waits for that other gesture to fail, to be like, oh, I can't be activated, so we really have good stuff around that. But then, yeah, once again, it's about, like, you know, rejecting palm input.
 
 That's something you can notice in using, and then you can, all right, try and find strategies around it, but it's always going to be, like, creating coding. This is creating coding. You have to be like, okay, yeah, how can I distinguish between an intentional touch and a non-intentional touch?
@@ -148,7 +154,9 @@ And the user is not going to tell you. You're going to have a separate button th
 So you have to look at, try and find the minute differences in between the two things, like, oh, this is a mistake, this is not. And ultimately, your thing isn't going to be perfect, but that's okay. You just have to do your best effort at trying to guess at the intent of the user.
 
 ### Rob
+
 Fantastic. Thank you so much.
 
 ### Nathan
+
 Yeah, thank you very much.

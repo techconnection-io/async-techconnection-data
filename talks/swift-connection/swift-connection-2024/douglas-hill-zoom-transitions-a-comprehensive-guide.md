@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/douglas-hill-zoom-transitions-a-comprehensive-guide
-date: '2024-09-23'
-title: 'Zoom transitions: A comprehensive guide'
+  /talks/swift-connection/swift-connection-2024/douglas-hill-zoom-transitions-a-comprehensive-guide
+date: "2024-09-23"
+title: "Zoom transitions: A comprehensive guide"
 author:
   - Douglas Hill
 video: qA69uZDd53Q
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/qA69uZDd53Q.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/zoom-transitions.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Douglas
+
 All right, hi everyone. It's really great to be here in Paris. So I'm Douglas Hill and this talk is going to be, this is quite a short talk, but we are going to go in as much detail as I can in quite a very specific new addition in the iOS 18 SDK.
 
 So Apple brings, you know, gives us a lot of new APIs every year. But this one is my particular favorite. It's a very nice small addition.
@@ -80,11 +82,13 @@ It's quite a simple thing to set up. It just adds a bit more delight to your app
 It would be great to see you at one of our events if you're around. Yeah, that's all. Thanks very much.
 
 ### Rob
+
 I like the short things that give us something you can take away and just use. Thank you. There was a weird thing, though, in your code example that I didn't understand.
 
 What's a namespace?
 
 ### Douglas
+
 Yes, that's a good question. The problem this is solving is that in SwiftUI, your view hierarchy is being rebuilt each time it's updated. So I think this is why you see the ‑‑ I would say this is more simple to understand conceptually in UIKit because you actually have a ‑‑ your views have a ‑‑ like, they are reference types.
 
 So you can say when the system needs to know what view should I be animating to, you just provide that view. Whereas in SwiftUI, it's a slightly more abstracted connection between them. So really, all the namespaces, it's like a unique identifier, I think, within your whole ‑‑ I mean, it's wrapped behind this macro.
@@ -94,23 +98,29 @@ So you kind of don't need to think about the details. But it is ‑‑ when you 
 But I kind of think of it more like the namespaces, it's just with these two things together, the system can uniquely know that this view animates up to this one.
 
 ### Rob
+
 Okay.
 
 ### Douglas
+
 Okay.
 
 ### Denis
+
 From the audience following up on namespace, we're wondering, is it safe to inject the namespace inside the environment? Or is there a cleaner way to do it?
 
 ### Douglas
+
 I think that should be fine. If you're, like, if you're setting up multiple different places in your app that have Zoom transitions, I think as long as you don't mix up your namespaces between them, I don't see why there would be any problems with this. Okay.
 
 But, yeah, like, yeah, the code sample was very simple there. But if you have more, you know, complexity in your, you know, like your list row, yes, you may then have that be a separate view and I guess you could use the environment to simplify parsing that namespace down to that. Okay.
 
 ### Rob
+
 So I always get really nervous when in UI code there's this, well, it's not implemented, but you can call it. What does it do in that case?
 
 ### Douglas
+
 Right. So like on watchOS or on Mac Catalyst if you're using the optimized setting, you'll just get the normal, like, push transition from your, like, navigation stack. Or if it's like a modal presentation, you'll just get the standard slide up.
 
 So it does, like, this would also be the case if you're supporting versions before iOS 18. Like, the, well, the functionality in that will still be there. You just will get a different transition effect, which I think does, it makes a big difference to the feel, but it's technically everything will still work in the app.
@@ -118,9 +128,11 @@ So it does, like, this would also be the case if you're supporting versions befo
 So I think it's quite, it's a fine for work.
 
 ### Denis
+
 Questions that comes up, is it possible to customize a bit the transition? Because, for example, the example given is, like, if you're displaying a sheet, maybe you don't want to you want to disable the zoom out when you slide down. Is it possible at all?
 
 ### Douglas
+
 I don't think you could do specifically that. I mean, that is the tradeoff with this. You get the effect for three lines of code, but there's not a whole lot you can customize.
 
 So I think, I mean, I think for the vast majority of apps, it's a very good tradeoff. But, yeah, I think it's fun, like, this is a fun thing to implement, and I did, like, it was a rainy weekend a few weeks ago, and I had a go, like, implementing this from scratch just to, well, as a science project, and I made decent progress, but even, like, most of the day on it, it was not completely finished as a kind of reusable component. So I don't know.
@@ -128,4 +140,5 @@ So I think, I mean, I think for the vast majority of apps, it's a very good trad
 It's probably not the best use of, like, your company's time if you're if you need to implement this effect. Yeah, I think the I guess the programmer in me is, like, yes, this is fun, but more like the project manager is, like, no, let's do it the easy way.
 
 ### Denis
+
 Well, thank you for your time and for this great presentation. Thank you. Thank you.

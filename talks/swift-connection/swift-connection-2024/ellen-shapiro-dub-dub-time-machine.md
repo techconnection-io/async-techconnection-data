@@ -1,6 +1,6 @@
 ---
-slug: /talks/frenchkit/swift-connection-2024/ellen-shapiro-dub-dub-time-machine
-date: '2024-09-23'
+slug: /talks/swift-connection/swift-connection-2024/ellen-shapiro-dub-dub-time-machine
+date: "2024-09-23"
 title: Dub Dub Time Machine
 author:
   - Ellen Shapiro
@@ -11,9 +11,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Ellen
+
 I hope you all got plenty of caffeine during the break, because I'm about to throw a whole lot of information at you. So every year, we as Apple developers collectively experience the Worldwide Developers Conference. Absolute mountains of information dumped on us, about 50 videos at a time over the course of five days.
 
 And during WWDC, you get incredibly excited about all the cool new stuff that got announced and that you're really itching to use. But then you go back to your job, the thing that actually pays you the money you need to live. And for folks at most jobs, that means that learning that you're not actually going to be able to use any of this stuff that just got announced for the next two years.

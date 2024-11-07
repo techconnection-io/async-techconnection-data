@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/rob-napier-zen-and-the-science-of-debugging
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/rob-napier-zen-and-the-science-of-debugging
+date: "2024-09-23"
 title: Zen and the Science of Debugging
 author:
   - Rob Napier
 video: abZsSwC9aqA
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/abZsSwC9aqA.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Zen%20v5.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Rob
+
 It's been a good day, yeah? We've learned a lot, Swift 6. This is the last talk before you are released to dinner, and if it pleases you, the bar.
 
 And I am the one thing standing between you and that release. My work is cut out for me. If I do my job correctly here, you will spend the next little bit pleasantly entertained, and maybe you'll think about it later at the bar.
@@ -390,12 +392,15 @@ It's easy to forget. It takes practice. It takes patience.
 And sometimes it takes a little letting go. Did I mention you should really keep a journal? Thank you.
 
 ### Ellen
+
 I think we should start with some audience questions. Because I think there are probably going to be some good ones.
 
 ### Julien
+
 Actually, this is some kind of magic effect. Did you already face a moment in which you try to fix a bug, you don't manage to find the root cause, the misconsumption, et cetera. And then you just take a short break.
 
 ### Rob
+
 Oh, certainly. Oh, all the time. This is a common problem I have in interviews.
 
 Because when I'm going in for an interview, they always go, well, we want to just see you work through this. And we want to see your process. Like, how do you think?
@@ -415,14 +420,17 @@ Here's what I know. But very seriously, the formalization. And again, back to sc
 A lot of science is figuring out, what am I even asking? What really is the problem?
 
 ### Ellen
+
 Yeah, putting it into a format where you are taking what you've been working with and you explain not just what you see the problem is, but everything that you've tried to fix it. Often, somebody else who hasn't been neck deep in the problem is able to be like, oh, did you try this? And you go, what?
 
 Oh. No, I did not. No, I did not.
 
 ### Julien
+
 A question from Herve. What is the worst and most difficult bug you had to face?
 
 ### Rob
+
 Oh, do we have time? Because it's a doozy. We had exactly one laptop that got one-way audio.
 
 I worked on a voice app. It was kind of like Skype or something. But we would get one-way audio where one person could hear the other, but they couldn't hear each other.
@@ -450,6 +458,7 @@ And we had a typo in the capitalization of the name of the library. One characte
 Six months. And six months.
 
 ### Ellen
+
 That's pretty brutal. I mean, when you have a bug like that, where it's just like, this seems to be affecting a vanishingly small number of people. But this is driving me so insane that I need to know what is happening here.
 
 How do you decide how to prioritize whether to keep going down the rabbit hole or whether to be like, you know what? This is unknowable. It's gremlins.
@@ -457,6 +466,7 @@ How do you decide how to prioritize whether to keep going down the rabbit hole o
 It's aliens. I don't know.
 
 ### Rob
+
 Cosmic rays. Whatever they blame. And that's always up to, and I say I worked six months on it.
 
 I clearly did not work full time on that. It was the constant, wait, could it be this? It was not that.
@@ -466,20 +476,25 @@ And then, you know, three weeks later, is it this? And I would say a lot of, in 
 But still, at the end of the day, yeah, you have to pick your battles eventually. And it was literally one machine.
 
 ### Ellen
+
 I would have absolutely just thrown the machine into the river.
 
 ### Rob
+
 Vix, we're going to shred your machine.
 
 ### Ellen
+
 I'm putting this in the sun. Have a nice day. Never do that.
 
 ### Julien
+
 And maybe the last question from the audience. This is a specific one to Crashlytics. What do you do when you have a crash?
 
 It points to nowhere as a question, but I think when you don't have a clear stack trace not to start with.
 
 ### Rob
+
 You have nothing to start with. Yeah. Your lips to everyone's ears.
 
 I wish I had an answer. There is the ones where you just got nothing. And I'll tell you, when you got nothing, you got nothing.
@@ -497,9 +512,11 @@ Often in those cases, you're going to have to just take lateral thinking. You're
 But I wish I had an answer to the two line stack trace. And... Me too.
 
 ### Ellen
+
 I think sometimes you can put like some kind of logs in. I know that Crashlytics has some level of just like breadcrumb logs. I've had those bail me out a couple of times where I'm just like, how did you even get into this situation?
 
 ### Rob
+
 Oh, oh, oh, oh. But I should tell people this, though. Because it used to be in the talk and I took it out because I just ran out of time.
 
 If you have just impossible stack traces, stack traces that are stupid, they make no sense. Like that can't be happening. A thing that makes stack traces that cannot happen is memory corruption.
@@ -517,4 +534,5 @@ But the most common cause is two things running on different threads accessing t
 And that will often find it.
 
 ### Ellen
+
 Thanks, Rob.

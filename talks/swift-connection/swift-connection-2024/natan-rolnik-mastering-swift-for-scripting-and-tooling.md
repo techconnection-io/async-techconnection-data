@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/natan-rolnik-mastering-swift-for-scripting-and-tooling
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/natan-rolnik-mastering-swift-for-scripting-and-tooling
+date: "2024-09-23"
 title: Mastering Swift for Scripting & Tooling
 author:
   - Natan Rolnik
@@ -12,9 +12,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Natan
+
 Hello, everyone. It's truly an honor to be here. I know after lunch is hard, so I prepared a sentence in French.
 
 All right. So I'm Natan. Let me just set it up here.
@@ -148,9 +150,11 @@ There's very good content on tooling. There's some projects you might check out 
 I hope you enjoyed it.
 
 ### Denis
+
 One question from the audience. Is there any hidden code you didn't show us that enabled you to display graphical UI from your script?
 
 ### Natan
+
 No. The code was that function. That was all it.
 
 It's actually interesting, because I used here appkit, but I wrote a post not long ago, like two, three weeks ago, that you can use Swift UI from the command line, which in the first moment was like, how? And there's a class that is called image renderer. So you can have your views as long as you're running on Mac OS.
@@ -158,9 +162,11 @@ It's actually interesting, because I used here appkit, but I wrote a post not lo
 This wouldn't work on Linux. But if you so all this code that I did in appkit, you can just create your view and use hstacks, vstacks for positioning and image renderer and output an image.
 
 ### Rob
+
 Something I saw a lot in your first example was when you had trouble, you called exit one. What's the one?
 
 ### Natan
+
 Right. So whenever tools or whenever an executable exits, it either exits some terminals, even they have some color that they show, like sometimes they show red, meaning that it was an error. So whenever the code is not zero, it's an error.
 
 There's also an error that Xcode throws a lot is error 65. Probably you've seen this. So it's also a code.
@@ -168,15 +174,19 @@ There's also an error that Xcode throws a lot is error 65. Probably you've seen 
 So any code that is not zero is a failure. I think it's also worth mentioning that when you're using the argument parser, you should probably be throwing errors instead of exiting. And the argument parser will be able to catch that and print that there was an error and they will throw an exit code.
 
 ### Rob
+
 So the argument parser can kind of take care of all the shell things for you.
 
 ### Natan
+
 It's not going to use any stylings and it's not going to be red. Yeah. But it takes care of it.
 
 ### Denis
+
 Do you have an opinion about how you can migrate a fastlane implementation that is already on Ruby to use it with Swift?
 
 ### Natan
+
 Honestly, I don't. I think that would be a lot of work. And one thing that's worth mentioning is that fastlane as being in Ruby allows plugins much better than Swift.
 
 So I wouldn't recommend to migrate everything. But instead, I would recommend maybe calling scripts. Like if you feel more comfortable writing Swift scripts, maybe you can write your scripts and call them from fastlane.
@@ -184,6 +194,7 @@ So I wouldn't recommend to migrate everything. But instead, I would recommend ma
 That's what I would personally do.
 
 ### Denis
+
 Yeah. One more. Is there a place where we can get some documentation about the stuff we're not used to use?
 
 For example, I don't know if you want to move from folder to folder. Do you have to get to the function that is provided by the terminal? Or is there like some part of the Swift library somewhere hidden?
@@ -191,20 +202,25 @@ For example, I don't know if you want to move from folder to folder. Do you have
 You can just have those functions ready to use?
 
 ### Natan
+
 If I understand the question correctly, so you can handle the paths. That's what I showed a little bit. There was the filemanager.default.current directory path. It gives you where am I being executed at. And from there, you could launch subprocesses. There's a process API from foundation that you could spin up other processes.
 
 And when you do that, you can specify a path. So for example, if you are in a repository and you have like a subpath, but you are running from the root, what I would do would probably spin up a new process on the subfolders instead. That's what the question meant.
 
 ### Denis
+
 Basically, my question was what is the operation we use to do in script? Like changing folder?
 
 ### Natan
+
 Changing folders, yeah. Because in bash, you can do CD dot dot. What I said now is the approach that I would follow.
 
 And I think that I'm not sure that there's a way to change in Swift.
 
 ### Denis
+
 Thank you. If you don't have any more questions. Thank you so much.
 
 ### Natan
+
 Thank you. That was wonderful.

@@ -1,19 +1,21 @@
 ---
-slug: /talks/frenchkit/swift-connection-2024/danielle-lewis-5-tips-to-ship
-date: '2024-09-23'
+slug: /talks/swift-connection/swift-connection-2024/danielle-lewis-5-tips-to-ship
+date: "2024-09-23"
 title: 5 Tips to Ship
 author:
   - Danielle Lewis
 video: dahoZR-zPng
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/dahoZR-zPng.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/5%20Tips%20to%20Ship.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Danielle
+
 Hello, everyone. Thank you so much. Good morning.
 
 So my name is Danielle, and I started learning Swift and SwiftUI in June of 2023. So I knew that I wanted to try out software development, but I was really overwhelmed by the number of options and specialties that were out there available. Seeing WWDC23 and the Vision Pro announcement made me realize instantly that I wanted to build products for that platform.
@@ -95,6 +97,7 @@ Put yourself out there, build and learn in public, and I feel like your chances 
 Bet on yourself, build something that makes you happy, and release it. Thank you.
 
 ### Robin
+
 Great talk. Thank you so much, Daniel. Yeah, you're welcome.
 
 So we have a few questions for you. Okay. Zeno, do you want to kick us off?
@@ -102,6 +105,7 @@ So we have a few questions for you. Okay. Zeno, do you want to kick us off?
 I know you probably have one.
 
 ### Zino
+
 Yeah. You talked about frustration and how hard it can be sometimes. So I know that you said get people interested in your work by giving you deadlines.
 
 You give yourself deadlines, right? And being accountable for the deadlines that you set by talking in public. But how do you deal with frustration?
@@ -109,27 +113,33 @@ You give yourself deadlines, right? And being accountable for the deadlines that
 Because as a newcomer, sometimes you hit a bug that is so infuriating that it makes you want to quit.
 
 ### Danielle
+
 Yes.
 
 ### Zino
+
 Absolutely. How do you deal with that?
 
 ### Danielle
+
 I spoke a lot about leveraging your community, and that was a big part of it for me. One thing that I found is the ability to be vulnerable and just accept that you don't know everything and ask for help. So whenever I hit a hard wall like that, I would just get on Twitter and say, hey, I'm having this issue.
 
 I would detail the issue, and what was really shocking to me was how many people were trying to help once I did that. So I got a lot of offers for help and a lot of people who wanted to help me along the way just by sharing that I was having issues and being stuck.
 
 ### Zino
+
 And how does that square with what you said about feeling like an imposter? Because when you ask a question, you kind of reinforce the fact that you are not suited to that job. But you also say that that's what helps you.
 
 So how do you square that?
 
 ### Danielle
+
 Absolutely. I think for me, it was speaking to people who were so much more experienced than me. When you have somebody who's been doing this for 20 years tell you that they still get stuck, that they still have issues, it helps you realize that I've only been doing this for six months.
 
 Of course I'm going to have issues. Of course I'm going to get stuck. So that really helped me out, just having that perspective of people who have been doing this, people I look up to having the same issues that I'm having.
 
 ### Robin
+
 Let me see. I'm looking at some questions from the audience. Let's see.
 
 Okay. From the audience. Do you check any existing apps on the store before you start developing to see if there's a gap?
@@ -137,6 +147,7 @@ Okay. From the audience. Do you check any existing apps on the store before you 
 Or do you just go straight into building what you like?
 
 ### Danielle
+
 Yeah. So most of my apps come from personal experience, personal things that I've gone through. I built a law dictionary.
 
 I was a law student and I wanted a better law dictionary. And so when I became an app developer, I built one. I built apps to solve problems that I saw at my job.
@@ -144,6 +155,7 @@ I was a law student and I wanted a better law dictionary. And so when I became a
 I built apps around my hobbies. So it's not really, my apps are all like very personal to me, but I just kind of share them with the world. And that's how I get my inspiration is through my personal experiences.
 
 ### Robin
+
 Awesome. Well, we have time for maybe one more question. Do you have another one or if not, I have one.
 
 It looks like that's all we have from the audience, but I have one more for you. Okay. How often do you come back around and update your apps?
@@ -151,6 +163,7 @@ It looks like that's all we have from the audience, but I have one more for you.
 Because you said that you publish them all as an MVP, but today they're nothing like what they first were.
 
 ### Danielle
+
 Yeah. So I kind of have in my head what I want an app to look like at the finish line. So it's more so just when I have time to do it.
 
 I like to try to get an app that's close to finish before I start another one, just so that I'm not, you know, building on top of things and putting things on the back burner. I really like to finish one thing or get as close to finish as possible before I start something new. But I kind of have an idea in my head what features I want for this app to have.
@@ -158,10 +171,13 @@ I like to try to get an app that's close to finish before I start another one, j
 And when it first releases, it's not going to have most of those features. So I kind of build myself a roadmap so I can say, okay, I know I want to build this, this, and this, and I try to build myself a roadmap to get that done. Awesome.
 
 ### Robin
+
 Well, thank you so much.
 
 ### Danielle
+
 You're welcome.
 
 ### Robin
+
 A round of applause for Danielle. Thank you.

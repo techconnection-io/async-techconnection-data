@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/john-sundell-a-practical-guide-to-swift-performance
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/john-sundell-a-practical-guide-to-swift-performance
+date: "2024-09-23"
 title: A practical guide to Swift performance
 author:
   - John Sundell
@@ -12,9 +12,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### John
+
 Hi, everyone. It's so, so great to be here and thanks for that wonderful introduction, Greg. I'm so happy to be here today to talk to you about Swift performance and specifically to share a lot of practical tips on how I think we can make our code faster and more efficient.
 
 Because I think that all of us, we really strive to write code that is as fast and as efficient as possible. After all, no one has a goal to write slow and inefficient and wasteful code. But at the same time, we usually have a lot of other goals with our code as well.
@@ -144,25 +146,31 @@ That's all I had for you today. With all of these tips, I hope that you can also
 Thank you, John.
 
 ### Greg
+
 So, we can stop the Q&A.
 
 ### Ellen
+
 Yeah. I really liked the talk. I think one of the questions that I had as I was sort of running through, I like your idea of fast by default, but I think one of the things we're always taught to do as programmers is avoid premature optimization.
 
 How do you draw the line between saying, okay, I want to make sure that this is fast by default versus like I am basically going down a rabbit hole trying to fix problems that don't actually exist yet?
 
 ### John
+
 Yeah, that's a very, very good question, and I think a lot of us have been taught that premature optimization is the root of all evil, and therefore, we kind of avoid doing it at all costs, and sometimes, that kind of also gets translated as I'm just not going to focus on performance at all when I'm developing my code and then just deal with it later, kind of if performance issues actually occur, and that might seem like the most optimised way to work with performance issues, but that way, you kind of always have to go back and fix things after the fact, and it can be kind of wasteful in terms of time because you have to get back into that context, you have to figure things out, maybe get bug reports from users, run the time profiler, figure out where the call stack is the heaviest.
 
 It takes a lot of time, right? What I want to do when I'm working on my code is I want to strike a nice balance between not optimising too much prematurely but also not trying my best not to commit code that I know has potential performance issues, right? So I think how to strike that balance is the premature optimisation happens when you optimise for use cases that just never materialise, so that usually happens if you start optimising immediately when you start writing your code, that could definitely be the premature optimisation, but if you do it as the last step, if you will, before you maybe create that pull request, then you are kind of striking that nice balance between not doing it too early in the development process but you're also not committing code that has kind of known performance issues, so that's usually what I strive for.
 
 ### Ellen
+
 Cool, thank you.
 
 ### Greg
+
 Thank you. We have a question from Dean. Swift 6 would have catched those race conditions, how do you feel about those concurrency checks additions to the compiler and the overhead for developers?
 
 ### John
+
 Yeah, so I think it's important here to separate race conditions from data races, so Swift 6 helps us identify potential data races, not race conditions. Race conditions can still happen. So what's the difference?
 
 Well, a data race happens when two threads or two concurrent operations access the same memory at the same time, so they either perform a read or a write at the same time, and that causes data corruption because you just can't have those two mutations happen at the same time so you end up with these kind of bad access errors or some other low-level kind of error in the stack that can be really hard to diagnose, right? So with Swift 6, the compiler is helping us identify those potential data races by saying, hey, this is, you're violating kind of the actor isolation model here, you need to make sure you have a sendable type which can actually be mutated concurrently and so on, and those checks can, in the beginning, I will be honest and say that I pretty much hated them, because especially when working on a kind of mid to large-size project, it was like a lot of work to make code compliant with it, and I'm still working on it on some projects. But at the same time, I want to keep an open mind where I remember back when I learned Swift and I went from Objective-C that didn't have optionals, and I remember I thought optionals were such a headache, because I was like, I know this is not going to be nil, why do I have to prove it to you, compiler?
@@ -172,16 +180,21 @@ And I think we might look back on Swift 6 the same way, which is like, oh, I rem
 I'm not sure if Swift 6 is across that line or still in the realm of being, making us productive, time will tell, but I'm trying to keep an open mind on it, and I think it has already identified some potential bugs in applications I work with, so that's good, and yeah, I think time will tell if it will be a net positive or a net negative, but so far I think it's working out quite well. So you can still have race conditions, and that's when the order of operations is not predictable, so in my demonstration here with the text editor, you could have the user press command S, for example, on the Mac, or press save in the UI multiple times, and because those tasks would be running in the background, you could start five, six different tasks, and the order of which they complete is unknown, and even in Swift 6, that would be the case, so that's something we still have to think about when we're writing asynchronous code.
 
 ### Ellen
+
 Is that sort of the actor reentrancy problem, where you sort of, if you're doing work after something finishes, then you have to sort of check, like, hey, did this change while I was waiting for this to come back?
 
 ### John
+
 Yeah, that's a very, very good point, and, like, I think when most developers, myself included, started working with actors, you kind of thought, oh, great, the actor will just take care of everything for me, and I don't have to worry about anything any more, I can just, like, do a wait, and actor will solve it, right? But yeah, absolutely, you have the reentrancy problem, which is when you go and perform an asynchronous operation inside of an actor, and you come back into the actor, well, something else might have happened in the meantime, right? Because that operation could have taken, like, let's say, you know, two minutes to complete, and the actor is not just going to sit there and wait for two minutes and block the thread, it's going to accept other requests in the meantime, which is good, but it also means we have to still think about race conditions, even if data races is not as much of a concern any more with actors.
 
 ### Greg
+
 Last question. Okay. From the audience as well, from Nathan, in that text-saving sample you showed, was there still a possible race?
 
 ### John
+
 No, I don't think so, because we're checking the task cancellation before saving, the only potential race is that we could actually perform validation and encoding that we would then throw away, there's a trade-off there of doing, like, work eagerly versus waiting, so another approach would have been to block the UI, for example, to set the save button to, you know, is enabled false, and then wait until the save is complete, and then re-enable it. Sometimes that is the right approach as well, it depends on how costly the encoding and validation operations are and what kind of trade-offs you want to make there, but I think in this particular use case it would be pretty safe, but, you know, you could always be surprised and then have to fix something, so I guess, like, you know, the kind of things I showed today and the principles that I tried to follow in writing code, it doesn't mean that I never create any bugs and all my code is super optimised, absolutely not, it's just that I try to think about performance earlier in the process so that it's more kind of, like I said, fast by default, it doesn't mean that it's always fast, so there's always, like, bugs you have to go back to figure out and there's always need for performance optimisations, it will just be fewer than if I would not think so much about performance from the get-go.
 
 ### Greg
+
 Perfect, thank you.

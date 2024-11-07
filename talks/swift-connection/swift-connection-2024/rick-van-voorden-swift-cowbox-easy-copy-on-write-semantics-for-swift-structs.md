@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/rick-van-voorden-swift-cowbox-easy-copy-on-write-semantics-for-swift-structs
-date: '2024-09-23'
-title: 'Swift-CowBox: Easy Copy-on-Write Semantics for Swift Structs'
+  /talks/swift-connection/swift-connection-2024/rick-van-voorden-swift-cowbox-easy-copy-on-write-semantics-for-swift-structs
+date: "2024-09-23"
+title: "Swift-CowBox: Easy Copy-on-Write Semantics for Swift Structs"
 author:
   - Rick Van Voorden
 video: m9JZmP9E12M
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/m9JZmP9E12M.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/cowbox.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Rick
+
 Bonjour, je m'appelle Rick, je suis très heureux d'être ici aujourd'hui, merci, merci. I say hello, my name is Rick, I am very happy to be here today. I am a software engineer from Los Angeles, California, yeah, and about six months ago I built a project called SwiftCalbox.
 
 I want to show it to you today. SwiftCalbox is free, SwiftCalbox is open source, and I'm going to show it to you today. I would like to begin with some background and philosophy.
@@ -206,17 +208,21 @@ You are a 10x engineer. I am going to use Calbox. You can download Swift Calbox 
 All mistakes belong only to me. For references, I promised you some references. These are some very good essays, lectures, and presentations that were very educational to me building Calbox and also building this talk, so if you want to really learn more about this topic, please check out these references, and now I say merci.
 
 ### Rob
+
 I love a really technical talk, a really deep talk right before coffee, and you can get your brain back together. One of the things that really got me was you'd say copy a lot, or, you know, if you copy it, you know, but, I mean, back in the Objective-C days, we actually typed the word copy, but I haven't typed the word copy in a long time. How do you know when you're copying when it's a struct?
 
 ### Rick
+
 So there are some situations when the compiler can help you, but in my experience, in my opinion, is these are happy accidents. Prepare for the worst case, you know, worst complexity, which is ON. So if your struct is ON and you pass it as a parameter to a function or you add it to an array and then you make a copy of that array and then mutate that array, in some situations, yes, the compiler can work some magic and maybe help you out there, but assume worst case.
 
 In the repo, there is a command line package that runs this code to copy, and all it is doing is just putting, you know, n items into an array, making a copy of that array, and then mutating the array, and that's triggering, you know, all n bytes being copied.
 
 ### Rob
+
 You said something really surprising there. You said passing it to a function?
 
 ### Rick
+
 If you have a struct, so this is a good question. So something that I hear sometimes is maybe engineers who are coming from a new platform may think that Swift structs are copy on write by default. We don't get that out of the box.
 
 When I brought up array and dictionary, the engineers that built those data structures made them copy on write, with a lot of just kind of manual code similar to the code that we saw. It's open source, so you can see it for yourself. But if you pass a struct to a function, in some situations, the compiler can help you out, but in some situations, it can't.
@@ -224,17 +230,21 @@ When I brought up array and dictionary, the engineers that built those data stru
 So as an engineer, if I look at a situation and I say sometimes I'm going to have to pay an ON cost, to me, that's an ON algorithm, so.
 
 ### Denis
+
 So one question that comes up a lot is, like, people who have been listening to the past presentation, and they're kind of worried, how is this going to affect if you're, like, using strict concurrency? You have to worry about something specific, or is it just, like, any of those things?
 
 ### Rick
+
 So Calbox doesn't really know much about concurrency. The check to ensure that a reference is unique is an atomic check that is down in the arc retain release system. So that's already atomic, so we're okay with that, and that's the same check that Swift array and Swift dictionary are built on.
 
 We're just using that same pattern. If you have a struct that is now sendable, so, like, we think to the person example, you know, struct person, ID string, location string, if that type is sendable and you make it Calbox, it will still be sendable, so, yeah.
 
 ### Rob
+
 So, I mean, you use that example quite a bit. String and array and I think some of the others are already copy on write. So I like, well, the question was, is there any danger of, or is there a problem or advantage of wrapping a copy on write type in a Calbox?
 
 ### Rick
+
 So, yeah, that's a good question. I like the string example because it kind of makes, like, a good demo, but the order struct, if you actually go into the sample repo, which is the fork of the Apple project, the order struct is actually, I think, 140 bytes of storage. It's maybe 15 times the width of one pointer, and it is there are nested types, there are other structs that are in there, there are ints, there are enums, so that is a great candidate.
 
 As far as whether you want to make a copy on write type part of your copy on write data storage, I don't have the one correct answer for everybody in this room. A lot of this is going to depend on how you're using it in your own projects. What I like about Swift Calbox is it is a non-breaking change.
@@ -242,9 +252,11 @@ As far as whether you want to make a copy on write type part of your copy on wri
 So the code to put Swift Calbox into your app and kind of try it and run the benchmarks, you're going to spend more time writing the benchmarks than you will spend migrating to Swift Calbox. So try it for yourself, you know, see how it works in your apps, come up with an experiment, run your experiment, and then measure and compare your results.
 
 ### Rob
+
 Well, thank you so much. I think it's about time for coffee, right?
 
 ### Denis
+
 Yeah, I think I can get one. Do you have one more? I'm so sorry.
 
 One more just question. I've seen some weird case where the compiler doesn't help you out a lot. It's like whenever you have a computed property, you might just want to say, okay, I want to access this property and modify it, and then something weird can happen and you get called a get, then a set, and then the copy on write doesn't work very well.
@@ -252,12 +264,15 @@ One more just question. I've seen some weird case where the compiler doesn't hel
 Do you know how we can maybe fix that or not? You have a computed property that you wrote yourself.
 
 ### Rick
+
 Yeah. And then you call...
 
 ### Denis
+
 Basically the computed... Basically the property is an array, and you're like, okay, whenever I call this property A, give me the array that is stored somewhere else. And whenever you just call A and, I don't know, insert an element, you're just going to get a get call, then a set call, and then at some point you have some kind of weird behavior because you have two pointers on the array.
 
 ### Rick
+
 Are you talking about... I think I can answer your question if I think I know what the question is. So there can be some situations, and this kind of leads back to your question, which was there can be some situations where you do see an accidental quadratic because an array is a copy on write data structure.
 
 If you store a copy on write data structure in a copy on write data structure, there can be some times when if you make a change to the sort of inner child struct, that may trigger another copy. If anybody is familiar with underscore read and underscore modify, there are these semi-private APIs that do help in this situation. We don't use them in cow box, we use the public getters and the public setters because I want to ship something that everybody can use and not be limited by some pseudo private API.

@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/vincent-pradeilles-ai-in-xcode-is-it-better-than-the-competitors
-date: '2024-09-23'
-title: 'AI in Xcode: is it better than the competitors?'
+  /talks/swift-connection/swift-connection-2024/vincent-pradeilles-ai-in-xcode-is-it-better-than-the-competitors
+date: "2024-09-23"
+title: "AI in Xcode: is it better than the competitors?"
 author:
   - Vincent Pradeilles
 video: YszBJrrpZM0
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/YszBJrrpZM0.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Xcode%20AI%20vs%20Copilot.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Vincent
+
 Hello, good morning. So I don't know if you've heard, but a few months ago, Apple, they made quite a few announcements on AI. I think it was one of the main topics.
 
 But there was one announcement that was especially for us developers. It was finally the introduction of AI tools in Xcode. And Apple, when they announced it, you could say that they sold it quite hard, because they used words like they've created specialized coding models that capture expertise only Apple can provide, like latest APIs, language feature documentation, and simple code.
@@ -78,9 +80,11 @@ If only 20 per cent of them are good, that's still a win, however, be careful if
 And finally, if you're enthusiastic about AI-assisted coding and you want to see a sneak peek of what SwiftAssist might look like, I would recommend looking at an IDE called Cursor. You might have heard about it because it did a bit of a buzz two or three weeks ago. And it's very similar to what SwiftAssist will do, basically, you can write a prompt inside your code, and it's going to do a query for you to an LLM, here it's Cloud 3.5, and it's going to automatically pass the answer and write the diff in your IDE. So it's kind of cool, it gives you a glimpse of maybe what IDEs will look like into the future. It's not more powerful than copying and pasting code from Cloud or JGPT, but the integration is pretty nice for testing, it can be pretty useful. And that's what I had for you today.
 
 ### Zino
+
 So in the example that you took, address is very standard, boilerplate, that kind of stuff, so AI is expected to work rather well on the things that are super common. Absolutely. Have you tried on more exotic structures, or more, you know, like, do you feel like it can learn from other things than just the statistical, more common things?
 
 ### Vincent
+
 Yeah, so the impression I got from the AI Unix code is that since it thinks only inside the file, or it seems to think only inside the file, that puts a strong limitation. Because the context of your project, for instance, a complex project, one file is definitely not enough. So I didn't give it a try on a very large project, to be honest.
 
 But when I see how it kind of struggled a bit with simple use cases, I have a hard time thinking that it would shine with much complex use cases. So I feel it makes sense, for instance, when you want to interact with the APIs from Apple, where Apple can manage to embed as much context as possible in the training, in the data that they show during training. When it's your own code, it's a bit more complex.
@@ -92,19 +96,23 @@ And you're right, that's for mocks. When it's basic data, so we need to give it 
 Maybe you could solve it by being a bit smart about it and structuring the code so that you build from basic stuff and then more complex stuff. But yeah, you will run into some limitations, yeah.
 
 ### Audrey
+
 So Vincent, speaking about context and about things you want to add, did you try, like, adding some more, like, trying to decorate the function? So adding more documentation about the parameters, the return parameters, and maybe what the function will do? Because you had an example where there was a completion block, which was disappointing.
 
 And maybe suggesting that it should return a sync function?
 
 ### Vincent
+
 Yeah. So I had quite stuff around the documentation. If I remember it correctly, predictive concatenation wouldn't generate a comment for you.
 
 But you could write a comment and it could help it understand what's going to happen. In the case of async, arguably it's going to be faster to write the signature yourself than to write the prompt for the documentation. But yeah, you can give it some kind of hints about what you would like to see for a comment.
 
 ### Audrey
+
 Yes, indeed. Thank you.
 
 ### Zino
+
 There's a question from the audience that I'm going to rephrase a little bit. So right now, right, the big thing with Apple is it's on device. Yes.
 
 It's on device, on device, on device. So ultimately what you said, let's wait for them to get better. It's going to learn about your own coding style and suggestions based on your own coding style.
@@ -112,6 +120,7 @@ It's on device, on device, on device. So ultimately what you said, let's wait fo
 Do you imagine a future where you can share that thing for best practices in a team? Like, is it something that you see is possible down the line?
 
 ### Vincent
+
 I guess you could. I don't know how they implemented it. You will see that when you install Xcode 16 on Sequoia, you download the basic foundation model which is around two gigabytes.
 
 But you could imagine that there is some fine tuning happening on the device. And so maybe it could share, like, the final layer plus the offset for the weights of the base model. Now, the question would be, how do you merge that across a team?
@@ -135,7 +144,9 @@ I do hope it will be better. I was a bit disappointed by what there is in Xcode,
 But picking up speed is quite fast in AI, so you never know, it could change at a few months' notice.
 
 ### Audrey
+
 Thank you, Vincent.
 
 ### Vincent
+
 Thank you. Thank you, Vincent.

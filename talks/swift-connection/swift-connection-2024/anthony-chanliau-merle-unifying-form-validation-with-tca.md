@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/anthony-chanliau-merle-unifying-form-validation-with-tca
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/anthony-chanliau-merle-unifying-form-validation-with-tca
+date: "2024-09-23"
 title: Unifying form validation with TCA
 author:
   - Anthony Chanliau Merle
 video: RrBxRX_SEsQ
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/RrBxRX_SEsQ.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Swift%20Connection%20ACM%20V3.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Anthony
+
 Hello everyone, just a little check about the slides and the clicker, right? Let's go to the next. Okay.
 
 Okay, so bottom is next. So my name is Anthony, and I'm an iOS lead developer at Aviv Group, and this company holds applications like European real estate applications, like Sologée in France, Imoweb in Belgium, and Immonet and Imowelt in Germany. Today I would like to share with you the issue we faced with working with form validation in our applications, and what solution we came up with, and how it works under the hood.
@@ -54,59 +56,75 @@ And these screens thankfully don't come from our applications, because the UI is
 And thank you for your attention. I was pleased to share this with you guys. Thank you.
 
 ### Zino
+
 No questions from the audience.
 
 ### Anthony
+
 That's okay. But we do have questions.
 
 ### Zino
+
 Okay.
 
 ### Audrey
+
 Very declarative.
 
 ### Zino
+
 Yeah.
 
 ### Audrey
+
 So thank you, Anthony. My question will be about when you work with products, they want sometimes to get the product being, you know, available for every country. So my question will be about localization.
 
 Where does localization strings, string key, or string resources fit in our model?
 
 ### Anthony
+
 So as you saw, like, for now, they are pretty close to the reducer part, because we declare all the validation rules on the reducer side, and we keep the error string with that. So that will be on that side. On the other side, obviously, can lead to some issues when you want to test them, because you have, in that case, ensure to test on the right language, because you want to assert that the error string value is actually, like, for example, in English and so on.
 
 So these are some, like, difficulties that we didn't manage to face yet, but indeed, we are aware of that.
 
 ### Zino
+
 And the second obvious question is about accessibility, right? So in the same vein that when your error messages or your validation rules can differ from language to language, they can also differ from, let's say, user preference, because of accessibility, somebody who has bigger font or whatever. So I know it's kind of a generic question, and it's a hard problem to solve, right?
 
 But do you think that with work, this particular system can adapt to a dynamic problem?
 
 ### Anthony
+
 I believe it can adapt to some problem from accessibility, because, like, actually, it only works on the logical part, and you can, as long as you work with bindings, because that's how we implemented it, you can basically fit any UI you want. So the accessibility for the font size and so on is closer to the UI part, so you will define it on the UI, and it will have, like, no impact on the logic. But on the other side, maybe for the accessibility, I don't have any insure for that yet.
 
 ### Audrey
+
 I have a last question about the point three, the fact that you're using TCA. Do you encounter to try to contact or maybe try to improve or maybe do some more requests about your way of doing things, like, which is really declarative and which is really nice and clear for people to adapt?
 
 ### Anthony
+
 Yeah. Well, first, thank you, because, like, it was really important to make it declarative, at least to us, because we wanted to be really easy for the developers to use it and to have less friction as possible to have, like, configurations or, like, specific logics and so on. We really just wanted to have it plug and play, and we believe this API is at least good enough for that, and we didn't take the opportunity yet to talk about with the point three guys, and actually, that's, like, the first time we shared this to an audience, like, we did it, and in the company, a colleague of mine that's in the crowd coming from Belgium just told me, like, there is this connection happening, and you helped us build this thing on the validation form, and that would be great, like, to make it, to open it to people so that they can get inspiration from it.
 
 So, yeah, I start by this, sharing it here, but I still feel, like, a bit, not imposter, but something like that, like, not legitimate enough to, like, say to the point three guys, like, hey, we came up with that, like, would it be nice to maybe work with that, or I don't know.
 
 ### Audrey
+
 Apparently not, because there was no question, so I think everyone understood.
 
 ### Zino
+
 Just for, just to reassure the problem with the imposter syndrome here, who is thinking about doing something like that for their form validation in the room? Yeah, see? Yeah, great.
 
 Quite a few people, actually.
 
 ### Anthony
+
 I'm happy with that, and, yeah, and actually, when I was working, when I was creating this talk, and I tried to make this solution, like, pretty, not abstract, but, like, the global image of this, I came up with the graph with, like, a way to notify the user, to notify the system that the user tapped the button, a way to send this thing, and I was writing it, and I was, like, that's actually not TCR at all, it can just be, like, SwiftUI bindings or publishers for people who work on, like, React or things like that, so they can really, like, take this picture and adapt the thing to their own needs.
 
 ### Zino
+
 Definitely. Thank you very much. Thank you.
 
 ### Anthony
+
 Thank you. Thank you, everyone.

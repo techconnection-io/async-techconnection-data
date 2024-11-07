@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/muralidharan-kathiresan-swift-6-concurrency-peace
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/muralidharan-kathiresan-swift-6-concurrency-peace
+date: "2024-09-23"
 title: Swift 6 + Concurrency  = Peace
 author:
   - Muralidharan Kathiresan
@@ -12,9 +12,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Muralidharan
+
 Swift6 plus concurrency equal to peace. I know what you might be thinking, how can concurrency be done in peace? I should be crazy, right?
 
 I can totally relate to it. I everything is good, calm, or when you leave everything and decide to quit. So let's see shift six concurrency is peaceful, if it is peaceful, in which way?
@@ -190,9 +192,11 @@ The details of SIFT 6 concurrency details are in my website. Yeah. So these are 
 And feel free to reach out any time. Thank you.
 
 ### Ellen
+
 One thing that I had a question about, one of the things that you said that when you're migrating things one at a time, it's easier to migrate the app first and then the modules rather than doing the modules before the app. Why have you found that to be easier? Okay.
 
 ### Muralidharan
+
 So every project is different. So it's my view. We had a lot of composable packages first.
 
 So each package was supporting different code bases. So we shared those packages immediately. So the app layer was pretty thin.
@@ -204,15 +208,19 @@ Otherwise, as we've seen, we can use the pre-concurrency attribute to improve th
 Yeah. Thank you.
 
 ### Julien
+
 First question from the audience. Maybe I can rephrase a bit. What's the worst data race you had to fix or correct?
 
 ### Muralidharan
+
 Sorry, can you please repeat?
 
 ### Julien
+
 What's the worst data race you faced within your migration? Yeah.
 
 ### Muralidharan
+
 We have a long-term issue. The app was stuck in the launch. So our product team was continuously digging us on this.
 
 But we couldn't be able to solve. We were trying to do instruments and other things. But when I started this change, I was able to see a lot of other things.
@@ -224,6 +232,7 @@ So it was a little helpful. It was not that much, to be honest. But we at least 
 So that was the app launch was having issues. It took too much time and it stuck. And that's especially for some customers, not for everyone.
 
 ### Ellen
+
 Nice. Can you talk a little bit more about the pre-concurrency app attribute? So it's basically marking things that are written before concurrency was invented.
 
 And it seems like you get really different benefits from marking something as pre-concurrency versus just sort of saying, oh, this is non-isolated or this is... Yeah. So can you talk a little bit about what are the advantages of using that annotation versus sort of what are the other escape patches that people use?
@@ -231,6 +240,7 @@ And it seems like you get really different benefits from marking something as pr
 Yeah.
 
 ### Muralidharan
+
 So if I'm using a common package, something, the third-party tool, I don't have a control over it, right? So I can't suddenly change what are the packages I own or my team owns. We have the control.
 
 So that's why I think this pre-concurrency attribute comes in. So you can import them. This import, a package with pre-currency was previously there.
@@ -244,9 +254,11 @@ So that's why these two new proposals were doing a lot of addition for the dynam
 Okay. Thank you. Thank you.
 
 ### Julien
+
 And how about combined? Do you think it would check for data arrays at some point?
 
 ### Muralidharan
+
 Yeah, I was expecting this question. So whenever there is a release version, right? So there are certain things.
 
 I was reading dispatch queue to the task, then combined sequence to the async sequence. Yeah, there are always this equal to that new similar versions are there. But it's according to the usage, for example, I have used Rxiv for five, six years, very long time.
@@ -258,9 +270,11 @@ So these data issues are specific to the way we implemented a certain system in 
 Shift is evolving, right? That's why we are having these things now, not before a few years.
 
 ### Ellen
+
 I think, what's your take on just sort of, I've seen a couple of people talk about like, I'm just going to turn on swift6, fix the things that are easy to fix, and then turn it back off until I'm like ready. Like, what's your take on like how whether that's actually valuable to do that, before you have a better understanding of how all of this isolation works?
 
 ### Muralidharan
+
 Yeah, very good question, actually. As I told, it's an opt-in mode only. There is no rush for anyone.
 
 I think this is the first time Apple made like that. So every time we need to run, but this time it is a little more flexible. So there is no problem that you need to mind.
@@ -276,10 +290,13 @@ I had a few issues without knowing them properly used. I have my own experience.
 First we need to be clear, then stepping into will be really helpful. It will be easy there. Okay, thank you.
 
 ### Julien
+
 And thank you, Marit.
 
 ### Muralidharan
+
 Thank you.
 
 ### Julien
+
 Thank you.

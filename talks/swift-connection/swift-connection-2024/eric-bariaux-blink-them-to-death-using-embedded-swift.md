@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/eric-bariaux-blink-them-to-death-using-embedded-swift
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/eric-bariaux-blink-them-to-death-using-embedded-swift
+date: "2024-09-23"
 title: Blink them to death using Embedded Swift
 author:
   - Eric Bariaux
 video: 61A46nZmCLE
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/61A46nZmCLE.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Blink%20them%20to%20death%20using%20Embedded%20Swift%20-%20Swift%20Connection.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Eric
+
 My name is Eric. I'm officially a software engineer, but really I'm a geek. I like to play with technology, sometimes to do useful things, sometimes to do a bit less useful things.
 
 I don't feel like a dinosaur, but I've been around for a while, so I've used quite a few different systems over the years. I am not, however, an embedded systems engineer or an electrical engineer. In fact, I discovered the embedded world only a few months ago when, back in April, Apple published a blog post on Swift.org pointing to the GitHub repo with the embedded Swift examples. This talk is about my journey with embedded Swift over the last few months with its ups and downs. So let's first take a look at embedded and some of its limitations, and for that, I want to compare a small embedded chip. This is an RF chip that's used, for instance, in the Apple TV remote control, and we compare that with an Apple Watch Series 0, so the original one released nearly ten years ago.
@@ -88,48 +90,61 @@ There are plenty of things out there. And things will improve. Embedded Swift is
 So I have a few articles on the blog with talking about embedded Swift. I will post also a few example code in GitHub, and I will continue to write there, and you can contact me if you want to talk about that. Thank you very much for attending the last session.
 
 ### Rob
+
 Oh, this one's near and dear to my heart. I love these little systems. Do you have any sense of how small it can go?
 
 I mean, if I want to go to a 866 or maybe an 18 mega, I mean, can it go...
 
 ### Eric
+
 Yes, I've seen a few posts about a few kilobytes of code, so three or four. The ATTiny is not yet supported, more because of the instruction sets than the code size. But yeah, that's the goal, that it should go down to 8 bits, really low-power stuff.
 
 ### Rob
+
 How about, have you gotten a sense of the overhead? I mean, sometimes it's hard to get C code to fit on these little tiny things. Are you paying a big penalty or not much?
 
 ### Eric
+
 No, not much. I think you can get to sizes that are pretty comparable to what you would get from C. Awesome.
 
 ### Denis
+
 We asked, can we use Swift embedded in an iOS app, and can the limit of this approach can improve the performance of our app?
 
 ### Eric
+
 So the goal of Apple is indeed to use Embedded Swift in more than embedded devices. But they are mainly targeting firmware, bootloaders, kernel code, etc. As I said, it's a subset, and so you can compile with Embedded mode on a Mac.
 
 I've never tried on an iOS, an iPhone, or an iPad or anything. But you can compile code to your Mac host with Embedded.
 
 ### Rob
+
 I don't know if you've seen how hard or how complex it is to onboard some new platform. If you had some chip that nobody else has taken care of, is that a huge project, or something you could take on?
 
 ### Eric
+
 Yeah, I think it's pretty big. There is, for instance, in the ASP32, there are two main categories. The C, which is using a RISC-V chip, which is supported, and the S series, which is using Extensa core, and it's not supported.
 
 And I've read a few people trying to get there, and it seems to be quite a trip.
 
 ### Denis
+
 For the people that are building stuff at home, they are asking, do you have a chip to recommend to start using?
 
 ### Eric
+
 So in the examples, it's a bit of a happenstance that I'm using the NRF chip. I think the ASP32 C series, so the C6 in particular, is quite supported. The Raspberry also.
 
 ### Rob
+
 The Pico, yes.
 
 ### Eric
+
 The Pico, yeah. Because Raspberry Pi is not embedded, it's a computer. It's a small one, but it's a computer.
 
 ### Rob
+
 Yes. Wonderful. I'm so excited to see Swift branching out like this.
 
 Thanks for pioneering for us. Thank you very much. Thank you.

@@ -1,20 +1,22 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/etienne-vautherin-how-apple-intelligence-infuses-and-distills-its-models-into-the-app
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/etienne-vautherin-how-apple-intelligence-infuses-and-distills-its-models-into-the-app
+date: "2024-09-23"
 title: How Apple Intelligence infuses and distills its models into the app
 author:
   - Etienne Vautherin
 video: xCIMaF1sqDY
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/xCIMaF1sqDY.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Apple%20Intelligence%20Key%20from%20Google%20Drive.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Etienne
+
 So, I'm Etienne and my activity is to build baby apps with software developers. What are baby apps? Yes, baby apps are apps that are made for practice technologies, for proof of concept, for minimum viable product.
 
 The idea is that we are at the beginning of the app and we just want to have some training, workshop, things like that, or to test very specific topics on the application. I've done this kind of work for many years with large companies and now, today, I will do these baby apps on my own activity. So, this is something that could be funny, but in fact, this is a very serious activity.
@@ -88,9 +90,11 @@ For example we received a new beta version on yesterday during the party so thin
 In fact it's a topic which needs a full day I think but I've tried to make the essential here.
 
 ### Zino
+
 Thank you Etienne. So as developers we're used to having full control over our code and with machine learning in general but with Apple Intelligent in particular right we have to delegate a lot of things to systems that work magically behind the scenes and that may or may not be available that may or may not work. Do you recommend developers to get into that habit of letting the machine work because it's hard for developers not to How do you square that?
 
 ### Etienne
+
 I think that we are already letting the control to the machine with SwiftUI. You only define how to display something but you are not in an imperative way. You don't say display this thing, display this thing.
 
 In the same scheme here you define what is a kind of entity, you expose what is in this entity, you expose what the application could do and you let the user compose these things and Apple Intelligent calls you through an intent. I think it's natural. You cannot do things in an imperative way but the perform method is imperative because you are modifying, updating the model and you are doing things that need to be explained explicitly with a sequence of instructions.
@@ -98,9 +102,11 @@ In the same scheme here you define what is a kind of entity, you expose what is 
 But all the definitions are declarative in fact. So you just let the system to choose what you want to extract at one time.
 
 ### Audrey
+
 Thank you. So there is a question which has been pushed by the audience and let's suppose you have two mail apps and both support the right mail intent. How will the system choose the right app?
 
 ### Etienne
+
 I think that you have two instances, two entities which are available for, in this case, for the mom's flight. You could have one big mail application which defines one and another which defines one. You cannot have two mails which are the same, you see.
 
 I think that the user in fact will choose one or another and perhaps will use more frequently one than another. And it's the way we update the search index. You see that one application is more frequently used or has been used more recently than the other and App Engine will choose this one between the both.
@@ -108,4 +114,5 @@ I think that the user in fact will choose one or another and perhaps will use mo
 And if you remove one app, the other could take the wheel at this time.
 
 ### Zino
+
 Thank you very much.

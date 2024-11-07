@@ -1,6 +1,6 @@
 ---
-slug: /talks/frenchkit/swift-connection-2024/chris-eidhof-swiftui-animations
-date: '2024-09-23'
+slug: /talks/swift-connection/swift-connection-2024/chris-eidhof-swiftui-animations
+date: "2024-09-23"
 title: SwiftUI Animations
 author:
   - Chris Eidhof
@@ -11,9 +11,11 @@ tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Chris
+
 I hope everybody's excited after lunch. I hope you didn't eat too much and fall asleep. Let's do animations.
 
 Everything will move on screen, so that should be a lot of fun. When you think about animations, there's so much to talk about and so much I would love to talk about. There's the theory behind animations, there's the design of animations, but today we're going to focus just on the SwiftUI part of animations, and not all of it.
@@ -211,23 +213,29 @@ We want to have one minus time by three, and now it's going to fade out over thr
 That's all I have to say. Thank you, and I'll take your questions.
 
 ### Denis
+
 So the first question from the audience, and the main question from the audience is, what is the tool you're using to draw the graph? Xcode, right?
 
 ### Chris
+
 It's just SwiftUI, yes.
 
 ### Denis
+
 Okay, and do you use it when you're creating a complicated animation? You need to just think about it and using it that way, or is it just a teaching tool?
 
 ### Chris
+
 Yeah, yeah. So I also teach workshops. I don't want to take away from John and Greg, but when I teach SwiftUI workshops, I use these tools to teach things, yes.
 
 ### Rob
+
 Okay, why do you make the rest of us look bad? No, okay. So it seems when you get up to those timeline views, and they're quite powerful, are there any helpers?
 
 So can I do ease in, ease out at all, or do you have to go to Wikipedia and look up all the formulas?
 
 ### Chris
+
 Yeah, so you can, there is a type called unit curve in SwiftUI, and that gives you these easing curves, and you can use that to compute. So I was, for example, computing the capacity by saying one minus time divided by three. So that is a linear animation, right?
 
 So as time progresses, the value gets, well, actually goes down, right, to zero. So if you take that as sort of the progress, and the progress would be between zero and one, you could feed that into one of these unit curves, and then you have that for you. And what's actually really cool is, I didn't have time to explain that, but now I do.
@@ -235,9 +243,11 @@ So as time progresses, the value gets, well, actually goes down, right, to zero.
 The keyframe animations, you can create a, so I use the keyframe animator, but there's also a type called keyframe timeline, and it just gets a value and keyframes. And you can say, keyframe timeline, what's my value at time 0.2, or 0.21? And so you can combine the timeline view of the canvas and the keyframe timeline to rewrite the code I just did in a much simpler way.
 
 ### Denis
+
 Ah, okay, okay. One question we have is like, how do you choose between the with animation wrapper and the animation modifier?
 
 ### Chris
+
 Yeah, so we saw that the animation modifier, as we started updating the view tree, at some point it started adding that animation, right, and it started passing it down the view tree. And so if you want to have local animations that are sort of built into your view, you can use the dot animation. The with animation does a similar thing, but at the root of the transaction.
 
 So if you say with animation is on equals true, it will start the update of the view tree from the top, and it receives the animation in the transaction straight away. You can even, so what happens is then the next question maybe, what happens when you combine the two, right? Like you have your transaction, and you do with animation, and it has a very fast animation, and then you have a dot animation that's slow.
@@ -247,19 +257,23 @@ Now what happens? So the dot animation will overwrite that faster animation, bec
 And so to summarize, I would use with animation when I want to control from the outside how things are animated, and if I want to put animations into my component, I would use dot animation.
 
 ### Rob
+
 Okay. So you said transaction a couple times. Yes.
 
 And if you're old enough to have worked in core animation, it feels kind of core animation-y. Is, if you've worked in like CA Layer or even DrawRect, the old school DrawRect, I mean, how close is a thing like Canvas to what we're used to?
 
 ### Chris
+
 I'm not completely sure. I don't know enough about the internals of core animation, how that works. From what I remember, it's quite different, but it serves a similar purpose, it just has the same name.
 
 I do think that both systems were made by the same person, so there's definitely some overlap there.
 
 ### Rob
+
 Can we use, it feels a lot like a DrawRect call, though, inside Canvas. Yes. Can you do most of the things you would think you could do in a DrawRect?
 
 ### Chris
+
 Yes, yes. It's very, so the Canvas and the DrawRect are very, very similar, I think. And so the Canvas, you get a context, and then with DrawRect, I guess you get a CG context.
 
 And so, yeah. You have, you cannot pass every single view into a Canvas. You saw me put the symbol into the Canvas and resolve it.
@@ -267,9 +281,11 @@ And so, yeah. You have, you cannot pass every single view into a Canvas. You saw
 And if it's, I think if I remember, if you have like an AppKit view, for example, or a UIKit view that's not, I don't know, there are some limitations, and then it will just render something very ugly. But you'll find out quickly when you do that.
 
 ### Denis
+
 And one more question, maybe. When you work on an animation, it looks great, but when you put it in the end of the user, sometimes they just press the button really quickly, and you're just like, oh, I spent so much time, and it's kind of glitching. Is there a way to have something like reversible and just at some point go back without having that kind of glitch that's like, OK, start from the bottom and animate?
 
 ### Chris
+
 Yeah. So there is a few techniques. So I think one of the things that, so I started diving really deep into the animation topic, not just for this talk, but in general.
 
 And so one of the cool things that iOS did, I don't know who remembers it, but there's like the iPhone 10 presentation, and during that WWDC, there's a talk about animations, and they show FaceTime as the example. You know when you have FaceTime on your phone, you have like the four corners where your picture is, and you can swipe it up, and you can swipe it to a different, and you can interrupt that animation, and all of that stuff works magically, right? I think this was UIKit Dynamics.
@@ -283,7 +299,9 @@ And so the thing is, though, not every animation type can merge, and not every c
 But the moment, as I did, when you use .speed, it doesn't work anymore, because it cannot merge those two kinds of animations. And so in the end, when you write the code, and when you have it working, the code is very simple, but it's really easy to make a mistake and not know why.
 
 ### Denis
+
 Okay, thank you. Thank you.
 
 ### Chris
+
 Yes.

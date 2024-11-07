@@ -1,19 +1,21 @@
 ---
-slug: /talks/frenchkit/swift-connection-2024/lena-stoxen-everythings-cooler-in-space
-date: '2024-09-23'
+slug: /talks/swift-connection/swift-connection-2024/lena-stoxen-everythings-cooler-in-space
+date: "2024-09-23"
 title: Everything's Cooler in Space
 author:
   - Lena Stöxen
 video: vn6TQvOdSQY
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/vn6TQvOdSQY.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/Everything-cooler%20in%20Spac.pdf.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Lena
+
 Hi, it's so nice to be on stage here today. I'm really nervous, but we'll see how this works out. This talk was quite long, but I cut some slides, so I'm thinking we're good.
 
 Anyway, my title is Everything's Cooler in Space, and as I was later told is that a lot of people now assume that it is about space, space. I meant like personal space and like spatial computing, so it's not about space, space. I'm sorry to disappoint anyone here.
@@ -183,9 +185,11 @@ It's more about the creativity. And I can show you something that I've been work
 Basically, the spheres now rotate in an orbit around you, because I thought that's a cool animation, and they open separate windows when you click them. Yeah, with that, I'm good on time, I think, and I want to say thank you all so much for listening, and I hope you had fun.
 
 ### Denis
+
 The main question remaining is, did you, by any chance, get into contact with someone at Apple and have an explanation on why there are three different implementations for the same thing, actually, based on three different platforms?
 
 ### Lena
+
 No, not really yet. Maybe in the future. Who knows?
 
 No, but I've talked to some people about the problems with it, especially the problems with anchors and testability. I suggested something. You know that a lot of people have a really new phone with a lighter sensor and everything, so that, in my opinion, you could kind of mock it with an iPhone, and then you could at least test whether the anchors would appear somewhere.
@@ -195,11 +199,13 @@ Same with iPad, because a lot of the anchors could, in my opinion, theoretically
 Maybe it doesn't work on the back-end. I can't say that.
 
 ### Rob
+
 The systems all work on components, right? They reach out and would modify their orientation like the billboards. It seems like multiple could mess with the same component.
 
 Are they ordered?
 
 ### Lena
+
 So they don't fight. You can order systems. Basically, the systems run one at a time behind each other, and you can add a dependency to say first system A, then system B, then system C, or system C can only run once you have system A and B, and you can do things like that to make sure they don't fight with each other.
 
 But, yes, you can do, well, it's not what you're really supposed to do, but you can, for instance, say I only want to look at, I have a system that, like my rotation system, that I don't need a component for that because I don't care about state, for instance, so I just want to rotate all entities all the time, and I just want to look whether they have a model component, and you can do that and then look at model components, because you're not really changing the model component.
@@ -207,7 +213,9 @@ But, yes, you can do, well, it's not what you're really supposed to do, but you 
 You're changing something of, like, the orientation, and that's more changing the entity. So they don't necessarily fight with each other.
 
 ### Rob
+
 Yeah. That was wonderful. Thank you so much.
 
 ### Lena
+
 Thank you.

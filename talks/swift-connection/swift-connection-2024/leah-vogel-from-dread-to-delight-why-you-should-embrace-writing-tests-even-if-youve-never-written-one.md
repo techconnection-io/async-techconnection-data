@@ -1,7 +1,7 @@
 ---
 slug: >-
-  /talks/frenchkit/swift-connection-2024/leah-vogel-from-dread-to-delight-why-you-should-embrace-writing-tests-even-if-youve-never-written-one
-date: '2024-09-23'
+  /talks/swift-connection/swift-connection-2024/leah-vogel-from-dread-to-delight-why-you-should-embrace-writing-tests-even-if-youve-never-written-one
+date: "2024-09-23"
 title: >-
   From Dread to Delight: Why You Should Embrace Writing Tests (Even If You’ve
   Never Written One)
@@ -9,14 +9,16 @@ author:
   - Leah Vogel
 video: r0luDOTLxUQ
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/r0luDOTLxUQ.jpg
-slides: null
+slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/From%20Dread%20to%20Delight%20Swift%20Connection%202024.zip
 tags: []
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
-allow_ads: false
+allow_ads: true
 ---
+
 ### Leah
+
 I'm going to get my bearings for a second. This is a cool clicker that I've never seen before. Let's see if I can figure out that forward goes forward or not, or backwards.
 
 Backwards is forwards. Okay, I'm probably holding it upside down. Aha.
@@ -244,110 +246,141 @@ Okay, so bottom line is, I love that animation. Okay, so that's it for me. And y
 Thank you very much.
 
 ### Julien
+
 Thank you. Thank you, Leah.
 
 ### Leah
+
 Oh, one second. I can't believe nobody has done this yet, but something that a lot of speakers like to do. So I have some help here, please.
 
 So everybody need to raise your hand and say hi. So, hi.
 
 ### Julien
+
 Okay, well, do you test it and do you validate it? Oh, do I validate? Okay, yes, I'll validate.
 
 ### Leah
+
 Okay, thank you so much, everybody.
 
 ### Ellen
+
 So I am a huge, huge advocate of testing, so I could probably ask you questions about this all day. But I'm gonna, other than complimenting you for the invention of tequila-driven development, that's pretty great. I wanted to ask sort of what your opinions are on a couple of things that I think different people have different opinions about that they've come to through their experience, and I'm really curious what your experience has been.
 
 So in terms of when you have interaction tests, I think there are some times where you can have interaction tests that involve the UI versus what I call headless interaction tests where it doesn't involve any UI. What do you find to be a good balance of those things?
 
 ### Leah
+
 Well, to be very, very candid, the UI ones we have the QA engineers handle, and the headless ones we have the developers do. So they're that kind of balance. Okay, fair enough.
 
 ### Julien
+
 Okay, so pretty much the same question from the audience, with a specific question on snapshot tests. What would be the line, developer, QA team?
 
 ### Leah
+
 Again, so in the company that I worked at, that was QA's responsibility. We actually recently had somebody on the animation team write a really cool thing that automates all the snapshots. We wanted to do it to use it for localization as well.
 
 I think that there's value for developers learning how to use all these tools because it's just another thing to add to your toolbox, and you're not always gonna have the privilege of working in a company that's got an automation team, and sometimes the developers are going to be having to handle that all by themselves. So it's good to know how to do both UI testing and snapshot testing on your own as well.
 
 ### Ellen
+
 And I'll note, you won't always have a QA team either. So I think one of the things that you talked about was sort of like trying to make sure that you're testing the happy path, where it's like we know most people are going down this direction. Obviously, there's kind of an infinite number of bad paths.
 
 How do you figure out sort of which ones that you wanna test versus ones where you're starting to get diminishing returns?
 
 ### Leah
+
 That's a good question. So one of the ways that we deal with testing at the company that I work at is that QA is responsible for writing test cases. And so they often are already thinking about all of the very unhappy paths, and sometimes as a developer, you might like, how did you even think of that?
 
 They say like, I've seen a job requirement that the QA engineer's gotta have a criminal mind. So not all developers have a criminal mind.
 
 ### Ellen
+
 My favorite QA guy I've ever worked with has said that he finds the best bugs when he's been testing something for like two hours and just starts doing the dumbest thing he can possibly think of. And then all of a sudden, he finds the craziest bugs that you can possibly find.
 
 ### Leah
+
 I find that there's a lot of value of once you've like uncovered a crash, if you're using tools like Crashlytics, et cetera, and you find, oh, I'm gonna fix this bug, writing a test for the bug is good, and then you're covering obviously a path that you hadn't thought of previously. Yeah, for sure.
 
 ### Julien
+
 Well, a new QA engineer will test it exactly every time in the elevator of the app to test the offline mode.
 
 ### Ellen
+
 I did that too one time. We had a streaming app, and the way that I tested it, dropping the stream was riding an elevator up and down. We did that too in Glide.
 
 ### Julien
+
 You said you wouldn't talk too much about money today, but well, the audience seems interested. So what's your takeaway to optimize a test course? So writing it maybe more quickly or less, if needed?
 
 ### Leah
+
 Well, I don't know. I don't know. There are people now who are saying, okay, AI's gonna change my job out, and I'm gonna write all my code using AI, and I'm sure you guys have tried it, and most of the code is really bad.
 
 So if the regular code is bad, the testing code is probably gonna be along the same lines. However, it's getting better, so I'm not discounting it, because as AI gets better and trained better, then I assume the tests will get better too, and who knows, maybe it'll turn out to be really useful soon.
 
 ### Julien
+
 Soon enough, yeah.
 
 ### Ellen
+
 Yeah. So you talked about one particular incident in which you had some sort of code that you thought was gonna be thrown away, and it's like, JK, that's production code now. Do you feel like that's given you any sort of second thoughts about things where you're like, you're more likely to write something that you, test for something that you initially sort of assess is throwaway code, but if it's like, oh, okay, oh, crap, that's now a production code.
 
 ### Leah
+
 Yes, okay, so I guess it really depends on the situation, but I would say if there's something that has any inkling of perhaps getting to production, at least write a test of the most critical flow that you know, if this fails, this was literally an API call. There was nothing. There was nothing, and the API changed under the hood.
 
 It was like, and it was a third-party API. It wasn't ours, and it was just like, it doesn't work. So if we had that one little sanity test, we would have caught it before the users did.
 
 ### Ellen
+
 Yeah, I think one of my favorite ways to think about testing, and where to start with it is, if people are coming after you with torches and pitchforks, if it breaks, start testing that first.
 
 ### Julien
+
 Another kind of torture, metrics, and Jeff is asking, what do you care about? Code coverage, number of tests, something else?
 
 ### Leah
+
 Okay, so code coverage is tricky because it's hard to measure exactly what you're testing, and again, you can have code coverage where you're testing all different kinds of unit tests, but you wanna really get the integration, so even if you had the entire app more or less covered by unit tests, you might not actually be writing meaningful tests, so I think that you need to think about what's really useful, what is crucial for your app, what's really gonna make a difference to your users at the end of the day?
 
 ### Ellen
+
 The canonical example of this in the United States was when the Affordable Care Act was first enacted. This was like the national marketplace for health insurance. All of the contractors who had been working on it had been working separately, and they had a zillion tests of each of their individual components, and then when they tried to actually make all the components work together, it completely blew up.
 
 ### Leah
+
 It's like that picture of the bridge, you know? The bridge, and it just doesn't connect at the end. Everybody built their part.
 
 ### Ellen
+
 Yeah, or like the thing where it's like, oh yeah, we've got two unit tests and zero integration tests, where it's someone who presses a button to open an umbrella, and the umbrella opens, but then the top of the umbrella just flies off into the space.
 
 ### Julien
+
 Well, I think you also know the picture of the two windows that you can open at the same time. Yeah, yeah. Pretty much the same, yeah.
 
 Did you succeed in introducing TDD in your teams?
 
 ### Leah
+
 No. No, but the people who do it, they really like it, but it's hard to convince people to want to do it.
 
 ### Julien
+
 So tequila one, or?
 
 ### Leah
+
 Oh, the tequila works fine, yeah.
 
 ### Julien
+
 Thank you, Leah.
 
 ### Leah
+
 Thank you, thank you all. As you all know, it's immensely satisfying to see all those green checks when the tests pass, so keep testing.
