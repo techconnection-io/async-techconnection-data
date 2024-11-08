@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/hidde-van-der-ploeg-how-to-make-your-app-look-like-youve-hired-a-designer
+  /talks/frenchkit/swift-connection-2023/hidde-van-der-ploeg-how-to-make-your-app-look-like-youve-hired-a-designer
 date: "2023-09-21"
 title: How to Make Your App Look Like You've Hired a Designer
 author:

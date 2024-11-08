@@ -1,5 +1,5 @@
 ---
-slug: /talks/swift-connection/swift-connection-2023/nicolas-zinovieff-audio-ar
+slug: /talks/frenchkit/swift-connection-2023/nicolas-zinovieff-audio-ar
 date: "2023-09-21"
 title: Audio AR…?
 author:

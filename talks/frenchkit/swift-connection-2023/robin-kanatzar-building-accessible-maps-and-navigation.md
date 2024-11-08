@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/robin-kanatzar-building-accessible-maps-and-navigation
+  /talks/frenchkit/swift-connection-2023/robin-kanatzar-building-accessible-maps-and-navigation
 date: "2023-09-21"
 title: Building Accessible Maps and Navigation
 author:

@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/daniel-steinberg-floating-down-an-asyncstream
+  /talks/frenchkit/swift-connection-2023/daniel-steinberg-floating-down-an-asyncstream
 date: "2023-09-21"
 title: Floating Down an AsyncStream
 author:

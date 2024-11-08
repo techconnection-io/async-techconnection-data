@@ -1,5 +1,5 @@
 ---
-slug: /talks/swift-connection/swift-connection-2023/krzysztof-zablocki-the-project-template
+slug: /talks/frenchkit/swift-connection-2023/krzysztof-zablocki-the-project-template
 date: "2023-09-21"
 title: The Project Template
 author:

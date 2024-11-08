@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/herve-berenger-playing-with-the-limits-can-your-app-run-arbitrary-binary-code
+  /talks/frenchkit/swift-connection-2023/herve-berenger-playing-with-the-limits-can-your-app-run-arbitrary-binary-code
 date: "2023-09-21"
 title: "Playing With the Limits: Can Your App Run Arbitrary Binary Code?"
 author:

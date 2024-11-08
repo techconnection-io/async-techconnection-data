@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/simon-b-stovring-achieving-loose-coupling-with-pure-dependency-injection-and-the-composition-root
+  /talks/frenchkit/swift-connection-2023/simon-b-stovring-achieving-loose-coupling-with-pure-dependency-injection-and-the-composition-root
 date: "2023-09-21"
 title: >-
   Achieving Loose Coupling with Pure Dependency Injection and the Composition

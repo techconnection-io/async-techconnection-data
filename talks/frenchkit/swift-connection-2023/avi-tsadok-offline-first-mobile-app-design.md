@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/avi-tsadok-offline-first-mobile-app-design
+  /talks/frenchkit/swift-connection-2023/avi-tsadok-offline-first-mobile-app-design
 date: "2023-09-21"
 title: Offline-First Mobile App Design
 author:

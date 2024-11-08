@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/ibrahima-ciss-swift-macros-the-key-to-efficient-and-elegant-code
+  /talks/frenchkit/swift-connection-2023/ibrahima-ciss-swift-macros-the-key-to-efficient-and-elegant-code
 date: "2023-09-21"
 title: "Swift Macros: The Key to Efficient and Elegant Code"
 author:

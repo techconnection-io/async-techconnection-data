@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/vui-nguyen-make-your-swiftui-design-system-portable-with-swift-packages
+  /talks/frenchkit/swift-connection-2023/vui-nguyen-make-your-swiftui-design-system-portable-with-swift-packages
 date: "2023-09-21"
 title: Make Your SwiftUI Design System Portable with Swift Packages
 author:

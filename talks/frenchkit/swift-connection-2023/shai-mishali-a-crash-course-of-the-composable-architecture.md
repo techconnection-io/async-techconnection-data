@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/shai-mishali-a-crash-course-of-the-composable-architecture
+  /talks/frenchkit/swift-connection-2023/shai-mishali-a-crash-course-of-the-composable-architecture
 date: "2023-09-21"
 title: A Crash Course of The Composable Architecture
 author:

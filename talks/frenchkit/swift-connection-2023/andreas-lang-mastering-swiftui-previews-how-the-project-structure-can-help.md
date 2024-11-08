@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/andreas-lang-mastering-swiftui-previews-how-the-project-structure-can-help
+  /talks/frenchkit/swift-connection-2023/andreas-lang-mastering-swiftui-previews-how-the-project-structure-can-help
 date: "2023-09-21"
 title: "Mastering SwiftUI Previews: How the Project Structure can help"
 author:

@@ -1,6 +1,6 @@
 ---
 slug: >-
-  /talks/swift-connection/swift-connection-2023/robin-kanatzar-ditch-your-expensive-cicd-and-build-your-own
+  /talks/frenchkit/swift-connection-2023/robin-kanatzar-ditch-your-expensive-cicd-and-build-your-own
 date: "2023-09-21"
 title: Ditch Your Expensive CI/CD and Build Your Own
 author:
