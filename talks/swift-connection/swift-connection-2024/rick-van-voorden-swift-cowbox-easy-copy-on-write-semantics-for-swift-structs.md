@@ -8,7 +8,8 @@ author:
 video: m9JZmP9E12M
 thumbnail: https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/m9JZmP9E12M.jpg
 slides: https://storage.googleapis.com/async-techconnection-downloads-events/swift-connection/swift-connection-24/cowbox.pdf.zip
-tags: []
+tags:
+  - Performance
 year: 2024
 conference: frenchkit
 edition: swift-connection-2024
