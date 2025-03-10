@@ -137,6 +137,11 @@
     "slug": "flutter-paris",
     "name": "Flutter Paris",
     "logo": "logos/Flutter-Paris-Meetup.png",
-    "editions": []
+    "editions": [
+      {
+        "slug": "march-2025",
+        "name": "Flutter Paris - March 2025"
+      }
+    ]
   }
 ]
