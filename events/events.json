@@ -132,5 +132,11 @@
         "name": "React Native Paris - November 2024"
       }
     ]
+  },
+  {
+    "slug": "flutter-paris",
+    "name": "Flutter Paris",
+    "logo": "logos/Flutter-Paris-Meetup.png",
+    "editions": []
   }
 ]
