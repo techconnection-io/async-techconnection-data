@@ -5,8 +5,8 @@ date: '2025-03-18'
 title: 'Backend for Frontend: A Practical Experience Report'
 author:
   - Majid Boudaoud
-video: FoEmAPhrOtA
-thumbnail: 'https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/FoEmAPhrOtA.jpg'
+video: Ts00Jtdi7qc
+thumbnail: 'https://async-assets.s3.eu-west-3.amazonaws.com/thumbnails/Ts00Jtdi7qc.jpg'
 slides: null
 tags: []
 year: 2025
