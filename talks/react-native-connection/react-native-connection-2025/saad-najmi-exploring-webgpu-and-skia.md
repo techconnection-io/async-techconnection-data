@@ -14,7 +14,8 @@ conference: react-native-connection
 edition: react-native-connection-2025
 allow_ads: false
 ---
-[Saad]  
+### Saad
+  
 All right. Hi, guys. I'm going to talk to you all about exploring WebGPU in Skia, or in other words, how to do a cool custom UI in React Native. So, entering myself again, my name is Saad Najmi. I'm a senior software engineer at Microsoft. I work on Microsoft Office for Mac and iOS. I started out as a native developer, and then over time I started doing React Native, and now you might know me as one of the maintainers for React Native MacOS. But for this talk, I'm actually talking about more of a side project that I picked up at the last conference I was at, which is I wanted to see what is this whole WebGPU Skia stuff about, and can I get it running on MacOS?
 
 So, let's start with the inspiration. On developer Twitter/developer YouTube, I'd see lots of really cool flashy demos and animations. And I consider myself a pretty good expert of all the style props and transforms and what you can do with React Native, but I didn't know how to do any of this. And that kind of worried me because I maintain one of the platforms, I want to make sure you can do things on Mac too. Over in Apple land, I'd also see that they started doing cool animations where they have Siri glow and then morph when it gets your results or in their WWDC demos, they had this like ripple effect you could add to SwiftUI. And I also didn't know how these worked. So I wanted to investigate. And the first question was, how are they doing these things? And the answer is, they're using a GPU. If you don't know what a GPU is, it is a graphics processing unit. It's a part of your computer that renders all your graphics. It looks like that if you have a Windows computer, but it's also on your phone, also on your Mac, also on your laptop. And most UI developers like me don't really have to interface with this. That's pretty low level. You kind of leave that to other people. But it turns out we're missing out because there's a lot of cool stuff you can do with your GPU.
@@ -51,53 +52,70 @@ Okay. So same question again. How can I use this in my app? Should I rewrite all
 
 I'd like to thank a couple of people. First off, Software Mansion for making Reanimated and gesture handler, and for porting those to macOS, so that when I got around to porting the test apps, those just worked. If those didn't work, my life would be hard. I'd like to thank Oscar, who is overdoing React Native Vision OS. He actually ported WebGPU to Vision OS first, and I keyed off of a lot of that work to get Mac OS working. I'd like to thank William and Christoph for doing cool stuff, and especially William for having so many videos, making really cool things with Skia. I have a few links to the things that are referenced. I'll see if I can share those with you somehow. I realize other people put QR codes, and I wish I did that, because that is very useful. All right. Thank you.
 
-[Mo]  
+### Mo
+  
 Thank you very much, Saad. You really had a can it be done in React Native moment there on stage.
 
-[Saad]  
+### Saad
+  
 Yeah, that was basically the idea.
 
-[Mo]  
+### Mo
+  
 Yeah, that was good. It was very, very cool. So you mentioned that the port was originally done into VisionOS, how much work and how much similarity is there typically between VisionOS libraries and macOS? How easy is it once something is there for VisionOS?
 
-[Saad]  
+### Saad
+  
 So VisionOS has an easier time than macOS because unlike macOS, which has a separate library app kit, VisionOS just uses UIKit, so your UI views all work. And so the real work was just adding VisionOS to the build matrix, which thankfully the build tool that-- I can't remember if it was CMake or Ninja, but whatever what it was that supported it, so you just kind of had to pattern match wherever there's iOS, there's VisionOS, and then it worked.
 
-[Mo]  
+### Mo
+  
 Cool. Very cool. There's a question here that I think is like centered in the late 1990s early 2000s, where someone's asking how does Microsoft feel about your involvement in Mac OS, it feels quite outdated like I'm a Mac I'm a PC ads type of thing.
 
-[Saad]  
+### Saad
+  
 I wasn't around for this, but I think when Microsoft announced Microsoft Office on Mac, it was a very big moment. And I think Windows and Mac may compete, so I don't know if that's really the case anymore, but Microsoft Office runs everywhere. It runs on Mac, it runs on iPhone, it runs on Android. And so the ethos of my team is really... If we have a thing we want in Office, then we have to go make it work on all the platforms they support, which includes macOS, which is why React Native macOS exists. We wanted to do something in Office, so we had to make it work everywhere. I don't think there's a, like, Microsoft is fully, you know, they created React Native macOS for a reason, and they're totally happy with it.
 
-[Mo]  
+### Mo
+  
 Even more shocking than that was when iTunes was released for Windows.
 
-[Saad]  
+### Saad
+  
 I don't remember that, but I will believe that.
 
-[Mo]  
+### Mo
+  
 Yeah, there's the videos of it. If you're iTunes on Windows, Steve Jobs took the mic out of Windows, but you'd expect that. What were the steps that you took when you ported React Native Skia to React Native Mac OS? What was that like?
 
-[Saad]  
+### Saad
+  
 It was the same steps. Oh, okay. The difference is that I did the add a test app last in that it's still in PR because I couldn't merge it because I couldn't get the test to pass. So it turns out the React Native Skia library is a lot bigger than the React Native FGPU library. So it has a lot more end-to-end tests. And I wasn't quite able to get that all ready before the talk. But it was the same thing. Like, William wrote most of both libraries. He had the same kind of JavaScript script to build either Skia or Don. So it was the same work to add it to the build matrix. He had the same kind of class names of iOS platform context that are renamed to Apple platform context. He saw me do it once for WebGPU. So it was easy for him to review me doing it for Skia. It was a very similar experience, just like one level up. and mostly a time thing. I think the Skia macOS support only landed last week because it took me a bit of time.
 
-[Mo]  
+### Mo
+  
 Yeah, fair enough. Is there something you think that is still sort of very difficult to achieve or unachievable in terms of the visual effect space inside of apps? You talked about the ripple effect, didn't you? example. But is there still something that you think would be significantly easier to do in SwiftUI compared to on React Native?
 
-[Saad]  
+### Saad
+  
 This is where I'm sad that I don't write more SwiftUI, because I think to be a good app developer, you have to know what's happening in all the spaces. I have a very good idea of what's happening in React Native. I don't have a good idea of what's happening in SwiftUI Jetpack Compose. And I think the best way to learn is by doing. Then I could know what things work better there and what things don't work better there. And unfortunately, I'm one person with a limited amount of time. That's very fair. So I can't answer that question, basically. I don't know.
 
-[Mo]  
+### Mo
+  
 Cool. Someone's left a comment. It's not really a question. They've just said that they don't know if anyone is working on React Native for IoT and embedded systems. Do you know anything about that?
 
-[Saad]  
+### Saad
+  
 No.
 
-[Mo]  
+### Mo
+  
 Cool. Well, I guess nobody's working on REC native for IoT and embedded systems, so... Glad that's cleared. Awesome! Do those have screens? Like, do you have UI on there? Oh, I guess they do. Depends, I guess. Maybe.
 
-[Saad]  
+### Saad
+  
 Yeah, okay. I don't know.
 
-[Mo]  
+### Mo
+  
 Cool. Awesome. Saad, thank you so much. We're going to have a proper sit down for the panel. So I will relieve you of your answering of questions duty. And then we'll see you back here in a little bit. So big round of applause for Saad. Thank you.
