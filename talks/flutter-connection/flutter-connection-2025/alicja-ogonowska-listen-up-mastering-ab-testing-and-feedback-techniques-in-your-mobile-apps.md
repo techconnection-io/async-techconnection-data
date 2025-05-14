@@ -14,7 +14,8 @@ conference: flutter-connection
 edition: flutter-connection-2025
 allow_ads: false
 ---
-[Alicja]  
+### Alicja
+  
 Hello, everyone. Yes, now you can hear me. Welcome to my talk where I'm going to be showing you some A/B testing essentials for your Flutter apps. My name is Alicja Gonowska and I work as a senior mobile engineer at OLX. I'm based in Gliwice in Poland and actually I have some sweets from Poland. So feel free to reach out to me after the talk or during the party and you may get some. And as Wadim mentioned, I'm a member of Flutteristas community and there will be a Flutteristas conference streaming tomorrow on Flutter community YouTube channel. So don't miss on it. And I wanted to ask you, have any one of you ever done A/B testing in your apps? I actually see some hands. I was afraid that I won't be able to see anything, but I decided to ask the question anyway. So I'm glad to hear that some of you are already familiar with it. 
 
 So basically A/B testing is exposing your users to different versions of the app to see which one performs better. And usually we have at least two different versions of the app or a feature with one of them being the so-called baseline. So something that you already had in your application and another version is a variation that you want to try out. And usually you are having some kind of remote values data source that will be distributing different values to your application, let's say A and B. And based on that, your application will behave slightly differently. Maybe the UI will be different. Maybe some flows will be changed. But what is most important is that your application already has those two versions implemented. And based on the remote value, you are differentiating what the users are seeing. And after that, you need to somehow measure, is it better or is it worse? And for that, you can use your analytics and track some events that are necessary to validate this kind of test. And after that, you can, for example, see that, okay, version A was definitely better. This is the winner. And the coolest part about A-B testing, you can mark this variant as a winner and automatically roll it out to all your users and you don't need another release. So no reviews, no waiting. Everyone will have the best version right away. 
@@ -33,35 +34,46 @@ And when it comes to analyzing the experiments results, it's hard to mock up som
 
 And there are also some other tools apart from A/B testing from Firebase, but they are mostly paid tools. So keep that in mind if you are a part of our organization, then probably you can use something more complex. And also many organizations use some in-house solutions. Like, for example, in OLX, we have our own analytics, our own A-B testing tools. So there was no point in showing you that because anyway, you won't be able to use that. But the general idea is always the same. And I also have some best practices for you to conduct a successful test. So it's best to test one variable at a time because otherwise you will be not for sure where are the better results coming from. Also, you should ensure a large enough sample size. So if you don't have an app with hundreds of thousands of users, feel free to split your audience in half and involve all the users in the test. And also it's important to leave a backdoor for testing. So as the CI/CD guys were showing you before with the feature flags, it's always good to have some kind of debug menu or at least a way to display what kind of variant you have right now, because otherwise you don't know whether it's an A/B test or a bug because, well, where is the feature? I don't see it. And last but not least, A/B testing goes beyond mobile apps and you can also test store listings. So in Google Play Store and App Store, you can select different descriptions or screenshots. Also, if you are using tools like Revenue Cat, you can check different pricings or even paywalls. And also most marketing tools offers you a way to A/B test push messages or in-app messages. So thanks a lot. Here is the link to slides. And if you want to talk more about it, ping me on Twitter, LinkedIn or Blue Sky. I'm basically everywhere. Thank you.
 
-[Vadym]  
+### Vadym
+  
 We're going to start from this one. What would be the difference between ABExperiment and Remote Config when you turn on flag based on different ways?
 
-[Alicja]  
+### Alicja
+  
 I don't understand the part about different ways, but basically remote config allows you to do feature flags. Because feature flags for me is just, you know, turning something on and off. And of course, you can decide that you can turn it off for some people. But with A-B testing, you have like a goal in mind. So it's not a safety measure that, OK, I'm not super sure about this new feature. So I'm going to enable the feature flag for half of the users and see what happens. Because then you are just waiting for crashes not to happen, usually. And with A-B tests, you always have some kind of goal in mind. So this is the difference for me. I hope I answered the question.
 
-[Vadym]  
+### Vadym
+  
 If they are silent, I guess, yes. And then how to decide on when the A/B results are significant enough to roll out the winner?
 
-[Alicja]  
+### Alicja
+  
 Well, all the tools show you that, so I mean, if you will see the results saying that the difference is 1%, then maybe you want to wait a bit more and see if that actually changes. But if you see a result of 20% plus events that you are waiting for, then clearly this is okay. So the good thing is I recommend using tools that are designed for that, because of course you could do everything from scratch. You could have your own analytics, remote value distribution, and then you can do all the calculations on your own. But yeah, who has time for it when there are tools dedicated for that?
 
-[Vadym]  
+### Vadym
+  
 I believe that actually every company and each company have their own metrics. So, I mean, you can imagine the scale 1% in a scope of Google or Meta will be huge. 1% in the scope of a smaller startup, it's not that much. It's your company and your data analyst to decide, or maybe you, because if you don't have a data analyst, but that's my opinion.
 
-[Alicja]  
+### Alicja
+  
 Yeah, I agree. I would say that A-B testing is great for huge apps because, as you mentioned, 1% can often mean millions of revenue increases. But even the smaller apps can try out A-B testing and see how the users are interacting with the app. And maybe for you, the changes will be much bigger.
 
-[Vadym]  
+### Vadym
+  
 Yep. Here then, what's your favorite tool for A/B testing and why?
 
-[Alicja]  
+### Alicja
+  
 To be honest, I still recommend Firebase A/B testing because the issues arrive when you want to do more complex tests, like mainly with the result analysis. It falls short when you have to check some more complex events or parameters, but it's a great way to start. Also, because many apps already use Firebase, already use remote config. So it's quite easy to get started and start your first experiment. And also quite easy to ask your company to start doing that because it's free.
 
-[Vadym]  
+### Vadym
+  
 Yeah, whatever free is really good in the beginning, but then as I'm also speaking about some kind of architecture, try to keep it on the edge. So not to dive deep into your application, not to like have really strong connections. And then how do you handle unit and end-to-end testing alongside A/B testing?
 
-[Alicja]  
+### Alicja
+  
 Okay, so usually I have some kind of overrides, so I create either a service or whatever you call it so that it's easy to set up the mocks inside the test and then you can test for the different variants and that's it.
 
-[Vadym]  
+### Vadym
+  
 I hope that's answered your questions and at least we're saying thank you, Alicia. Thank you. Thanks for sharing this.
